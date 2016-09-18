@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CD98F292-6859-4B31-AB7C-83C6434AA5E0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BilgisayarKontrol</RootNamespace>
+    <AssemblyName>BilgisayarKontrol</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BilgisayariKapat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BilgisayariKapat.Designer.cs">
+      <DependentUpon>BilgisayariKapat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DevamEdenler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DevamEdenler.Designer.cs">
+      <DependentUpon>DevamEdenler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hakkinda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hakkinda.Designer.cs">
+      <DependentUpon>Hakkinda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MesajGoster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MesajGoster.Designer.cs">
+      <DependentUpon>MesajGoster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="İnternetiKes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="İnternetiKes.Designer.cs">
+      <DependentUpon>İnternetiKes.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BilgisayariKapat.resx">
+      <DependentUpon>BilgisayariKapat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DevamEdenler.resx">
+      <DependentUpon>DevamEdenler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hakkinda.resx">
+      <DependentUpon>Hakkinda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MesajGoster.resx">
+      <DependentUpon>MesajGoster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="İnternetiKes.resx">
+      <DependentUpon>İnternetiKes.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_53yFou.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_6yirxO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_8yZU78.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_4S23B6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_7hFv6N.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_2jrqjS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_4tOAIA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_6FrSxz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_6AXskY.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_8xvO2y.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_3a0Jh6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_9UXTNU.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_3SicEa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_2xLss3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_3SicEa1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_3SicEa2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_2xLss31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_0rOnS7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_3oldbz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_0RZKkL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_8K709c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_4E8fEE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_9IaPOJ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_9IaPOJ1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_9IaPOJ2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nezmankapatılsınlogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_8FZyP7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_6A41PI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_498nry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_4VuNNp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_6xOIg2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_3xcPZy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_0f8cwa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_03RwU0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_3Fuxgr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_9Ki0wd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_7hKeM6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_6raSEJ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_7pDgxa.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
