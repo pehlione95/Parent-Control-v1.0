@@ -14,7 +14,7 @@ Zamana bağlı olarak,
   -EKLENEN / DEĞİŞTİRİLEN ÖZELLİKLER-
 
 * Uygulamanın güvenliği bakımından kapatılması için şifre gereksinimi
-* Ebeveyn kullanıcı girişi
+* Ebeveyn kullanıcı giriş bölümü
 * Şifremi unuttum bölümü
 * Tasarım değişikliliği
 * İcon değişikliliği
