@@ -40,6 +40,7 @@
             // 
             // pictureBox3
             // 
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Help;
             this.pictureBox3.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_1vlAoR;
             this.pictureBox3.Location = new System.Drawing.Point(322, 201);
             this.pictureBox3.Name = "pictureBox3";
@@ -51,6 +52,7 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Help;
             this.pictureBox2.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_6tvHo8;
             this.pictureBox2.Location = new System.Drawing.Point(258, 203);
             this.pictureBox2.Name = "pictureBox2";
@@ -62,6 +64,7 @@
             // 
             // iptalettusu
             // 
+            this.iptalettusu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.iptalettusu.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_4rwvAD;
             this.iptalettusu.Location = new System.Drawing.Point(386, 203);
             this.iptalettusu.Name = "iptalettusu";

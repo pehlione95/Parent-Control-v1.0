@@ -34,6 +34,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Giristusu = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -62,6 +63,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Cursor = System.Windows.Forms.Cursors.Help;
             this.label2.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(78, 232);
@@ -96,7 +98,8 @@
             // Giristusu
             // 
             this.Giristusu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(183)))), ((int)(((byte)(211)))));
-            this.Giristusu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Giristusu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Giristusu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Giristusu.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Giristusu.ForeColor = System.Drawing.Color.Black;
             this.Giristusu.Image = global::BilgisayarKontrol.Properties.Resources.Forward_30;
@@ -109,12 +112,21 @@
             this.Giristusu.UseVisualStyleBackColor = false;
             this.Giristusu.Click += new System.EventHandler(this.Giristusu_Click);
             // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel4.Location = new System.Drawing.Point(12, 127);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(500, 3);
+            this.panel4.TabIndex = 33441;
+            // 
             // Giris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SkyBlue;
-            this.ClientSize = new System.Drawing.Size(516, 279);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(183)))), ((int)(((byte)(211)))));
+            this.ClientSize = new System.Drawing.Size(527, 279);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
@@ -141,5 +153,6 @@
         private System.Windows.Forms.Label label2;
         public System.Windows.Forms.Button Giristusu;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel4;
     }
 }

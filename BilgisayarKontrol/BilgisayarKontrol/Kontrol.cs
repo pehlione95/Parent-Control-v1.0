@@ -27,7 +27,7 @@ namespace BilgisayarKontrol
 
         private void KontrolTimer_Tick(object sender, EventArgs e)
         {
-            button1.Enabled = false;
+            baslattusu.Enabled = false;
             a += 10;
             if(a<40)
             {
@@ -65,7 +65,7 @@ namespace BilgisayarKontrol
                 {
                     progressBar1.Value = 0;
                     gif.Visible = false;
-                    button1.Visible = false;
+                    baslattusu.Visible = false;
                     tamamtusu.Text = "Devam et";
                 }
 
@@ -97,6 +97,44 @@ namespace BilgisayarKontrol
         {
             KontrolTimer.Start();
             
+        }
+
+
+
+        private void gif_MouseEnter(object sender, EventArgs e)
+        {
+            gif.BackColor = Color.SkyBlue;
+        }
+
+        private void gif_MouseLeave(object sender, EventArgs e)
+        {
+            gif.BackColor = Color.Azure;
+        }
+
+        private void tamamtusu_MouseEnter(object sender, EventArgs e)
+        {
+            tamamtusu.BackColor = Color.SkyBlue;
+        }
+
+        private void tamamtusu_MouseLeave(object sender, EventArgs e)
+        {
+            tamamtusu.BackColor = Color.Azure;
+        }
+
+        private void baslattusu_MouseEnter(object sender, EventArgs e)
+        {
+            baslattusu.BackColor = Color.SkyBlue;
+        }
+
+        private void baslattusu_MouseLeave(object sender, EventArgs e)
+        {
+            baslattusu.BackColor = Color.Azure;
+        }
+
+        private void baslattusu_Click(object sender, EventArgs e)
+        {
+            
+            KontrolTimer.Start();   
         }
     }
 }

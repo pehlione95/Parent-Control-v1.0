@@ -70,6 +70,7 @@
             // 
             // kapattusu
             // 
+            this.kapattusu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.kapattusu.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_4rwvAD;
             this.kapattusu.Location = new System.Drawing.Point(16, 6);
             this.kapattusu.Name = "kapattusu";
@@ -81,6 +82,7 @@
             // 
             // tamamtusu
             // 
+            this.tamamtusu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.tamamtusu.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_6mkMqS;
             this.tamamtusu.Location = new System.Drawing.Point(206, 6);
             this.tamamtusu.Name = "tamamtusu";
@@ -94,8 +96,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SkyBlue;
-            this.ClientSize = new System.Drawing.Size(275, 225);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(183)))), ((int)(((byte)(211)))));
+            this.ClientSize = new System.Drawing.Size(275, 200);
             this.ControlBox = false;
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.pictureBox1);

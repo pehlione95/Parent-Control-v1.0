@@ -36,7 +36,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.örnektimer = new System.Windows.Forms.Timer(this.components);
             this.gif = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.baslattusu = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gif)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,8 +64,9 @@
             // 
             // tamamtusu
             // 
-            this.tamamtusu.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.tamamtusu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.tamamtusu.BackColor = System.Drawing.Color.Azure;
+            this.tamamtusu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.tamamtusu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.tamamtusu.Font = new System.Drawing.Font("Tahoma", 12F);
             this.tamamtusu.Location = new System.Drawing.Point(386, 122);
             this.tamamtusu.Name = "tamamtusu";
@@ -74,6 +75,8 @@
             this.tamamtusu.Text = "Kapat";
             this.tamamtusu.UseVisualStyleBackColor = false;
             this.tamamtusu.Click += new System.EventHandler(this.tamamtusu_Click);
+            this.tamamtusu.MouseEnter += new System.EventHandler(this.tamamtusu_MouseEnter);
+            this.tamamtusu.MouseLeave += new System.EventHandler(this.tamamtusu_MouseLeave);
             // 
             // panel4
             // 
@@ -89,7 +92,7 @@
             // 
             // gif
             // 
-            this.gif.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.gif.BackColor = System.Drawing.Color.Azure;
             this.gif.Image = global::BilgisayarKontrol.Properties.Resources.Yükleniyor;
             this.gif.Location = new System.Drawing.Point(159, 127);
             this.gif.Name = "gif";
@@ -97,25 +100,30 @@
             this.gif.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.gif.TabIndex = 23;
             this.gif.TabStop = false;
+            this.gif.MouseEnter += new System.EventHandler(this.gif_MouseEnter);
+            this.gif.MouseLeave += new System.EventHandler(this.gif_MouseLeave);
             // 
-            // button1
+            // baslattusu
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.button1.Location = new System.Drawing.Point(10, 122);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(202, 48);
-            this.button1.TabIndex = 24;
-            this.button1.Text = "Başlat";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.baslattusu.BackColor = System.Drawing.Color.Azure;
+            this.baslattusu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.baslattusu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.baslattusu.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.baslattusu.Location = new System.Drawing.Point(12, 122);
+            this.baslattusu.Name = "baslattusu";
+            this.baslattusu.Size = new System.Drawing.Size(202, 48);
+            this.baslattusu.TabIndex = 24;
+            this.baslattusu.Text = "Baslat";
+            this.baslattusu.UseVisualStyleBackColor = false;
+            this.baslattusu.Click += new System.EventHandler(this.baslattusu_Click);
+            this.baslattusu.MouseEnter += new System.EventHandler(this.baslattusu_MouseEnter);
+            this.baslattusu.MouseLeave += new System.EventHandler(this.baslattusu_MouseLeave);
             // 
             // Kontrol
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SkyBlue;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(183)))), ((int)(((byte)(211)))));
             this.ClientSize = new System.Drawing.Size(606, 185);
             this.ControlBox = false;
             this.Controls.Add(this.gif);
@@ -123,7 +131,7 @@
             this.Controls.Add(this.tamamtusu);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.baslattusu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.Name = "Kontrol";
@@ -144,7 +152,7 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Timer örnektimer;
         private System.Windows.Forms.PictureBox gif;
-        private System.Windows.Forms.Button button1;
         public System.Windows.Forms.Timer KontrolTimer;
+        private System.Windows.Forms.Button baslattusu;
     }
 }

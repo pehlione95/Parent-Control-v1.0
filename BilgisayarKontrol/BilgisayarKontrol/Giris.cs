@@ -63,12 +63,13 @@ namespace BilgisayarKontrol
 
         private void sifreTXT_TextChanged(object sender, EventArgs e)
         {
-            //label1.Text = "Kullanıcı bilgileriniz ile giriş yapınız";
-            //label1.ForeColor = Color.Black;
+            label1.Text = "Kullanıcı bilgileriniz ile giriş yapınız";
+            label1.ForeColor = Color.Black;
         }
 
         private void label2_Click(object sender, EventArgs e)
         {
+            
             SifremiUnuttum pw = new SifremiUnuttum();
             pw.Show();
         }

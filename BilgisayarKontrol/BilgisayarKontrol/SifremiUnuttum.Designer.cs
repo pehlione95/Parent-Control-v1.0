@@ -59,6 +59,7 @@
             // 
             // kapattusu
             // 
+            this.kapattusu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.kapattusu.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_4rwvAD;
             this.kapattusu.Location = new System.Drawing.Point(42, 8);
             this.kapattusu.Name = "kapattusu";
@@ -71,6 +72,7 @@
             // tamam
             // 
             this.tamam.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tamam.Cursor = System.Windows.Forms.Cursors.Hand;
             this.tamam.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_6mkMqS;
             this.tamam.Location = new System.Drawing.Point(254, 8);
             this.tamam.Name = "tamam";
@@ -94,8 +96,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SkyBlue;
-            this.ClientSize = new System.Drawing.Size(294, 192);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(183)))), ((int)(((byte)(211)))));
+            this.ClientSize = new System.Drawing.Size(294, 170);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.güvenlikcevabiTXT);

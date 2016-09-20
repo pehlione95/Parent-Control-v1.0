@@ -46,6 +46,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.iptalettusu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tamam)).BeginInit();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -63,6 +64,7 @@
             // 
             // iptalettusu
             // 
+            this.iptalettusu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.iptalettusu.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_4rwvAD;
             this.iptalettusu.Location = new System.Drawing.Point(33, 6);
             this.iptalettusu.Name = "iptalettusu";
@@ -74,6 +76,7 @@
             // 
             // tamam
             // 
+            this.tamam.Cursor = System.Windows.Forms.Cursors.Hand;
             this.tamam.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_6mkMqS;
             this.tamam.Location = new System.Drawing.Point(363, 6);
             this.tamam.Name = "tamam";
@@ -96,6 +99,7 @@
             // belirlenenzamanakadarradio
             // 
             this.belirlenenzamanakadarradio.AutoSize = true;
+            this.belirlenenzamanakadarradio.Cursor = System.Windows.Forms.Cursors.Hand;
             this.belirlenenzamanakadarradio.Font = new System.Drawing.Font("Tahoma", 12F);
             this.belirlenenzamanakadarradio.Location = new System.Drawing.Point(34, 10);
             this.belirlenenzamanakadarradio.Name = "belirlenenzamanakadarradio";
@@ -111,8 +115,9 @@
             this.belirlenenzamandansonraradio.AutoSize = true;
             this.belirlenenzamandansonraradio.BackColor = System.Drawing.Color.WhiteSmoke;
             this.belirlenenzamandansonraradio.Checked = true;
+            this.belirlenenzamandansonraradio.Cursor = System.Windows.Forms.Cursors.Hand;
             this.belirlenenzamandansonraradio.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.belirlenenzamandansonraradio.Location = new System.Drawing.Point(27, 333);
+            this.belirlenenzamandansonraradio.Location = new System.Drawing.Point(33, 11);
             this.belirlenenzamandansonraradio.Name = "belirlenenzamandansonraradio";
             this.belirlenenzamandansonraradio.Size = new System.Drawing.Size(272, 23);
             this.belirlenenzamandansonraradio.TabIndex = 37;
@@ -126,7 +131,7 @@
             this.dateTimePicker1.CustomFormat = "";
             this.dateTimePicker1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePicker1.Location = new System.Drawing.Point(27, 201);
+            this.dateTimePicker1.Location = new System.Drawing.Point(28, 181);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.ShowUpDown = true;
             this.dateTimePicker1.Size = new System.Drawing.Size(105, 27);
@@ -137,7 +142,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel1.Controls.Add(this.belirlenenzamanakadarradio);
-            this.panel1.Location = new System.Drawing.Point(-7, 271);
+            this.panel1.Location = new System.Drawing.Point(-7, 242);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(455, 46);
             this.panel1.TabIndex = 39;
@@ -145,7 +150,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel2.Location = new System.Drawing.Point(-7, 320);
+            this.panel2.Controls.Add(this.belirlenenzamandansonraradio);
+            this.panel2.Location = new System.Drawing.Point(-7, 292);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(455, 46);
             this.panel2.TabIndex = 40;
@@ -153,7 +159,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_1tu7Yl;
-            this.pictureBox3.Location = new System.Drawing.Point(26, 160);
+            this.pictureBox3.Location = new System.Drawing.Point(27, 140);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(284, 25);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -162,6 +168,7 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_7tiwvB;
             this.pictureBox2.Location = new System.Drawing.Point(360, 76);
             this.pictureBox2.Name = "pictureBox2";
@@ -185,7 +192,8 @@
             // 
             this.bilgibir.AutoSize = true;
             this.bilgibir.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bilgibir.Location = new System.Drawing.Point(3, 369);
+            this.bilgibir.ForeColor = System.Drawing.SystemColors.Control;
+            this.bilgibir.Location = new System.Drawing.Point(4, 352);
             this.bilgibir.Name = "bilgibir";
             this.bilgibir.Size = new System.Drawing.Size(307, 19);
             this.bilgibir.TabIndex = 42;
@@ -195,7 +203,8 @@
             // 
             this.bilgiiki.AutoSize = true;
             this.bilgiiki.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bilgiiki.Location = new System.Drawing.Point(3, 388);
+            this.bilgiiki.ForeColor = System.Drawing.SystemColors.Control;
+            this.bilgiiki.Location = new System.Drawing.Point(4, 371);
             this.bilgiiki.Name = "bilgiiki";
             this.bilgiiki.Size = new System.Drawing.Size(307, 19);
             this.bilgiiki.TabIndex = 43;
@@ -205,14 +214,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SkyBlue;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(183)))), ((int)(((byte)(211)))));
             this.ClientSize = new System.Drawing.Size(440, 467);
             this.Controls.Add(this.bilgiiki);
             this.Controls.Add(this.bilgibir);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.uygulamadiTXT);
-            this.Controls.Add(this.belirlenenzamandansonraradio);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel4);
@@ -230,6 +238,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.tamam)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

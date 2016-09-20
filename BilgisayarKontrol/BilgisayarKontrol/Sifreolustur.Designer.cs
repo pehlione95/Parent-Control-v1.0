@@ -55,7 +55,7 @@
             // cevapTXT
             // 
             this.cevapTXT.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.cevapTXT.Location = new System.Drawing.Point(12, 165);
+            this.cevapTXT.Location = new System.Drawing.Point(12, 174);
             this.cevapTXT.Name = "cevapTXT";
             this.cevapTXT.Size = new System.Drawing.Size(258, 27);
             this.cevapTXT.TabIndex = 25;
@@ -64,7 +64,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label1.ForeColor = System.Drawing.Color.AliceBlue;
             this.label1.Location = new System.Drawing.Point(12, 92);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(249, 19);
@@ -75,8 +75,8 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label2.Location = new System.Drawing.Point(12, 195);
+            this.label2.ForeColor = System.Drawing.Color.AliceBlue;
+            this.label2.Location = new System.Drawing.Point(12, 204);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(226, 19);
             this.label2.TabIndex = 28;
@@ -84,6 +84,7 @@
             // 
             // kapattusu
             // 
+            this.kapattusu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.kapattusu.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_4rwvAD;
             this.kapattusu.Location = new System.Drawing.Point(53, 7);
             this.kapattusu.Name = "kapattusu";
@@ -115,6 +116,7 @@
             // 
             // sifreolusturtusu
             // 
+            this.sifreolusturtusu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.sifreolusturtusu.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_6mkMqS;
             this.sifreolusturtusu.Location = new System.Drawing.Point(270, 6);
             this.sifreolusturtusu.Name = "sifreolusturtusu";
@@ -129,7 +131,7 @@
             this.panel4.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel4.Controls.Add(this.kapattusu);
             this.panel4.Controls.Add(this.sifreolusturtusu);
-            this.panel4.Location = new System.Drawing.Point(-37, 238);
+            this.panel4.Location = new System.Drawing.Point(-37, 253);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(365, 63);
             this.panel4.TabIndex = 31;
@@ -138,8 +140,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SkyBlue;
-            this.ClientSize = new System.Drawing.Size(290, 387);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(183)))), ((int)(((byte)(211)))));
+            this.ClientSize = new System.Drawing.Size(290, 314);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);

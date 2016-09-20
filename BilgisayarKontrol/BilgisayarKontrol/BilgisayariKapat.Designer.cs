@@ -62,6 +62,7 @@
             // 
             // iptalettusu
             // 
+            this.iptalettusu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.iptalettusu.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_4rwvAD;
             this.iptalettusu.Location = new System.Drawing.Point(19, 6);
             this.iptalettusu.Name = "iptalettusu";
@@ -73,6 +74,7 @@
             // 
             // tamam
             // 
+            this.tamam.Cursor = System.Windows.Forms.Cursors.Hand;
             this.tamam.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_6mkMqS;
             this.tamam.Location = new System.Drawing.Point(286, 6);
             this.tamam.Name = "tamam";
@@ -96,8 +98,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SkyBlue;
-            this.ClientSize = new System.Drawing.Size(355, 184);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(183)))), ((int)(((byte)(211)))));
+            this.ClientSize = new System.Drawing.Size(355, 165);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.dateTimePicker1);

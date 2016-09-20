@@ -183,6 +183,16 @@ namespace BilgisayarKontrol.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Logomakr_1n8nOU {
+            get {
+                object obj = ResourceManager.GetObject("Logomakr_1n8nOU", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Logomakr_1pFRwO {
             get {
                 object obj = ResourceManager.GetObject("Logomakr_1pFRwO", resourceCulture);
@@ -583,6 +593,16 @@ namespace BilgisayarKontrol.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Logomakr_7gV4IG {
+            get {
+                object obj = ResourceManager.GetObject("Logomakr_7gV4IG", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Logomakr_7hFv6N {
             get {
                 object obj = ResourceManager.GetObject("Logomakr_7hFv6N", resourceCulture);
@@ -676,6 +696,16 @@ namespace BilgisayarKontrol.Properties {
         internal static System.Drawing.Bitmap Logomakr_8K709c {
             get {
                 object obj = ResourceManager.GetObject("Logomakr_8K709c", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logomakr_8lh57r {
+            get {
+                object obj = ResourceManager.GetObject("Logomakr_8lh57r", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

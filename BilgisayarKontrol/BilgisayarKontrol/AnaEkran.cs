@@ -202,11 +202,6 @@ namespace BilgisayarKontrol
             
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            KapatmaEngeli ka = new KapatmaEngeli();
-            ka.Show();
-        }
 
         private void KapatmaEngeli_Tick(object sender, EventArgs e)
         {
@@ -276,6 +271,92 @@ namespace BilgisayarKontrol
                     }
                 }
             }
+        }
+
+        private void ZamanlıOlarakBilgisayariKapatBT_MouseEnter(object sender, EventArgs e)
+        {
+            ZamanlıOlarakBilgisayariKapatBT.BackColor = Color.SkyBlue;
+        }
+
+        private void ZamanlıOlarakBilgisayariKapatBT_MouseLeave(object sender, EventArgs e)
+        {
+            ZamanlıOlarakBilgisayariKapatBT.BackColor = Color.Azure;
+        }
+
+        private void İnternetiYenileTusu_MouseEnter(object sender, EventArgs e)
+        {
+            İnternetiYenileTusu.BackColor = Color.SkyBlue;
+        }
+
+        private void İnternetiYenileTusu_MouseLeave(object sender, EventArgs e)
+        {
+            İnternetiYenileTusu.BackColor = Color.Azure;
+        }
+
+        private void İnternetiKesTusu_MouseEnter(object sender, EventArgs e)
+        {
+            İnternetiKesTusu.BackColor = Color.SkyBlue;
+        }
+
+        private void İnternetiKesTusu_MouseLeave(object sender, EventArgs e)
+        {
+            İnternetiKesTusu.BackColor = Color.Azure;
+        }
+
+        private void oyunengelletusu_MouseEnter(object sender, EventArgs e)
+        {
+            oyunengelletusu.BackColor = Color.SkyBlue;
+        }
+
+        private void oyunengelletusu_MouseLeave(object sender, EventArgs e)
+        {
+            oyunengelletusu.BackColor = Color.Azure;
+        }
+
+        private void BilgisayariYenidenBaslatTusu_MouseEnter(object sender, EventArgs e)
+        {
+            BilgisayariYenidenBaslatTusu.BackColor = Color.SkyBlue;
+        }
+
+        private void BilgisayariYenidenBaslatTusu_MouseLeave(object sender, EventArgs e)
+        {
+            BilgisayariYenidenBaslatTusu.BackColor = Color.Azure;
+        }
+
+        private void MesajGösterTusu_MouseEnter(object sender, EventArgs e)
+        {
+            MesajGösterTusu.BackColor = Color.SkyBlue;
+        }
+
+        private void MesajGösterTusu_MouseLeave(object sender, EventArgs e)
+        {
+            MesajGösterTusu.BackColor = Color.Azure;
+        }
+
+        private void gizletusu_MouseEnter(object sender, EventArgs e)
+        {
+            gizletusu.BackColor = Color.SkyBlue;
+        }
+
+        private void gizletusu_MouseLeave(object sender, EventArgs e)
+        {
+            gizletusu.BackColor = Color.Azure;
+        }
+
+
+        private void cikistusu_MouseEnter(object sender, EventArgs e)
+        {
+            cikistusu.BackColor = Color.SkyBlue;
+        }
+
+        private void cikistusu_MouseLeave(object sender, EventArgs e)
+        {
+            cikistusu.BackColor = Color.Azure;
+        }
+        private void cikistusu_Click(object sender, EventArgs e)
+        {
+            KapatmaEngeli ka = new KapatmaEngeli();
+            ka.Show();
         }
     }
     }
