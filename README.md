@@ -1,4 +1,4 @@
-Eveveynler için geliştirilmiş bir uygulamadır.
+Ebeveynler için geliştirilmiş bir uygulamadır.
 Tasarımı tamamlanmıştır.
 Kodlama %20 olarak tamamlanmıştır.
 
