@@ -1,6 +1,7 @@
 Ebeveynler için geliştirilmiş bir uygulamadır.
 Tasarımı tamamlanmıştır.
 Kodlama %75 olarak tamamlanmıştır.
+
 [21.09.2016] Özellikler
 
 Zamana bağlı olarak,
