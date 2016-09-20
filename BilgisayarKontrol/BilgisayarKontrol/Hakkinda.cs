@@ -18,7 +18,22 @@ namespace BilgisayarKontrol
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            //gittt
+           
+        }
+
+        private void iptalettusu_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://www.github.com/sametuca");
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://www.sametuca.wordpress.com");
         }
     }
 }

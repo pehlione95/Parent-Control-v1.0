@@ -9,26 +9,24 @@ using System.Windows.Forms;
 
 namespace BilgisayarKontrol
 {
-    public partial class NetKes : Form
+    public partial class Reboot : Form
     {
-        public NetKes()
+        public Reboot()
         {
             InitializeComponent();
         }
+        public static int islem = 0;
         public static string belirlenenzaman;
-        public static int islemyapildi = 0;
         
-        private void İnternetiKes_Load(object sender, EventArgs e)
+        
+        private void YenidenBaslat_Load(object sender, EventArgs e)
         {
-            if(islemyapildi==0)
+            if (islem == 0)
             {
-                
                 iptalettusu.Enabled = false;
-
             }
-            else if(islemyapildi==1)
+            else if (islem != 0)
             {
-               
                 iptalettusu.Enabled = true;
             }
         }
@@ -36,32 +34,33 @@ namespace BilgisayarKontrol
         private void tamamtusu_Click(object sender, EventArgs e)
         {
             belirlenenzaman = dateTimePicker1.Value.ToShortTimeString();
-            DialogResult soru = MessageBox.Show("İnternet bağlantısı " + belirlenenzaman + " aralığında kesilsin mı ?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            DialogResult soru = MessageBox.Show("Bilgisayar " + belirlenenzaman + " aralığında yeniden başlatılsın mı ?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
             if (DialogResult.Yes == soru)
             {
                 try
                 {
-                    AnaEkran f1 = new AnaEkran();
-                    f1.İnternetiKes.Interval = 10000;
-                    f1.TimerBilgisayariKapat.Start();
-                    iptalettusu.Enabled = false;
-                    islemyapildi = 1;
+                    AnaEkran an = new AnaEkran();
+                    an.YenidenBaslat.Interval = 10000;
+                    an.YenidenBaslat.Start();
+                    islem = 1;
+                    iptalettusu.Enabled = true;
                     this.Hide();
                     Basarili success = new Basarili();
                     success.Show();
+
                 }
-                catch(Exception hata)
+                catch (Exception hata)
                 {
                     MessageBox.Show("Bir hata oluştu :" + hata + "", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     DialogResult soru2 = MessageBox.Show("Tekrar denemek istermisiniz ?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
                     if (DialogResult.Yes == soru)
                     {
 
-                        AnaEkran f1 = new AnaEkran();
-                        f1.İnternetiKes.Interval = 10000;
-                        f1.TimerBilgisayariKapat.Start();
-                        iptalettusu.Enabled = false;
-                        islemyapildi = 1;
+                        AnaEkran an = new AnaEkran();
+                        an.YenidenBaslat.Interval = 10000;
+                        an.YenidenBaslat.Start();
+                        islem = 1;
+                        iptalettusu.Enabled = true;
                         this.Hide();
                         Basarili success = new Basarili();
                         success.Show();
@@ -71,17 +70,26 @@ namespace BilgisayarKontrol
                         MessageBox.Show("İşlem tamamlanamıyor.Sistem saatinizi kontrol ettikden sonra programı yeniden başlatınız.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
+
+            }
+        }
+        private void iptalettusu_Click(object sender, EventArgs e)
+        {
+            DialogResult soru = MessageBox.Show("Zamanlanmış görevi iptal etmek istiyormusunuz ?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (DialogResult.Yes == soru)
+            {
+                islem = 0;
+                AnaEkran f1 = new AnaEkran();
+                f1.YenidenBaslat.Stop();
+                MessageBox.Show("Zamanlanan görev iptal edildi", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                iptalettusu.Enabled = false;
             }
             else
             {
 
             }
         }
-
-        private void iptalettusu_Click(object sender, EventArgs e)
-        {
-            AnaEkran an = new AnaEkran();
-            an.İnternetiKes.Stop();
-        }
     }
 }
+    
+

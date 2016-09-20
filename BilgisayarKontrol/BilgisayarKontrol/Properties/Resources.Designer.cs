@@ -63,9 +63,49 @@ namespace BilgisayarKontrol.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Forward_30 {
+            get {
+                object obj = ResourceManager.GetObject("Forward-30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Forward_50_1_ {
+            get {
+                object obj = ResourceManager.GetObject("Forward-50(1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Logomakr_03RwU0 {
             get {
                 object obj = ResourceManager.GetObject("Logomakr_03RwU0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logomakr_05T5jU {
+            get {
+                object obj = ResourceManager.GetObject("Logomakr_05T5jU", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logomakr_0aYYOu {
+            get {
+                object obj = ResourceManager.GetObject("Logomakr_0aYYOu", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,6 +123,16 @@ namespace BilgisayarKontrol.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Logomakr_0HUgyl {
+            get {
+                object obj = ResourceManager.GetObject("Logomakr_0HUgyl", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Logomakr_0rOnS7 {
             get {
                 object obj = ResourceManager.GetObject("Logomakr_0rOnS7", resourceCulture);
@@ -93,9 +143,79 @@ namespace BilgisayarKontrol.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Logomakr_0RzB5M {
+            get {
+                object obj = ResourceManager.GetObject("Logomakr_0RzB5M", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Logomakr_0RZKkL {
             get {
                 object obj = ResourceManager.GetObject("Logomakr_0RZKkL", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logomakr_13wDDO {
+            get {
+                object obj = ResourceManager.GetObject("Logomakr_13wDDO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logomakr_1cmRkg {
+            get {
+                object obj = ResourceManager.GetObject("Logomakr_1cmRkg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logomakr_1pFRwO {
+            get {
+                object obj = ResourceManager.GetObject("Logomakr_1pFRwO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logomakr_1tu7Yl {
+            get {
+                object obj = ResourceManager.GetObject("Logomakr_1tu7Yl", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logomakr_1vlAoR {
+            get {
+                object obj = ResourceManager.GetObject("Logomakr_1vlAoR", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logomakr_20b3Q4 {
+            get {
+                object obj = ResourceManager.GetObject("Logomakr_20b3Q4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,6 +253,16 @@ namespace BilgisayarKontrol.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Logomakr_33RfDm {
+            get {
+                object obj = ResourceManager.GetObject("Logomakr_33RfDm", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Logomakr_3a0Jh6 {
             get {
                 object obj = ResourceManager.GetObject("Logomakr_3a0Jh6", resourceCulture);
@@ -143,9 +273,29 @@ namespace BilgisayarKontrol.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Logomakr_3CotLQ {
+            get {
+                object obj = ResourceManager.GetObject("Logomakr_3CotLQ", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Logomakr_3Fuxgr {
             get {
                 object obj = ResourceManager.GetObject("Logomakr_3Fuxgr", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logomakr_3hakeU {
+            get {
+                object obj = ResourceManager.GetObject("Logomakr_3hakeU", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -193,6 +343,16 @@ namespace BilgisayarKontrol.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Logomakr_3VM2Ks {
+            get {
+                object obj = ResourceManager.GetObject("Logomakr_3VM2Ks", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Logomakr_3xcPZy {
             get {
                 object obj = ResourceManager.GetObject("Logomakr_3xcPZy", resourceCulture);
@@ -216,6 +376,26 @@ namespace BilgisayarKontrol.Properties {
         internal static System.Drawing.Bitmap Logomakr_4E8fEE {
             get {
                 object obj = ResourceManager.GetObject("Logomakr_4E8fEE", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logomakr_4hXvxn {
+            get {
+                object obj = ResourceManager.GetObject("Logomakr_4hXvxn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logomakr_4rwvAD {
+            get {
+                object obj = ResourceManager.GetObject("Logomakr_4rwvAD", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -263,6 +443,66 @@ namespace BilgisayarKontrol.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Logomakr_59g091 {
+            get {
+                object obj = ResourceManager.GetObject("Logomakr_59g091", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logomakr_59g0911 {
+            get {
+                object obj = ResourceManager.GetObject("Logomakr_59g0911", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logomakr_5bE5GU {
+            get {
+                object obj = ResourceManager.GetObject("Logomakr_5bE5GU", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logomakr_5lVmVe {
+            get {
+                object obj = ResourceManager.GetObject("Logomakr_5lVmVe", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logomakr_5Mr8S6 {
+            get {
+                object obj = ResourceManager.GetObject("Logomakr_5Mr8S6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logomakr_671vx1 {
+            get {
+                object obj = ResourceManager.GetObject("Logomakr_671vx1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Logomakr_6A41PI {
             get {
                 object obj = ResourceManager.GetObject("Logomakr_6A41PI", resourceCulture);
@@ -293,9 +533,29 @@ namespace BilgisayarKontrol.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Logomakr_6mkMqS {
+            get {
+                object obj = ResourceManager.GetObject("Logomakr_6mkMqS", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Logomakr_6raSEJ {
             get {
                 object obj = ResourceManager.GetObject("Logomakr_6raSEJ", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logomakr_6tvHo8 {
+            get {
+                object obj = ResourceManager.GetObject("Logomakr_6tvHo8", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -343,9 +603,59 @@ namespace BilgisayarKontrol.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Logomakr_7nxy4b {
+            get {
+                object obj = ResourceManager.GetObject("Logomakr_7nxy4b", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Logomakr_7pDgxa {
             get {
                 object obj = ResourceManager.GetObject("Logomakr_7pDgxa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logomakr_7tiwvB {
+            get {
+                object obj = ResourceManager.GetObject("Logomakr_7tiwvB", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logomakr_7wWYKs {
+            get {
+                object obj = ResourceManager.GetObject("Logomakr_7wWYKs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logomakr_8DDnOa {
+            get {
+                object obj = ResourceManager.GetObject("Logomakr_8DDnOa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logomakr_8Dri84 {
+            get {
+                object obj = ResourceManager.GetObject("Logomakr_8Dri84", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -366,6 +676,16 @@ namespace BilgisayarKontrol.Properties {
         internal static System.Drawing.Bitmap Logomakr_8K709c {
             get {
                 object obj = ResourceManager.GetObject("Logomakr_8K709c", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logomakr_8P9uR4 {
+            get {
+                object obj = ResourceManager.GetObject("Logomakr_8P9uR4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -433,6 +753,16 @@ namespace BilgisayarKontrol.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Logomakr_9mge1J {
+            get {
+                object obj = ResourceManager.GetObject("Logomakr_9mge1J", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Logomakr_9UXTNU {
             get {
                 object obj = ResourceManager.GetObject("Logomakr_9UXTNU", resourceCulture);
@@ -446,6 +776,16 @@ namespace BilgisayarKontrol.Properties {
         internal static System.Drawing.Bitmap nezmankapatılsınlogo {
             get {
                 object obj = ResourceManager.GetObject("nezmankapatılsınlogo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Yükleniyor {
+            get {
+                object obj = ResourceManager.GetObject("Yükleniyor", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

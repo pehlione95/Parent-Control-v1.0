@@ -15,7 +15,7 @@ namespace BilgisayarKontrol
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AnaEkran());
+            Application.Run(new Giris());
         }
     }
 }

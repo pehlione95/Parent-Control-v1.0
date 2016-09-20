@@ -30,18 +30,22 @@
         {
             this.mesajTXT = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.tamamtusu = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.iptalettusu = new System.Windows.Forms.Button();
             this.baslikTXT = new System.Windows.Forms.TextBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.iptalettusu = new System.Windows.Forms.PictureBox();
+            this.tamam = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iptalettusu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tamam)).BeginInit();
             this.SuspendLayout();
             // 
             // mesajTXT
@@ -68,19 +72,6 @@
             this.comboBox1.TabIndex = 9;
             this.comboBox1.SelectedValueChanged += new System.EventHandler(this.comboBox1_SelectedValueChanged);
             // 
-            // tamamtusu
-            // 
-            this.tamamtusu.BackColor = System.Drawing.Color.Lavender;
-            this.tamamtusu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.tamamtusu.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.tamamtusu.Location = new System.Drawing.Point(33, 286);
-            this.tamamtusu.Name = "tamamtusu";
-            this.tamamtusu.Size = new System.Drawing.Size(348, 40);
-            this.tamamtusu.TabIndex = 12;
-            this.tamamtusu.Text = "Tamam";
-            this.tamamtusu.UseVisualStyleBackColor = false;
-            this.tamamtusu.Click += new System.EventHandler(this.tamamtusu_Click);
-            // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.CustomFormat = "";
@@ -91,19 +82,6 @@
             this.dateTimePicker1.ShowUpDown = true;
             this.dateTimePicker1.Size = new System.Drawing.Size(105, 27);
             this.dateTimePicker1.TabIndex = 13;
-            // 
-            // iptalettusu
-            // 
-            this.iptalettusu.BackColor = System.Drawing.Color.Lavender;
-            this.iptalettusu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iptalettusu.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.iptalettusu.Location = new System.Drawing.Point(33, 332);
-            this.iptalettusu.Name = "iptalettusu";
-            this.iptalettusu.Size = new System.Drawing.Size(348, 41);
-            this.iptalettusu.TabIndex = 15;
-            this.iptalettusu.Text = "İptal Et";
-            this.iptalettusu.UseVisualStyleBackColor = false;
-            this.iptalettusu.Click += new System.EventHandler(this.iptalettusu_Click);
             // 
             // baslikTXT
             // 
@@ -152,20 +130,50 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel4.Controls.Add(this.iptalettusu);
+            this.panel4.Controls.Add(this.tamam);
+            this.panel4.Location = new System.Drawing.Point(-8, 290);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(463, 63);
+            this.panel4.TabIndex = 33;
+            // 
+            // iptalettusu
+            // 
+            this.iptalettusu.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_4rwvAD;
+            this.iptalettusu.Location = new System.Drawing.Point(41, 8);
+            this.iptalettusu.Name = "iptalettusu";
+            this.iptalettusu.Size = new System.Drawing.Size(50, 48);
+            this.iptalettusu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.iptalettusu.TabIndex = 29;
+            this.iptalettusu.TabStop = false;
+            this.iptalettusu.Click += new System.EventHandler(this.iptal_Click);
+            // 
+            // tamam
+            // 
+            this.tamam.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_6mkMqS;
+            this.tamam.Location = new System.Drawing.Point(339, 8);
+            this.tamam.Name = "tamam";
+            this.tamam.Size = new System.Drawing.Size(50, 49);
+            this.tamam.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.tamam.TabIndex = 30;
+            this.tamam.TabStop = false;
+            this.tamam.Click += new System.EventHandler(this.tamam_Click);
             // 
             // MesajGoster
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
-            this.ClientSize = new System.Drawing.Size(413, 404);
+            this.ClientSize = new System.Drawing.Size(413, 365);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.baslikTXT);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.iptalettusu);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.tamamtusu);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.mesajTXT);
@@ -180,6 +188,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iptalettusu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tamam)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -191,11 +203,12 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button tamamtusu;
         public System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Button iptalettusu;
         private System.Windows.Forms.TextBox baslikTXT;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.PictureBox iptalettusu;
+        private System.Windows.Forms.PictureBox tamam;
     }
 }

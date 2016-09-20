@@ -31,6 +31,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -44,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Basarili.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Basarili.Designer.cs">
+      <DependentUpon>Basarili.cs</DependentUpon>
+    </Compile>
     <Compile Include="BilgisayariKapat.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -56,17 +65,47 @@
     <Compile Include="DevamEdenler.Designer.cs">
       <DependentUpon>DevamEdenler.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="SifremiUnuttum.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="SifremiUnuttum.Designer.cs">
+      <DependentUpon>SifremiUnuttum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sifreolustur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sifreolustur.Designer.cs">
+      <DependentUpon>Sifreolustur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnaEkran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaEkran.Designer.cs">
+      <DependentUpon>AnaEkran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giris.Designer.cs">
+      <DependentUpon>Giris.cs</DependentUpon>
     </Compile>
     <Compile Include="Hakkinda.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Hakkinda.Designer.cs">
       <DependentUpon>Hakkinda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KapatmaEngeli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KapatmaEngeli.Designer.cs">
+      <DependentUpon>KapatmaEngeli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kontrol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kontrol.Designer.cs">
+      <DependentUpon>Kontrol.cs</DependentUpon>
     </Compile>
     <Compile Include="MesajGoster.cs">
       <SubType>Form</SubType>
@@ -76,23 +115,59 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings1.cs" />
+    <Compile Include="Settings1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings1.settings</DependentUpon>
+    </Compile>
+    <Compile Include="UygulamaEngelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UygulamaEngelle.Designer.cs">
+      <DependentUpon>UygulamaEngelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YenidenBaslat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YenidenBaslat.Designer.cs">
+      <DependentUpon>YenidenBaslat.cs</DependentUpon>
+    </Compile>
     <Compile Include="İnternetiKes.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="İnternetiKes.Designer.cs">
       <DependentUpon>İnternetiKes.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Basarili.resx">
+      <DependentUpon>Basarili.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BilgisayariKapat.resx">
       <DependentUpon>BilgisayariKapat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DevamEdenler.resx">
       <DependentUpon>DevamEdenler.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="SifremiUnuttum.resx">
+      <DependentUpon>SifremiUnuttum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sifreolustur.resx">
+      <DependentUpon>Sifreolustur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnaEkran.resx">
+      <DependentUpon>AnaEkran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giris.resx">
+      <DependentUpon>Giris.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Hakkinda.resx">
       <DependentUpon>Hakkinda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KapatmaEngeli.resx">
+      <DependentUpon>KapatmaEngeli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kontrol.resx">
+      <DependentUpon>Kontrol.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MesajGoster.resx">
       <DependentUpon>MesajGoster.cs</DependentUpon>
@@ -107,9 +182,19 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UygulamaEngelle.resx">
+      <DependentUpon>UygulamaEngelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YenidenBaslat.resx">
+      <DependentUpon>YenidenBaslat.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="İnternetiKes.resx">
       <DependentUpon>İnternetiKes.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="app.manifest">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -119,6 +204,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Settings1.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings1.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Logomakr_53yFou.png" />
@@ -236,6 +325,108 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Logomakr_7pDgxa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_8P9uR4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yükleniyor.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_8Dri84.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_4hXvxn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_33RfDm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_7nxy4b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_13wDDO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_0aYYOu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_5bE5GU.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_59g091.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_59g0911.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_0HUgyl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_9mge1J.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_7wWYKs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_1pFRwO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_3VM2Ks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Forward-50%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Forward-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_5lVmVe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_05T5jU.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_8DDnOa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_6mkMqS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_4rwvAD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_3hakeU.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_6tvHo8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_1vlAoR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_1cmRkg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_671vx1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_20b3Q4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_5Mr8S6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_7tiwvB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_1tu7Yl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_0RzB5M.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_3CotLQ.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,6 +1,6 @@
 ﻿namespace BilgisayarKontrol
 {
-    partial class İnternetiKes
+    partial class NetKes
     {
         /// <summary>
         /// Required designer variable.
@@ -58,7 +58,7 @@
             // 
             // iptalettusu
             // 
-            this.iptalettusu.BackColor = System.Drawing.Color.Lavender;
+            this.iptalettusu.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.iptalettusu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iptalettusu.Font = new System.Drawing.Font("Tahoma", 12F);
             this.iptalettusu.Location = new System.Drawing.Point(12, 155);
@@ -67,10 +67,11 @@
             this.iptalettusu.TabIndex = 17;
             this.iptalettusu.Text = "İptal Et";
             this.iptalettusu.UseVisualStyleBackColor = false;
+            this.iptalettusu.Click += new System.EventHandler(this.iptalettusu_Click);
             // 
             // tamamtusu
             // 
-            this.tamamtusu.BackColor = System.Drawing.Color.Lavender;
+            this.tamamtusu.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.tamamtusu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.tamamtusu.Font = new System.Drawing.Font("Tahoma", 12F);
             this.tamamtusu.Location = new System.Drawing.Point(12, 109);
@@ -79,8 +80,9 @@
             this.tamamtusu.TabIndex = 16;
             this.tamamtusu.Text = "Tamam";
             this.tamamtusu.UseVisualStyleBackColor = false;
+            this.tamamtusu.Click += new System.EventHandler(this.tamamtusu_Click);
             // 
-            // İnternetiKes
+            // NetKes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -92,9 +94,10 @@
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
-            this.Name = "İnternetiKes";
+            this.Name = "NetKes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Zamanlı Olarak İnterneti Kes";
+            this.Load += new System.EventHandler(this.İnternetiKes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -38,32 +38,42 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.zamandansonraTXT = new System.Windows.Forms.TextBox();
+            this.zamanakadarTXT = new System.Windows.Forms.TextBox();
+            this.ZamanakadarİPTAL = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.ZamandansonraİPTAL = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.MesajGöstermeİptal = new System.Windows.Forms.PictureBox();
+            this.İnternetKapatmaİptal = new System.Windows.Forms.PictureBox();
+            this.SistemKapatmaİptal = new System.Windows.Forms.PictureBox();
+            this.İnternetYenidenBaslatİptal = new System.Windows.Forms.PictureBox();
+            this.YenidenBaslatİptal = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZamanakadarİPTAL)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZamandansonraİPTAL)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MesajGöstermeİptal)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.İnternetKapatmaİptal)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SistemKapatmaİptal)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.İnternetYenidenBaslatİptal)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.YenidenBaslatİptal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.SuspendLayout();
             // 
             // sistemkapatTXT
             // 
             this.sistemkapatTXT.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.sistemkapatTXT.Location = new System.Drawing.Point(12, 189);
+            this.sistemkapatTXT.Location = new System.Drawing.Point(22, 199);
             this.sistemkapatTXT.Name = "sistemkapatTXT";
             this.sistemkapatTXT.ReadOnly = true;
             this.sistemkapatTXT.Size = new System.Drawing.Size(348, 27);
@@ -73,7 +83,7 @@
             // internetkapatTXT
             // 
             this.internetkapatTXT.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.internetkapatTXT.Location = new System.Drawing.Point(12, 263);
+            this.internetkapatTXT.Location = new System.Drawing.Point(22, 273);
             this.internetkapatTXT.Name = "internetkapatTXT";
             this.internetkapatTXT.ReadOnly = true;
             this.internetkapatTXT.Size = new System.Drawing.Size(348, 27);
@@ -83,7 +93,7 @@
             // mesajgosterTXT
             // 
             this.mesajgosterTXT.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.mesajgosterTXT.Location = new System.Drawing.Point(12, 336);
+            this.mesajgosterTXT.Location = new System.Drawing.Point(22, 346);
             this.mesajgosterTXT.Name = "mesajgosterTXT";
             this.mesajgosterTXT.ReadOnly = true;
             this.mesajgosterTXT.Size = new System.Drawing.Size(348, 27);
@@ -94,7 +104,7 @@
             // 
             this.sistemyenidenTXT.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.sistemyenidenTXT.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.sistemyenidenTXT.Location = new System.Drawing.Point(12, 40);
+            this.sistemyenidenTXT.Location = new System.Drawing.Point(22, 50);
             this.sistemyenidenTXT.Name = "sistemyenidenTXT";
             this.sistemyenidenTXT.ReadOnly = true;
             this.sistemyenidenTXT.Size = new System.Drawing.Size(348, 27);
@@ -104,7 +114,7 @@
             // internetyenidenTXT
             // 
             this.internetyenidenTXT.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.internetyenidenTXT.Location = new System.Drawing.Point(12, 117);
+            this.internetyenidenTXT.Location = new System.Drawing.Point(22, 127);
             this.internetyenidenTXT.Name = "internetyenidenTXT";
             this.internetyenidenTXT.ReadOnly = true;
             this.internetyenidenTXT.Size = new System.Drawing.Size(348, 27);
@@ -113,53 +123,158 @@
             // 
             // panel2
             // 
-            this.panel2.Location = new System.Drawing.Point(335, 152);
+            this.panel2.Location = new System.Drawing.Point(345, 162);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(22, 31);
             this.panel2.TabIndex = 12;
             // 
             // panel3
             // 
-            this.panel3.Location = new System.Drawing.Point(343, 226);
+            this.panel3.Location = new System.Drawing.Point(353, 236);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(22, 31);
             this.panel3.TabIndex = 13;
             // 
             // panel4
             // 
-            this.panel4.Location = new System.Drawing.Point(417, 3);
+            this.panel4.Location = new System.Drawing.Point(427, 13);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(22, 31);
             this.panel4.TabIndex = 14;
             // 
             // panel5
             // 
-            this.panel5.Location = new System.Drawing.Point(425, 80);
+            this.panel5.Location = new System.Drawing.Point(435, 90);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(22, 31);
             this.panel5.TabIndex = 15;
             // 
             // panel6
             // 
-            this.panel6.Location = new System.Drawing.Point(332, 299);
+            this.panel6.Location = new System.Drawing.Point(345, 309);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(22, 31);
             this.panel6.TabIndex = 16;
             // 
-            // pictureBox6
+            // zamandansonraTXT
             // 
-            this.pictureBox6.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_6raSEJ;
-            this.pictureBox6.Location = new System.Drawing.Point(366, 41);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(28, 26);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox6.TabIndex = 17;
-            this.pictureBox6.TabStop = false;
+            this.zamandansonraTXT.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.zamandansonraTXT.Location = new System.Drawing.Point(22, 420);
+            this.zamandansonraTXT.Name = "zamandansonraTXT";
+            this.zamandansonraTXT.ReadOnly = true;
+            this.zamandansonraTXT.Size = new System.Drawing.Size(348, 27);
+            this.zamandansonraTXT.TabIndex = 22;
+            // 
+            // zamanakadarTXT
+            // 
+            this.zamanakadarTXT.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.zamanakadarTXT.Location = new System.Drawing.Point(22, 494);
+            this.zamanakadarTXT.Name = "zamanakadarTXT";
+            this.zamanakadarTXT.ReadOnly = true;
+            this.zamanakadarTXT.Size = new System.Drawing.Size(348, 27);
+            this.zamanakadarTXT.TabIndex = 26;
+            // 
+            // ZamanakadarİPTAL
+            // 
+            this.ZamanakadarİPTAL.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_6raSEJ;
+            this.ZamanakadarİPTAL.Location = new System.Drawing.Point(376, 494);
+            this.ZamanakadarİPTAL.Name = "ZamanakadarİPTAL";
+            this.ZamanakadarİPTAL.Size = new System.Drawing.Size(28, 26);
+            this.ZamanakadarİPTAL.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.ZamanakadarİPTAL.TabIndex = 28;
+            this.ZamanakadarİPTAL.TabStop = false;
+            this.ZamanakadarİPTAL.Click += new System.EventHandler(this.ZamanakadarİPTAL_Click);
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_3CotLQ;
+            this.pictureBox9.Location = new System.Drawing.Point(22, 466);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(306, 25);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox9.TabIndex = 27;
+            this.pictureBox9.TabStop = false;
+            // 
+            // ZamandansonraİPTAL
+            // 
+            this.ZamandansonraİPTAL.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_6raSEJ;
+            this.ZamandansonraİPTAL.Location = new System.Drawing.Point(376, 420);
+            this.ZamandansonraİPTAL.Name = "ZamandansonraİPTAL";
+            this.ZamandansonraİPTAL.Size = new System.Drawing.Size(28, 26);
+            this.ZamandansonraİPTAL.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.ZamandansonraİPTAL.TabIndex = 25;
+            this.ZamandansonraİPTAL.TabStop = false;
+            this.ZamandansonraİPTAL.Click += new System.EventHandler(this.ZamandansonraİPTAL_Click);
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_0RzB5M;
+            this.pictureBox7.Location = new System.Drawing.Point(22, 392);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(330, 25);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox7.TabIndex = 23;
+            this.pictureBox7.TabStop = false;
+            // 
+            // MesajGöstermeİptal
+            // 
+            this.MesajGöstermeİptal.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_6raSEJ;
+            this.MesajGöstermeİptal.Location = new System.Drawing.Point(376, 346);
+            this.MesajGöstermeİptal.Name = "MesajGöstermeİptal";
+            this.MesajGöstermeİptal.Size = new System.Drawing.Size(28, 26);
+            this.MesajGöstermeİptal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.MesajGöstermeİptal.TabIndex = 21;
+            this.MesajGöstermeİptal.TabStop = false;
+            this.MesajGöstermeİptal.Click += new System.EventHandler(this.MesajGöstermeİptal_Click);
+            // 
+            // İnternetKapatmaİptal
+            // 
+            this.İnternetKapatmaİptal.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_6raSEJ;
+            this.İnternetKapatmaİptal.Location = new System.Drawing.Point(376, 274);
+            this.İnternetKapatmaİptal.Name = "İnternetKapatmaİptal";
+            this.İnternetKapatmaİptal.Size = new System.Drawing.Size(28, 26);
+            this.İnternetKapatmaİptal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.İnternetKapatmaİptal.TabIndex = 20;
+            this.İnternetKapatmaİptal.TabStop = false;
+            this.İnternetKapatmaİptal.Click += new System.EventHandler(this.İnternetKapatmaİptal_Click);
+            // 
+            // SistemKapatmaİptal
+            // 
+            this.SistemKapatmaİptal.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_6raSEJ;
+            this.SistemKapatmaİptal.Location = new System.Drawing.Point(376, 199);
+            this.SistemKapatmaİptal.Name = "SistemKapatmaİptal";
+            this.SistemKapatmaİptal.Size = new System.Drawing.Size(28, 26);
+            this.SistemKapatmaİptal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.SistemKapatmaİptal.TabIndex = 19;
+            this.SistemKapatmaİptal.TabStop = false;
+            this.SistemKapatmaİptal.Click += new System.EventHandler(this.SistemKapatmaİptal_Click);
+            // 
+            // İnternetYenidenBaslatİptal
+            // 
+            this.İnternetYenidenBaslatİptal.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_6raSEJ;
+            this.İnternetYenidenBaslatİptal.Location = new System.Drawing.Point(376, 127);
+            this.İnternetYenidenBaslatİptal.Name = "İnternetYenidenBaslatİptal";
+            this.İnternetYenidenBaslatİptal.Size = new System.Drawing.Size(28, 26);
+            this.İnternetYenidenBaslatİptal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.İnternetYenidenBaslatİptal.TabIndex = 18;
+            this.İnternetYenidenBaslatİptal.TabStop = false;
+            this.İnternetYenidenBaslatİptal.Click += new System.EventHandler(this.İnternetYenidenBaslatİptal_Click);
+            // 
+            // YenidenBaslatİptal
+            // 
+            this.YenidenBaslatİptal.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_6raSEJ;
+            this.YenidenBaslatİptal.Location = new System.Drawing.Point(376, 51);
+            this.YenidenBaslatİptal.Name = "YenidenBaslatİptal";
+            this.YenidenBaslatİptal.Size = new System.Drawing.Size(28, 26);
+            this.YenidenBaslatİptal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.YenidenBaslatİptal.TabIndex = 17;
+            this.YenidenBaslatİptal.TabStop = false;
+            this.YenidenBaslatİptal.Click += new System.EventHandler(this.YenidenBaslatİptal_Click);
             // 
             // pictureBox5
             // 
             this.pictureBox5.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_3oldbz;
-            this.pictureBox5.Location = new System.Drawing.Point(12, 308);
+            this.pictureBox5.Location = new System.Drawing.Point(22, 318);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(325, 22);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -169,7 +284,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_0rOnS7;
-            this.pictureBox4.Location = new System.Drawing.Point(12, 85);
+            this.pictureBox4.Location = new System.Drawing.Point(22, 95);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(438, 26);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -179,7 +294,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_2xLss3;
-            this.pictureBox3.Location = new System.Drawing.Point(12, 232);
+            this.pictureBox3.Location = new System.Drawing.Point(22, 242);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(356, 26);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -189,7 +304,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_3SicEa;
-            this.pictureBox2.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox2.Location = new System.Drawing.Point(22, 22);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(409, 22);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -199,63 +314,30 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_9UXTNU;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 161);
+            this.pictureBox1.Location = new System.Drawing.Point(22, 171);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(348, 22);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_6raSEJ;
-            this.pictureBox7.Location = new System.Drawing.Point(366, 117);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(28, 26);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox7.TabIndex = 18;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_6raSEJ;
-            this.pictureBox8.Location = new System.Drawing.Point(366, 189);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(28, 26);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox8.TabIndex = 19;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_6raSEJ;
-            this.pictureBox9.Location = new System.Drawing.Point(366, 264);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(28, 26);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox9.TabIndex = 20;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_6raSEJ;
-            this.pictureBox10.Location = new System.Drawing.Point(366, 336);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(28, 26);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox10.TabIndex = 21;
-            this.pictureBox10.TabStop = false;
-            // 
             // DevamEdenler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(437, 382);
-            this.Controls.Add(this.pictureBox10);
+            this.BackColor = System.Drawing.Color.SkyBlue;
+            this.ClientSize = new System.Drawing.Size(453, 534);
+            this.Controls.Add(this.ZamanakadarİPTAL);
             this.Controls.Add(this.pictureBox9);
-            this.Controls.Add(this.pictureBox8);
+            this.Controls.Add(this.zamanakadarTXT);
+            this.Controls.Add(this.ZamandansonraİPTAL);
             this.Controls.Add(this.pictureBox7);
-            this.Controls.Add(this.pictureBox6);
+            this.Controls.Add(this.zamandansonraTXT);
+            this.Controls.Add(this.MesajGöstermeİptal);
+            this.Controls.Add(this.İnternetKapatmaİptal);
+            this.Controls.Add(this.SistemKapatmaİptal);
+            this.Controls.Add(this.İnternetYenidenBaslatİptal);
+            this.Controls.Add(this.YenidenBaslatİptal);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
@@ -276,16 +358,21 @@
             this.Name = "DevamEdenler";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Devam Eden İslemler";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.Load += new System.EventHandler(this.DevamEdenler_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.ZamanakadarİPTAL)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ZamandansonraİPTAL)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MesajGöstermeİptal)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.İnternetKapatmaİptal)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SistemKapatmaİptal)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.İnternetYenidenBaslatİptal)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.YenidenBaslatİptal)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -295,12 +382,10 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.TextBox sistemkapatTXT;
         private System.Windows.Forms.TextBox internetkapatTXT;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.TextBox mesajgosterTXT;
-        private System.Windows.Forms.TextBox sistemyenidenTXT;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.TextBox internetyenidenTXT;
         private System.Windows.Forms.Panel panel2;
@@ -308,10 +393,18 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox İnternetYenidenBaslatİptal;
+        private System.Windows.Forms.PictureBox SistemKapatmaİptal;
+        private System.Windows.Forms.PictureBox İnternetKapatmaİptal;
+        private System.Windows.Forms.PictureBox MesajGöstermeİptal;
+        public System.Windows.Forms.TextBox sistemkapatTXT;
+        public System.Windows.Forms.TextBox sistemyenidenTXT;
+        public System.Windows.Forms.PictureBox YenidenBaslatİptal;
+        private System.Windows.Forms.PictureBox ZamandansonraİPTAL;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.TextBox zamandansonraTXT;
+        private System.Windows.Forms.PictureBox ZamanakadarİPTAL;
         private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.TextBox zamanakadarTXT;
     }
 }
