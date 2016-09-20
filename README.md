@@ -6,7 +6,7 @@ Kodlama %75 olarak tamamlanmıştır.
 
 Zamana bağlı olarak,
 
-* Güç kapatma
+* Güç kapatma / Yeniden başlatma
 * Mesaj gösterme
 * İnternet erişimini sınırlandır
 * İnternet erişimini sağlama
