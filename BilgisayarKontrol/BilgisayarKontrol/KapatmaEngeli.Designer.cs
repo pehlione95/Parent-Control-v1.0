@@ -29,11 +29,10 @@
         private void InitializeComponent()
         {
             this.sifreTXT = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.kapattusu = new System.Windows.Forms.PictureBox();
             this.tamamtusu = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kapattusu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tamamtusu)).BeginInit();
@@ -47,16 +46,6 @@
             this.sifreTXT.PasswordChar = '*';
             this.sifreTXT.Size = new System.Drawing.Size(240, 27);
             this.sifreTXT.TabIndex = 18;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_9mge1J;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 40);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(261, 25);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 20;
-            this.pictureBox1.TabStop = false;
             // 
             // panel4
             // 
@@ -84,7 +73,7 @@
             // 
             this.tamamtusu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.tamamtusu.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_6mkMqS;
-            this.tamamtusu.Location = new System.Drawing.Point(206, 6);
+            this.tamamtusu.Location = new System.Drawing.Point(205, 6);
             this.tamamtusu.Name = "tamamtusu";
             this.tamamtusu.Size = new System.Drawing.Size(50, 49);
             this.tamamtusu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -92,15 +81,26 @@
             this.tamamtusu.TabStop = false;
             this.tamamtusu.Click += new System.EventHandler(this.tamamtusu_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Yu Gothic UI Semilight", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label2.Location = new System.Drawing.Point(6, 25);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(251, 32);
+            this.label2.TabIndex = 33446;
+            this.label2.Text = "Yönetici sifresini yaziniz";
+            // 
             // KapatmaEngeli
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(183)))), ((int)(((byte)(211)))));
-            this.ClientSize = new System.Drawing.Size(275, 200);
+            this.ClientSize = new System.Drawing.Size(263, 200);
             this.ControlBox = false;
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.sifreTXT);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
@@ -108,7 +108,6 @@
             this.Name = "KapatmaEngeli";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.KapatmaEngeli_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kapattusu)).EndInit();
@@ -121,9 +120,9 @@
         #endregion
 
         private System.Windows.Forms.TextBox sifreTXT;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox kapattusu;
         private System.Windows.Forms.PictureBox tamamtusu;
+        private System.Windows.Forms.Label label2;
     }
 }

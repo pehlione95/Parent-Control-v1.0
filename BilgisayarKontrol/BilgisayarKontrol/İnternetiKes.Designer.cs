@@ -28,22 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.iptalettusu = new System.Windows.Forms.Button();
-            this.tamamtusu = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tamamtusu = new System.Windows.Forms.PictureBox();
+            this.iptalettusu = new System.Windows.Forms.PictureBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            ((System.ComponentModel.ISupportInitialize)(this.tamamtusu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iptalettusu)).BeginInit();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_7pDgxa;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 21);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(429, 31);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
             // 
             // dateTimePicker1
             // 
@@ -56,59 +49,80 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(105, 27);
             this.dateTimePicker1.TabIndex = 14;
             // 
-            // iptalettusu
+            // label1
             // 
-            this.iptalettusu.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.iptalettusu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iptalettusu.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.iptalettusu.Location = new System.Drawing.Point(12, 155);
-            this.iptalettusu.Name = "iptalettusu";
-            this.iptalettusu.Size = new System.Drawing.Size(429, 41);
-            this.iptalettusu.TabIndex = 17;
-            this.iptalettusu.Text = "İptal Et";
-            this.iptalettusu.UseVisualStyleBackColor = false;
-            this.iptalettusu.Click += new System.EventHandler(this.iptalettusu_Click);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Yu Gothic UI Semilight", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label1.Location = new System.Drawing.Point(6, 19);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(404, 32);
+            this.label1.TabIndex = 33441;
+            this.label1.Text = "İnternet baglantisi ne zaman kesilsin ?";
             // 
             // tamamtusu
             // 
-            this.tamamtusu.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.tamamtusu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.tamamtusu.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.tamamtusu.Location = new System.Drawing.Point(12, 109);
+            this.tamamtusu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.tamamtusu.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_6mkMqS;
+            this.tamamtusu.Location = new System.Drawing.Point(352, 6);
             this.tamamtusu.Name = "tamamtusu";
-            this.tamamtusu.Size = new System.Drawing.Size(429, 40);
-            this.tamamtusu.TabIndex = 16;
-            this.tamamtusu.Text = "Tamam";
-            this.tamamtusu.UseVisualStyleBackColor = false;
+            this.tamamtusu.Size = new System.Drawing.Size(50, 49);
+            this.tamamtusu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.tamamtusu.TabIndex = 30;
+            this.tamamtusu.TabStop = false;
             this.tamamtusu.Click += new System.EventHandler(this.tamamtusu_Click);
+            // 
+            // iptalettusu
+            // 
+            this.iptalettusu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iptalettusu.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_4rwvAD;
+            this.iptalettusu.Location = new System.Drawing.Point(19, 6);
+            this.iptalettusu.Name = "iptalettusu";
+            this.iptalettusu.Size = new System.Drawing.Size(50, 48);
+            this.iptalettusu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.iptalettusu.TabIndex = 29;
+            this.iptalettusu.TabStop = false;
+            this.iptalettusu.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel4.Controls.Add(this.iptalettusu);
+            this.panel4.Controls.Add(this.tamamtusu);
+            this.panel4.Location = new System.Drawing.Point(0, 128);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(460, 63);
+            this.panel4.TabIndex = 33442;
             // 
             // NetKes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(183)))), ((int)(((byte)(211)))));
-            this.ClientSize = new System.Drawing.Size(461, 213);
-            this.Controls.Add(this.iptalettusu);
-            this.Controls.Add(this.tamamtusu);
+            this.ClientSize = new System.Drawing.Size(414, 190);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.Name = "NetKes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Zamanlı Olarak İnterneti Kes";
             this.Load += new System.EventHandler(this.İnternetiKes_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tamamtusu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iptalettusu)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox1;
         public System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Button iptalettusu;
-        private System.Windows.Forms.Button tamamtusu;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox tamamtusu;
+        private System.Windows.Forms.PictureBox iptalettusu;
+        private System.Windows.Forms.Panel panel4;
     }
 }

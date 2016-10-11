@@ -33,6 +33,7 @@ namespace BilgisayarKontrol
             }
         }
 
+
         private void tamamtusu_Click(object sender, EventArgs e)
         {
             belirlenenzaman = dateTimePicker1.Value.ToShortTimeString();
@@ -50,7 +51,7 @@ namespace BilgisayarKontrol
                     Basarili success = new Basarili();
                     success.Show();
                 }
-                catch(Exception hata)
+                catch (Exception hata)
                 {
                     MessageBox.Show("Bir hata oluştu :" + hata + "", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     DialogResult soru2 = MessageBox.Show("Tekrar denemek istermisiniz ?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
@@ -78,7 +79,7 @@ namespace BilgisayarKontrol
             }
         }
 
-        private void iptalettusu_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
             AnaEkran an = new AnaEkran();
             an.İnternetiKes.Stop();

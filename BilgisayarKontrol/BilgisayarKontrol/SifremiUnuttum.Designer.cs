@@ -32,11 +32,10 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.kapattusu = new System.Windows.Forms.PictureBox();
             this.tamam = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kapattusu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tamam)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // güvenlikcevabiTXT
@@ -44,7 +43,7 @@
             this.güvenlikcevabiTXT.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.güvenlikcevabiTXT.Location = new System.Drawing.Point(12, 64);
             this.güvenlikcevabiTXT.Name = "güvenlikcevabiTXT";
-            this.güvenlikcevabiTXT.Size = new System.Drawing.Size(260, 27);
+            this.güvenlikcevabiTXT.Size = new System.Drawing.Size(270, 27);
             this.güvenlikcevabiTXT.TabIndex = 23;
             // 
             // panel4
@@ -74,7 +73,7 @@
             this.tamam.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tamam.Cursor = System.Windows.Forms.Cursors.Hand;
             this.tamam.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_6mkMqS;
-            this.tamam.Location = new System.Drawing.Point(254, 8);
+            this.tamam.Location = new System.Drawing.Point(262, 7);
             this.tamam.Name = "tamam";
             this.tamam.Size = new System.Drawing.Size(50, 49);
             this.tamam.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -82,24 +81,25 @@
             this.tamam.TabStop = false;
             this.tamam.Click += new System.EventHandler(this.tamam_Click);
             // 
-            // pictureBox1
+            // label2
             // 
-            this.pictureBox1.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_05T5jU;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 23);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(260, 25);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 24;
-            this.pictureBox1.TabStop = false;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Yu Gothic UI Semilight", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label2.Location = new System.Drawing.Point(6, 20);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(287, 32);
+            this.label2.TabIndex = 33446;
+            this.label2.Text = "Güvenlik cevabınızı yazınız";
             // 
             // SifremiUnuttum
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(183)))), ((int)(((byte)(211)))));
-            this.ClientSize = new System.Drawing.Size(294, 170);
+            this.ClientSize = new System.Drawing.Size(299, 170);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.güvenlikcevabiTXT);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
@@ -111,7 +111,6 @@
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kapattusu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tamam)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -120,9 +119,9 @@
         #endregion
 
         private System.Windows.Forms.TextBox güvenlikcevabiTXT;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox tamam;
         private System.Windows.Forms.PictureBox kapattusu;
+        private System.Windows.Forms.Label label2;
     }
 }

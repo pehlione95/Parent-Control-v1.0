@@ -37,19 +37,17 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.DosyaSec = new System.Windows.Forms.PictureBox();
             this.bilgibir = new System.Windows.Forms.Label();
             this.bilgiiki = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iptalettusu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tamam)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DosyaSec)).BeginInit();
             this.SuspendLayout();
             // 
             // panel4
@@ -78,7 +76,7 @@
             // 
             this.tamam.Cursor = System.Windows.Forms.Cursors.Hand;
             this.tamam.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_6mkMqS;
-            this.tamam.Location = new System.Drawing.Point(363, 6);
+            this.tamam.Location = new System.Drawing.Point(360, 6);
             this.tamam.Name = "tamam";
             this.tamam.Size = new System.Drawing.Size(50, 49);
             this.tamam.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -90,7 +88,7 @@
             // 
             this.uygulamadiTXT.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.uygulamadiTXT.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.uygulamadiTXT.Location = new System.Drawing.Point(27, 83);
+            this.uygulamadiTXT.Location = new System.Drawing.Point(27, 65);
             this.uygulamadiTXT.Name = "uygulamadiTXT";
             this.uygulamadiTXT.ReadOnly = true;
             this.uygulamadiTXT.Size = new System.Drawing.Size(327, 27);
@@ -131,7 +129,7 @@
             this.dateTimePicker1.CustomFormat = "";
             this.dateTimePicker1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePicker1.Location = new System.Drawing.Point(28, 181);
+            this.dateTimePicker1.Location = new System.Drawing.Point(28, 179);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.ShowUpDown = true;
             this.dateTimePicker1.Size = new System.Drawing.Size(105, 27);
@@ -156,37 +154,17 @@
             this.panel2.Size = new System.Drawing.Size(455, 46);
             this.panel2.TabIndex = 40;
             // 
-            // pictureBox3
+            // DosyaSec
             // 
-            this.pictureBox3.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_1tu7Yl;
-            this.pictureBox3.Location = new System.Drawing.Point(27, 140);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(284, 25);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox3.TabIndex = 41;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_7tiwvB;
-            this.pictureBox2.Location = new System.Drawing.Point(360, 76);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(46, 43);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox2.TabIndex = 34;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_1cmRkg;
-            this.pictureBox1.Location = new System.Drawing.Point(27, 25);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(376, 26);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 31;
-            this.pictureBox1.TabStop = false;
+            this.DosyaSec.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DosyaSec.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_7tiwvB;
+            this.DosyaSec.Location = new System.Drawing.Point(360, 65);
+            this.DosyaSec.Name = "DosyaSec";
+            this.DosyaSec.Size = new System.Drawing.Size(31, 27);
+            this.DosyaSec.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.DosyaSec.TabIndex = 34;
+            this.DosyaSec.TabStop = false;
+            this.DosyaSec.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // bilgibir
             // 
@@ -210,19 +188,41 @@
             this.bilgiiki.TabIndex = 43;
             this.bilgiiki.Text = "* Belirlenen zamana kadar engelleme aktif";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Yu Gothic UI Semilight", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label2.Location = new System.Drawing.Point(20, 18);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(402, 32);
+            this.label2.TabIndex = 33446;
+            this.label2.Text = "Engellenecek uygulama / oyun seciniz";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Yu Gothic UI Semilight", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label1.Location = new System.Drawing.Point(22, 134);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(276, 32);
+            this.label1.TabIndex = 33447;
+            this.label1.Text = "Ne zaman engellenecek ?";
+            // 
             // UygulamaEngelle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(183)))), ((int)(((byte)(211)))));
             this.ClientSize = new System.Drawing.Size(440, 467);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.bilgiiki);
             this.Controls.Add(this.bilgibir);
-            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.uygulamadiTXT);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.DosyaSec);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
@@ -240,9 +240,7 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DosyaSec)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -253,16 +251,16 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox iptalettusu;
         private System.Windows.Forms.PictureBox tamam;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox DosyaSec;
         public System.Windows.Forms.TextBox uygulamadiTXT;
         private System.Windows.Forms.RadioButton belirlenenzamanakadarradio;
         private System.Windows.Forms.RadioButton belirlenenzamandansonraradio;
         public System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label bilgibir;
         private System.Windows.Forms.Label bilgiiki;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }

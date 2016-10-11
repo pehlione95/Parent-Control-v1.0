@@ -32,11 +32,10 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.iptalettusu = new System.Windows.Forms.PictureBox();
             this.tamam = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iptalettusu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tamam)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // dateTimePicker1
@@ -84,15 +83,16 @@
             this.tamam.TabStop = false;
             this.tamam.Click += new System.EventHandler(this.tamam_Click);
             // 
-            // pictureBox5
+            // label1
             // 
-            this.pictureBox5.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_6xOIg2;
-            this.pictureBox5.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(333, 35);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox5.TabIndex = 20;
-            this.pictureBox5.TabStop = false;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Yu Gothic UI Semilight", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label1.Location = new System.Drawing.Point(12, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(339, 32);
+            this.label1.TabIndex = 33440;
+            this.label1.Text = "Bilgisayar ne zaman kapatılsın ?";
             // 
             // BilgisayariKapat
             // 
@@ -100,8 +100,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(183)))), ((int)(((byte)(211)))));
             this.ClientSize = new System.Drawing.Size(355, 165);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.dateTimePicker1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
@@ -113,16 +113,16 @@
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iptalettusu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tamam)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
         public System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox iptalettusu;
         private System.Windows.Forms.PictureBox tamam;
+        private System.Windows.Forms.Label label1;
     }
 }

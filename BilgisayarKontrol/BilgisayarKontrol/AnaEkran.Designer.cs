@@ -41,6 +41,7 @@
             this.KapatmaEngeli = new System.Windows.Forms.Timer(this.components);
             this.Gizle = new System.Windows.Forms.NotifyIcon(this.components);
             this.panel3 = new System.Windows.Forms.Panel();
+            this.UygulamaOyunBaslatTusu = new System.Windows.Forms.Button();
             this.oyunengelletusu = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.cikistusu = new System.Windows.Forms.Button();
@@ -54,19 +55,18 @@
             this.TimerBelirlenenZamandanSonra = new System.Windows.Forms.Timer(this.components);
             this.TimerBelirlenenZamanaKadar = new System.Windows.Forms.Timer(this.components);
             this.kontrolpicture = new System.Windows.Forms.PictureBox();
-            this.DevamEdenlerTusu = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.hakkindatusu = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.DevamEdenlerTusu = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.hakkindatusu = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.UygulamaOyunBaslat = new System.Windows.Forms.Timer(this.components);
             this.AcilirMenü.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kontrolpicture)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DevamEdenlerTusu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hakkindatusu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // TimerBilgisayariKapat
@@ -76,13 +76,13 @@
             // anlikzamantimelabel
             // 
             this.anlikzamantimelabel.AutoSize = true;
-            this.anlikzamantimelabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.anlikzamantimelabel.Font = new System.Drawing.Font("Yu Gothic UI Semilight", 15F);
             this.anlikzamantimelabel.ForeColor = System.Drawing.Color.Black;
-            this.anlikzamantimelabel.Location = new System.Drawing.Point(133, 462);
+            this.anlikzamantimelabel.Location = new System.Drawing.Point(136, 459);
             this.anlikzamantimelabel.Name = "anlikzamantimelabel";
-            this.anlikzamantimelabel.Size = new System.Drawing.Size(140, 25);
+            this.anlikzamantimelabel.Size = new System.Drawing.Size(135, 28);
             this.anlikzamantimelabel.TabIndex = 11;
-            this.anlikzamantimelabel.Text = "Bilgi Alınıyor ....";
+            this.anlikzamantimelabel.Text = "Bilgi Aliniyor ....";
             this.anlikzamantimelabel.Click += new System.EventHandler(this.anlikzamantimelabel_Click);
             // 
             // TimerAnlikZaman
@@ -132,6 +132,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel3.Controls.Add(this.UygulamaOyunBaslatTusu);
             this.panel3.Controls.Add(this.oyunengelletusu);
             this.panel3.Controls.Add(this.panel1);
             this.panel3.Controls.Add(this.cikistusu);
@@ -145,6 +146,24 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(719, 289);
             this.panel3.TabIndex = 33;
+            // 
+            // UygulamaOyunBaslatTusu
+            // 
+            this.UygulamaOyunBaslatTusu.BackColor = System.Drawing.Color.Azure;
+            this.UygulamaOyunBaslatTusu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.UygulamaOyunBaslatTusu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.UygulamaOyunBaslatTusu.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.UygulamaOyunBaslatTusu.Image = ((System.Drawing.Image)(resources.GetObject("UygulamaOyunBaslatTusu.Image")));
+            this.UygulamaOyunBaslatTusu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.UygulamaOyunBaslatTusu.Location = new System.Drawing.Point(343, 146);
+            this.UygulamaOyunBaslatTusu.Name = "UygulamaOyunBaslatTusu";
+            this.UygulamaOyunBaslatTusu.Size = new System.Drawing.Size(293, 58);
+            this.UygulamaOyunBaslatTusu.TabIndex = 29;
+            this.UygulamaOyunBaslatTusu.Text = "Uygulama / Oyun Başlat";
+            this.UygulamaOyunBaslatTusu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.UygulamaOyunBaslatTusu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.UygulamaOyunBaslatTusu.UseVisualStyleBackColor = true;
+            this.UygulamaOyunBaslatTusu.Click += new System.EventHandler(this.UygulamaOyunBaslatTusu_Click);
             // 
             // oyunengelletusu
             // 
@@ -180,7 +199,7 @@
             this.cikistusu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cikistusu.Font = new System.Drawing.Font("Tahoma", 12F);
             this.cikistusu.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_7gV4IG;
-            this.cikistusu.Location = new System.Drawing.Point(502, 146);
+            this.cikistusu.Location = new System.Drawing.Point(502, 210);
             this.cikistusu.Name = "cikistusu";
             this.cikistusu.Size = new System.Drawing.Size(134, 58);
             this.cikistusu.TabIndex = 27;
@@ -255,7 +274,7 @@
             this.gizletusu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.gizletusu.Font = new System.Drawing.Font("Tahoma", 12F);
             this.gizletusu.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_1n8nOU;
-            this.gizletusu.Location = new System.Drawing.Point(343, 146);
+            this.gizletusu.Location = new System.Drawing.Point(343, 210);
             this.gizletusu.Name = "gizletusu";
             this.gizletusu.Size = new System.Drawing.Size(153, 58);
             this.gizletusu.TabIndex = 6;
@@ -332,18 +351,6 @@
             this.kontrolpicture.TabStop = false;
             this.kontrolpicture.Click += new System.EventHandler(this.kontrolpicture_Click);
             // 
-            // DevamEdenlerTusu
-            // 
-            this.DevamEdenlerTusu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.DevamEdenlerTusu.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_9IaPOJ2;
-            this.DevamEdenlerTusu.Location = new System.Drawing.Point(122, 119);
-            this.DevamEdenlerTusu.Name = "DevamEdenlerTusu";
-            this.DevamEdenlerTusu.Size = new System.Drawing.Size(124, 35);
-            this.DevamEdenlerTusu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.DevamEdenlerTusu.TabIndex = 19;
-            this.DevamEdenlerTusu.TabStop = false;
-            this.DevamEdenlerTusu.Click += new System.EventHandler(this.DevamEdenlerTusu_Click);
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_0RZKkL;
@@ -353,18 +360,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox2.TabIndex = 18;
             this.pictureBox2.TabStop = false;
-            // 
-            // hakkindatusu
-            // 
-            this.hakkindatusu.Cursor = System.Windows.Forms.Cursors.Help;
-            this.hakkindatusu.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_4S23B6;
-            this.hakkindatusu.Location = new System.Drawing.Point(-16, 120);
-            this.hakkindatusu.Name = "hakkindatusu";
-            this.hakkindatusu.Size = new System.Drawing.Size(144, 35);
-            this.hakkindatusu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.hakkindatusu.TabIndex = 15;
-            this.hakkindatusu.TabStop = false;
-            this.hakkindatusu.Click += new System.EventHandler(this.hakkindatusu_Click);
             // 
             // pictureBox1
             // 
@@ -377,15 +372,47 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // pictureBox3
+            // DevamEdenlerTusu
             // 
-            this.pictureBox3.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_2jrqjS;
-            this.pictureBox3.Location = new System.Drawing.Point(12, 458);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(144, 35);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox3.TabIndex = 16;
-            this.pictureBox3.TabStop = false;
+            this.DevamEdenlerTusu.AutoSize = true;
+            this.DevamEdenlerTusu.Font = new System.Drawing.Font("Yu Gothic UI Semilight", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.DevamEdenlerTusu.ForeColor = System.Drawing.Color.Black;
+            this.DevamEdenlerTusu.Location = new System.Drawing.Point(125, 120);
+            this.DevamEdenlerTusu.Name = "DevamEdenlerTusu";
+            this.DevamEdenlerTusu.Size = new System.Drawing.Size(111, 28);
+            this.DevamEdenlerTusu.TabIndex = 33440;
+            this.DevamEdenlerTusu.Text = "İslem Listesi";
+            this.DevamEdenlerTusu.Click += new System.EventHandler(this.DevamEdenlerTusu_Click);
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(100, 23);
+            this.label1.TabIndex = 1;
+            // 
+            // hakkindatusu
+            // 
+            this.hakkindatusu.AutoSize = true;
+            this.hakkindatusu.Font = new System.Drawing.Font("Yu Gothic UI Semilight", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.hakkindatusu.ForeColor = System.Drawing.Color.Black;
+            this.hakkindatusu.Location = new System.Drawing.Point(7, 120);
+            this.hakkindatusu.Name = "hakkindatusu";
+            this.hakkindatusu.Size = new System.Drawing.Size(90, 28);
+            this.hakkindatusu.TabIndex = 33441;
+            this.hakkindatusu.Text = "Hakkinda";
+            this.hakkindatusu.Click += new System.EventHandler(this.hakkindatusu_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Yu Gothic UI Semilight", 15F);
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(12, 459);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(126, 28);
+            this.label2.TabIndex = 33442;
+            this.label2.Text = "Anlik Zaman :";
             // 
             // AnaEkran
             // 
@@ -394,14 +421,15 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(183)))), ((int)(((byte)(211)))));
             this.ClientSize = new System.Drawing.Size(634, 496);
             this.ControlBox = false;
-            this.Controls.Add(this.kontrolpicture);
-            this.Controls.Add(this.DevamEdenlerTusu);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.hakkindatusu);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.DevamEdenlerTusu);
+            this.Controls.Add(this.kontrolpicture);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.anlikzamantimelabel);
-            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.panel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
@@ -415,11 +443,8 @@
             this.AcilirMenü.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kontrolpicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DevamEdenlerTusu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hakkindatusu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -437,10 +462,7 @@
         private System.Windows.Forms.Timer TimerAnlikZaman;
         private System.Windows.Forms.Button gizletusu;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox hakkindatusu;
-        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox DevamEdenlerTusu;
         public System.Windows.Forms.Timer MesajGöster;
         public System.Windows.Forms.Timer İnternetiKes;
         public System.Windows.Forms.Timer YenidenBaslat;
@@ -456,6 +478,12 @@
         private System.Windows.Forms.Button oyunengelletusu;
         public System.Windows.Forms.Timer TimerBelirlenenZamandanSonra;
         public System.Windows.Forms.Timer TimerBelirlenenZamanaKadar;
+        private System.Windows.Forms.Label DevamEdenlerTusu;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label hakkindatusu;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button UygulamaOyunBaslatTusu;
+        public System.Windows.Forms.Timer UygulamaOyunBaslat;
     }
 }
 

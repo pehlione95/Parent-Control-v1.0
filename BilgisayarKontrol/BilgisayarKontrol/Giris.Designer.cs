@@ -64,25 +64,25 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Cursor = System.Windows.Forms.Cursors.Help;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Font = new System.Drawing.Font("Yu Gothic UI Semilight", 11.25F);
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(78, 232);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 18);
+            this.label2.Size = new System.Drawing.Size(112, 20);
             this.label2.TabIndex = 33440;
-            this.label2.Text = "Şifremi unuttum";
+            this.label2.Text = "Sifremi unuttum";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Font = new System.Drawing.Font("Yu Gothic UI Semilight", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(78, 148);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(211, 18);
+            this.label1.Size = new System.Drawing.Size(229, 20);
             this.label1.TabIndex = 33439;
-            this.label1.Text = "Kullanıcı bilgileriniz ile giriş yapınız";
+            this.label1.Text = "Kullanıcı bilgileriniz ile giris yapınız";
             // 
             // pictureBox1
             // 
@@ -115,9 +115,9 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel4.Location = new System.Drawing.Point(12, 127);
+            this.panel4.Location = new System.Drawing.Point(-19, 127);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(500, 3);
+            this.panel4.Size = new System.Drawing.Size(585, 5);
             this.panel4.TabIndex = 33441;
             // 
             // Giris

@@ -127,6 +127,12 @@
     <Compile Include="UygulamaEngelle.Designer.cs">
       <DependentUpon>UygulamaEngelle.cs</DependentUpon>
     </Compile>
+    <Compile Include="UygulamaOyunBaslat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UygulamaOyunBaslat.Designer.cs">
+      <DependentUpon>UygulamaOyunBaslat.cs</DependentUpon>
+    </Compile>
     <Compile Include="YenidenBaslat.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -184,6 +190,9 @@
     </Compile>
     <EmbeddedResource Include="UygulamaEngelle.resx">
       <DependentUpon>UygulamaEngelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UygulamaOyunBaslat.resx">
+      <DependentUpon>UygulamaOyunBaslat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="YenidenBaslat.resx">
       <DependentUpon>YenidenBaslat.cs</DependentUpon>

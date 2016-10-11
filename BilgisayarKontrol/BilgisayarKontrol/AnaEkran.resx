@@ -136,7 +136,7 @@
     <value>950, 17</value>
   </metadata>
   <metadata name="KapatmaEngeli.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 56</value>
+    <value>185, 56</value>
   </metadata>
   <metadata name="Gizle.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>872, 17</value>
@@ -680,6 +680,21 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
 </value>
   </data>
+  <data name="UygulamaOyunBaslatTusu.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAB8AAAAeCAYAAADU8sWcAAAABGdBTUEAALGPC/xhBQAAAi1JREFUSEu1
+        VttVwkAQpQQ+JfxQgh1oCXagHWgH2gH8JPzagXaAHUgH0gE0kKxzd+8kkycbCPecPZC7O+/ZSWaX4G7r
+        HpdpcVxmhZO1w1qk7lX4FY/cDkmaf9Bw19rBOR6dHtZ4kuWf8rvX54ovvuZrN6dIHCCQbN37kPfWOCmU
+        YkX+pHu+NKm755HzEKEQhQiSaqHLuALOL9N8o/vRDjCFFMo3pFsYMq4Qgy+VruI42IzNOoJDFF1CMcYB
+        60CSFr+k6wipKq/OnjRKEOonSkh5xBoH7NlF5t5IV7Dpto0mz6Z5KgeghPwPqUHgXNBRHFs3QDa8EU23
+        Ao2ie0G4cgBOthT1AGe7dEjU7kk3bNSKIQfGQGT9LZLaf5OqpfxEqoUpHLDXj5T3KNTjTP2aDiBj3IqC
+        TX2ZYUnDwSuTrvTEAGoOxA4PgrJ140rEGAesAzK//0hHQW2JjlA2JWKNA3AAGRsjI9Gu1JaN3Ne8ec2m
+        RmfNS+N9428iINXGeBjZZlpV5A2A+80gD6TqtRhTwzHw7w7aaL0theyfvROg/n5vXE/bDFNHz6sZdPc1
+        tWzqpKvu4ZVAFtHIqre3p1iXcnohG9y6CE3DZwOyKcLCtzi3RgF6rOHoGcL6V2+wEd/hIXv52siOH17M
+        QO1bPESSr+8y94B9nEMN/XPmnvGdbs/7dU3voPNFic1C1EK0vc01Bj6VEoFE7idU35L9g7/PzMpNgPpj
+        YSzr/8uinM3+AbecCcRAmzl0AAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="oyunengelletusu.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAB8AAAAeCAYAAADU8sWcAAAABGdBTUEAALGPC/xhBQAAAi1JREFUSEu1
@@ -729,6 +744,9 @@
     <value>695, 17</value>
   </metadata>
   <metadata name="TimerBelirlenenZamanaKadar.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>150, 56</value>
+    <value>318, 56</value>
+  </metadata>
+  <metadata name="UygulamaOyunBaslat.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 56</value>
   </metadata>
 </root>

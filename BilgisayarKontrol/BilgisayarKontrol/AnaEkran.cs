@@ -136,22 +136,12 @@ namespace BilgisayarKontrol
             BilgisayariKapat kapat = new BilgisayariKapat();
             kapat.Show();
         }
-        private void hakkindatusu_Click(object sender, EventArgs e)
-        {
-            Hakkinda sam = new Hakkinda();
-            sam.Show();
-            
-        }
         private void İnternetiKesTusu_Click(object sender, EventArgs e)
         {
             NetKes netikes = new NetKes();
             netikes.Show();
         }
-        private void DevamEdenlerTusu_Click(object sender, EventArgs e)
-        {
-            DevamEdenler dv = new DevamEdenler();
-            dv.Show();
-        }
+
         private void MesajGösterTusu_Click(object sender, EventArgs e)
         {
             MesajGoster msj = new MesajGoster();
@@ -165,7 +155,8 @@ namespace BilgisayarKontrol
             }
             else
             {
-                MessageBox.Show("Bu bilgi sistem saatinizden, anlık olarak alınmaktadır.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                anlikzamantimelabel.Text = DateTime.Today.ToShortTimeString();
+                anlikzamantimelabel.Text = "Bilgi Alınıyor ....";
             }
         }
         private void gizletusu_Click(object sender, EventArgs e)
@@ -357,6 +348,24 @@ namespace BilgisayarKontrol
         {
             KapatmaEngeli ka = new KapatmaEngeli();
             ka.Show();
+        }
+
+        private void DevamEdenlerTusu_Click(object sender, EventArgs e)
+        {
+            DevamEdenler dv = new DevamEdenler();
+            dv.Show();
+        }
+
+        private void hakkindatusu_Click(object sender, EventArgs e)
+        {
+            Hakkinda sam = new Hakkinda();
+            sam.Show();
+        }
+
+        private void UygulamaOyunBaslatTusu_Click(object sender, EventArgs e)
+        {
+            UygulamaOyunBaslat sams = new UygulamaOyunBaslat();
+            sams.Show();
         }
     }
     }
