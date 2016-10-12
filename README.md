@@ -14,13 +14,15 @@ Zamana bağlı olarak yapılabilecek işlemler,
 * Kullanıcı bilgileri ile giriş
 * Güvenlik nedeni ile rogramın kapatılması için kullanıcı şifre gereksinimi
 
-[12.10.2016] EKLENEN / DEĞİŞTİRİLEN //
+[12.10.2016] EKLENEN / DEĞİŞTİRİLEN
+-----------------------------------
 
 * Uygulama / Oyun başlatma
 * Kod fazlalığının temizlenmesi
 * Bazı tasarım değişikliliği
 
 [21.09.2016] EKLENEN / DEĞİŞTİRİLEN
+-----------------------------------
 
 * Uygulamanın güvenliği bakımından kapatılması için şifre gereksinimi
 * Ebeveyn kullanıcı giriş bölümü
@@ -30,6 +32,7 @@ Zamana bağlı olarak yapılabilecek işlemler,
 * Uygulama / Oyun engelleme ( Belirlenen süreden sonra veya belirlenen süreye kadar)
 
 [16.09.2016] EKLENEN / DEĞİŞTİRİLEN
+-----------------------------------
 
 * Sistem saatinin değişkene denklare edilirken alınan hata düzeltildi.
 
