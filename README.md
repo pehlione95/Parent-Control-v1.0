@@ -14,7 +14,7 @@ Zamana bağlı olarak yapılabilecek işlemler,
 * Kullanıcı bilgileri ile giriş
 * Güvenlik nedeni ile rogramın kapatılması için kullanıcı şifre gereksinimi
 
-[12.10.2016] EKLENEN / DEĞİŞTİRİLEN 
+[12.10.2016] EKLENEN / DEĞİŞTİRİLEN //
 
 * Uygulama / Oyun başlatma
 * Kod fazlalığının temizlenmesi
