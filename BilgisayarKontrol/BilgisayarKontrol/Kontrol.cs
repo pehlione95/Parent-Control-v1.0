@@ -16,6 +16,7 @@ namespace BilgisayarKontrol
             InitializeComponent();
         }
         int a = 0;
+        public static int islemyapiliyor = 0;
         private void Kontrol_Load(object sender, EventArgs e)
         {
             gif.Visible = false;
@@ -27,7 +28,8 @@ namespace BilgisayarKontrol
 
         private void KontrolTimer_Tick(object sender, EventArgs e)
         {
-            baslattusu.Enabled = false;
+            BaslatTusu.Enabled = false;
+            islemyapiliyor = 1;
             a += 10;
             if(a<40)
             {
@@ -65,17 +67,11 @@ namespace BilgisayarKontrol
                 {
                     progressBar1.Value = 0;
                     gif.Visible = false;
-                    baslattusu.Visible = false;
-                    tamamtusu.Text = "Devam et";
+                    BaslatTusu.Visible = false;
+                    islemyapiliyor = 0;
                 }
 
             }
-        }
-
-        private void tamamtusu_Click(object sender, EventArgs e)
-        {
-            
-            this.Hide();
         }
 
         private void örnektimer_Tick(object sender, EventArgs e)
@@ -100,41 +96,32 @@ namespace BilgisayarKontrol
         }
 
 
-
-        private void gif_MouseEnter(object sender, EventArgs e)
+        private void BaslatTusu_Click(object sender, EventArgs e)
         {
-            gif.BackColor = Color.SkyBlue;
+            KontrolTimer.Start();
         }
 
-        private void gif_MouseLeave(object sender, EventArgs e)
+        private void İptalEtTusu_Click(object sender, EventArgs e)
         {
-            gif.BackColor = Color.Azure;
-        }
-
-        private void tamamtusu_MouseEnter(object sender, EventArgs e)
-        {
-            tamamtusu.BackColor = Color.SkyBlue;
-        }
-
-        private void tamamtusu_MouseLeave(object sender, EventArgs e)
-        {
-            tamamtusu.BackColor = Color.Azure;
-        }
-
-        private void baslattusu_MouseEnter(object sender, EventArgs e)
-        {
-            baslattusu.BackColor = Color.SkyBlue;
-        }
-
-        private void baslattusu_MouseLeave(object sender, EventArgs e)
-        {
-            baslattusu.BackColor = Color.Azure;
-        }
-
-        private void baslattusu_Click(object sender, EventArgs e)
-        {
-            
-            KontrolTimer.Start();   
+            if(islemyapiliyor==1)
+            {
+                DialogResult soru = MessageBox.Show("İşlemi iptal etmek istiyormusunuz ?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if(DialogResult.Yes==soru)
+                {
+                    islemyapiliyor = 0;
+                    KontrolTimer.Stop();
+                    örnektimer.Stop();
+                    progressBar1.Value = 0;
+                    label1.Text = "Bu islem programın tüm fonksiyonlarını yerine getirebilme özelliğini kontrol eder";
+                    gif.Visible = false;
+                    BaslatTusu.Enabled = true;
+                    
+                }
+            }
+            else
+            {
+                this.Hide();
+            }
         }
     }
 }

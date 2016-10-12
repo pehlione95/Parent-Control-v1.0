@@ -101,12 +101,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(465, 263);
+            this.ControlBox = false;
             this.Controls.Add(this.Versiyon);
             this.Controls.Add(this.WordpressTusu);
             this.Controls.Add(this.GitHubTusu);
             this.Controls.Add(this.KapatTusu);
             this.Controls.Add(this.pictureBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.Name = "Hakkinda";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

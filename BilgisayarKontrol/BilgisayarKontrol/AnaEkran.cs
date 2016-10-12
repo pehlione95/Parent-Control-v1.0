@@ -364,8 +364,27 @@ namespace BilgisayarKontrol
 
         private void UygulamaOyunBaslatTusu_Click(object sender, EventArgs e)
         {
-            UygulamaOyunBaslat sams = new UygulamaOyunBaslat();
+            UygulamaOyunBaslatForm sams = new UygulamaOyunBaslatForm();
             sams.Show();
+        }
+
+        private void UygulamaOyunBaslat_Tick(object sender, EventArgs e)
+        {
+            if(UygulamaOyunBaslatForm.belirlenenzaman==sistemsaati)
+            {
+                Process.Start("cmd.exe", "/C" + UygulamaOyunBaslatForm.uygulamaadi);
+                UygulamaOyunBaslat.Stop();
+            }
+        }
+
+        private void UygulamaOyunBaslatTusu_MouseEnter(object sender, EventArgs e)
+        {
+            UygulamaOyunBaslatTusu.BackColor = Color.SkyBlue;
+        }
+
+        private void UygulamaOyunBaslatTusu_MouseLeave(object sender, EventArgs e)
+        {
+            UygulamaOyunBaslatTusu.BackColor = Color.Azure;
         }
     }
     }

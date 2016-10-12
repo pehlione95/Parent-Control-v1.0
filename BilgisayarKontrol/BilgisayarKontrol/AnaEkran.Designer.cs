@@ -164,6 +164,8 @@
             this.UygulamaOyunBaslatTusu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.UygulamaOyunBaslatTusu.UseVisualStyleBackColor = true;
             this.UygulamaOyunBaslatTusu.Click += new System.EventHandler(this.UygulamaOyunBaslatTusu_Click);
+            this.UygulamaOyunBaslatTusu.MouseEnter += new System.EventHandler(this.UygulamaOyunBaslatTusu_MouseEnter);
+            this.UygulamaOyunBaslatTusu.MouseLeave += new System.EventHandler(this.UygulamaOyunBaslatTusu_MouseLeave);
             // 
             // oyunengelletusu
             // 
@@ -354,9 +356,9 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_0RZKkL;
-            this.pictureBox2.Location = new System.Drawing.Point(95, 120);
+            this.pictureBox2.Location = new System.Drawing.Point(100, 128);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(24, 35);
+            this.pictureBox2.Size = new System.Drawing.Size(24, 29);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox2.TabIndex = 18;
             this.pictureBox2.TabStop = false;
@@ -377,7 +379,7 @@
             this.DevamEdenlerTusu.AutoSize = true;
             this.DevamEdenlerTusu.Font = new System.Drawing.Font("Yu Gothic UI Semilight", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.DevamEdenlerTusu.ForeColor = System.Drawing.Color.Black;
-            this.DevamEdenlerTusu.Location = new System.Drawing.Point(125, 120);
+            this.DevamEdenlerTusu.Location = new System.Drawing.Point(130, 125);
             this.DevamEdenlerTusu.Name = "DevamEdenlerTusu";
             this.DevamEdenlerTusu.Size = new System.Drawing.Size(111, 28);
             this.DevamEdenlerTusu.TabIndex = 33440;
@@ -396,7 +398,7 @@
             this.hakkindatusu.AutoSize = true;
             this.hakkindatusu.Font = new System.Drawing.Font("Yu Gothic UI Semilight", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.hakkindatusu.ForeColor = System.Drawing.Color.Black;
-            this.hakkindatusu.Location = new System.Drawing.Point(7, 120);
+            this.hakkindatusu.Location = new System.Drawing.Point(7, 125);
             this.hakkindatusu.Name = "hakkindatusu";
             this.hakkindatusu.Size = new System.Drawing.Size(90, 28);
             this.hakkindatusu.TabIndex = 33441;
@@ -413,6 +415,10 @@
             this.label2.Size = new System.Drawing.Size(126, 28);
             this.label2.TabIndex = 33442;
             this.label2.Text = "Anlik Zaman :";
+            // 
+            // UygulamaOyunBaslat
+            // 
+            this.UygulamaOyunBaslat.Tick += new System.EventHandler(this.UygulamaOyunBaslat_Tick);
             // 
             // AnaEkran
             // 
@@ -470,7 +476,6 @@
         private System.Windows.Forms.ContextMenuStrip AcilirMenü;
         private System.Windows.Forms.ToolStripMenuItem gösterToolStripMenuItem;
         private System.Windows.Forms.Button cikistusu;
-        private System.Windows.Forms.Timer KapatmaEngeli;
         private System.Windows.Forms.NotifyIcon Gizle;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel1;
@@ -484,6 +489,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button UygulamaOyunBaslatTusu;
         public System.Windows.Forms.Timer UygulamaOyunBaslat;
+        public System.Windows.Forms.Timer KapatmaEngeli;
     }
 }
 

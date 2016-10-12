@@ -1,6 +1,6 @@
 ﻿namespace BilgisayarKontrol
 {
-    partial class UygulamaOyunBaslat
+    partial class UygulamaOyunBaslatForm
     {
         /// <summary>
         /// Required designer variable.
@@ -129,7 +129,7 @@
             this.DosyaSec.TabStop = false;
             this.DosyaSec.Click += new System.EventHandler(this.DosyaSec_Click);
             // 
-            // UygulamaOyunBaslat
+            // UygulamaOyunBaslatForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -143,7 +143,7 @@
             this.Controls.Add(this.dateTimePicker1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
-            this.Name = "UygulamaOyunBaslat";
+            this.Name = "UygulamaOyunBaslatForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Uygulama / Oyun Baslat";
             this.Load += new System.EventHandler(this.UygulamaOyunBaslat_Load);
