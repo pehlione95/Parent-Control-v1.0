@@ -12,17 +12,17 @@ Zamana bağlı olarak yapılabilecek işlemler,
 * Uygulama / Oyun Başlatma
 * Programın arkplanda gizlenebilmesi
 * Kullanıcı bilgileri ile giriş
-* Güvenlik nedeni ile rogramın kapatılması için kullanıcı şifre gereksinimi
+* * Güvenlik nedeni ile rogramın kapatılması için kullanıcı şifre gereksinimi
 -----------------------------------------------------------------------------
 [12.10.2016] Özellikler // CODER: SAMET UCA
-EKLENEN / DEĞİŞTİRİLEN
+ EKLENEN / DEĞİŞTİRİLEN
 
 * Uygulama / Oyun başlatma
 * Kod fazlalığının temizlenmesi
 * Bazı tasarım değişikliliği
 -----------------------------------------------------------------------------
 [21.09.2016] Özellikler // CODER: SAMET UCA
-EKLENEN / DEĞİŞTİRİLEN
+EKLE  NEN / DEĞİŞTİRİLEN
 
 * Uygulamanın güvenliği bakımından kapatılması için şifre gereksinimi
 * Ebeveyn kullanıcı giriş bölümü
