@@ -13,14 +13,13 @@ Zamana bağlı olarak yapılabilecek işlemler,
 * Programın arkplanda gizlenebilmesi
 * Kullanıcı bilgileri ile giriş
 ! Güvenlik nedeni ile rogramın kapatılması için kullanıcı şifre gereksinimi
-[12.10.2016] EKLENEN / DEĞİŞTİRİLEN / CODER: SAMET UCA
+[12.10.2016] EKLENEN / DEĞİŞTİRİLEN 
 -----------------------------------------------------------------------------
 * Uygulama / Oyun başlatma
 * Kod fazlalığının temizlenmesi
 * Bazı tasarım değişikliliği
 -----------------------------------------------------------------------------
-[21.09.2016] Özellikler // CODER: SAMET UCA
-EKLE  NEN / DEĞİŞTİRİLEN
+[21.09.2016] EKLENEN / DEĞİŞTİRİLEN
 
 * Uygulamanın güvenliği bakımından kapatılması için şifre gereksinimi
 * Ebeveyn kullanıcı giriş bölümü
