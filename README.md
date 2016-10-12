@@ -1,18 +1,28 @@
 Ebeveynler için geliştirilmiş bir uygulamadır.
 Tasarımı tamamlanmıştır.
-Kodlama %75 olarak tamamlanmıştır.
+Kodlama %80 olarak tamamlanmıştır.
+Zamana bağlı olarak yapılabilecek işlemler,
 
-[21.09.2016] Özellikler
-
-Zamana bağlı olarak,
-
-* Güç kapatma / Yeniden başlatma
+* Güç kapatma
+* Yeniden başlatma
 * Mesaj gösterme
 * İnternet erişimini sınırlandır
 * İnternet erişimini sağlama
 * Uygulama / Oyun engelleme ( Belirlenen süreden sonra veya belirlenen süreye kadar)
+* Uygulama / Oyun Başlatma
+* Programın arkplanda gizlenebilmesi
+* Kullanıcı bilgileri ile giriş
+* Güvenlik nedeni ile rogramın kapatılması için kullanıcı şifre gereksinimi
+-----------------------------------------------------------------------------
+[12.10.2016] Özellikler // CODER: SAMET UCA
+EKLENEN / DEĞİŞTİRİLEN
 
-  -EKLENEN / DEĞİŞTİRİLEN ÖZELLİKLER-
+* Uygulama / Oyun başlatma
+* Kod fazlalığının temizlenmesi
+* Bazı tasarım değişikliliği
+-----------------------------------------------------------------------------
+[21.09.2016] Özellikler // CODER: SAMET UCA
+EKLENEN / DEĞİŞTİRİLEN
 
 * Uygulamanın güvenliği bakımından kapatılması için şifre gereksinimi
 * Ebeveyn kullanıcı giriş bölümü
@@ -22,17 +32,8 @@ Zamana bağlı olarak,
 * Uygulama / Oyun engelleme ( Belirlenen süreden sonra veya belirlenen süreye kadar)
 
 -----------------------------------------------------------------------------
-[16.09.2016] Özellikler
-
-Zamana bağlı olarak,
-
-* Güç kapatma
-* Yeniden başlatma
-* Mesaj gösterme
-* İnternet erişimini sınırlandırma
-* İnternet erişimini sağlama
-
- -EKLENEN / DEĞİŞTİRİLEN ÖZELLİKLER-
+[16.09.2016] Özellikler // CODER: SAMET UCA
+EKLENEN / DEĞİŞTİRİLEN
  
 * Sistem saatinin değişkene denklare edilirken alınan hata düzeltildi.
 
