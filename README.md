@@ -1,9 +1,6 @@
 Ebeveynler için geliştirilmiş bir uygulamadır.
-----------------------------------------------
 Tasarımı tamamlanmıştır.
-------------------------
 Kodlama %80 olarak tamamlanmıştır.
-----------------------------------
 Zamana bağlı olarak yapılabilecek işlemler,
 -------------------------------------------
 
