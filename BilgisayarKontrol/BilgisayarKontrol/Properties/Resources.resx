@@ -256,9 +256,6 @@
   <data name="Logomakr_4E8fEE" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Logomakr_4E8fEE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Logomakr_6A41PI" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Logomakr_6A41PI.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Logomakr_6AXskY" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Logomakr_6AXskY.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -271,8 +268,8 @@
   <data name="Logomakr_0rOnS7" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Logomakr_0rOnS7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Logomakr_3SicEa2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Logomakr_3SicEa2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Logomakr_7gV4IG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logomakr_7gV4IG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Logomakr_8P9uR4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Logomakr_8P9uR4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -292,6 +289,9 @@
   <data name="Logomakr_8xvO2y" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Logomakr_8xvO2y.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Logomakr_2icDiW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logomakr_2icDiW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Logomakr_2xLss31" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Logomakr_2xLss31.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -301,14 +301,17 @@
   <data name="Logomakr_53yFou" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Logomakr_53yFou.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Logomakr_3SicEa1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logomakr_3SicEa1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Logomakr_2xLss3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Logomakr_2xLss3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Logomakr_7nxy4b" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Logomakr_7nxy4b.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Logomakr_3SicEa1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Logomakr_3SicEa1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Logomakr_6A41PI" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logomakr_6A41PI.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Logomakr_8DDnOa" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Logomakr_8DDnOa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -322,17 +325,23 @@
   <data name="Logomakr_05T5jU" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Logomakr_05T5jU.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Logomakr_4VuNNp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logomakr_4VuNNp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Logomakr_9Ki0wd" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Logomakr_9Ki0wd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Logomakr_7pDgxa" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Logomakr_7pDgxa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Logomakr_4VuNNp" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Logomakr_4VuNNp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Logomakr_3SicEa2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logomakr_3SicEa2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Logomakr_6tvHo8" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Logomakr_6tvHo8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logomakr_5qWUAZ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logomakr_5qWUAZ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Logomakr_9IaPOJ" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Logomakr_9IaPOJ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -343,7 +352,7 @@
   <data name="Logomakr_13wDDO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Logomakr_13wDDO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Logomakr_7gV4IG" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Logomakr_7gV4IG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Logomakr_1RBsZw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logomakr_1RBsZw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

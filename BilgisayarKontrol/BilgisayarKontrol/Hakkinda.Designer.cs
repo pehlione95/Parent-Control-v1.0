@@ -33,6 +33,7 @@
             this.KapatTusu = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Versiyon = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.WordpressTusu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GitHubTusu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.KapatTusu)).BeginInit();
@@ -90,11 +91,22 @@
             this.Versiyon.AutoSize = true;
             this.Versiyon.Font = new System.Drawing.Font("Yu Gothic UI Semilight", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Versiyon.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.Versiyon.Location = new System.Drawing.Point(21, 145);
+            this.Versiyon.Location = new System.Drawing.Point(25, 177);
             this.Versiyon.Name = "Versiyon";
             this.Versiyon.Size = new System.Drawing.Size(49, 32);
             this.Versiyon.TabIndex = 33446;
             this.Versiyon.Text = "v1.1";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Yu Gothic UI Semilight", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label1.Location = new System.Drawing.Point(21, 145);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(222, 32);
+            this.label1.TabIndex = 33447;
+            this.label1.Text = "Theme : italk-design";
             // 
             // Hakkinda
             // 
@@ -102,6 +114,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(465, 263);
             this.ControlBox = false;
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.Versiyon);
             this.Controls.Add(this.WordpressTusu);
             this.Controls.Add(this.GitHubTusu);
@@ -127,5 +140,6 @@
         private System.Windows.Forms.PictureBox GitHubTusu;
         private System.Windows.Forms.PictureBox WordpressTusu;
         private System.Windows.Forms.Label Versiyon;
+        private System.Windows.Forms.Label label1;
     }
 }

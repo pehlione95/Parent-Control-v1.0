@@ -25,7 +25,7 @@ namespace BilgisayarKontrol {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
         public double Sifre {
             get {
                 return ((double)(this["Sifre"]));
@@ -56,6 +56,66 @@ namespace BilgisayarKontrol {
             }
             set {
                 this["Soru"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public double Yardim {
+            get {
+                return ((double)(this["Yardim"]));
+            }
+            set {
+                this["Yardim"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public double UygulamaKapatilirkenSifreİstensinmi {
+            get {
+                return ((double)(this["UygulamaKapatilirkenSifreİstensinmi"]));
+            }
+            set {
+                this["UygulamaKapatilirkenSifreİstensinmi"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public double CmdEngellensinmi {
+            get {
+                return ((double)(this["CmdEngellensinmi"]));
+            }
+            set {
+                this["CmdEngellensinmi"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public double RunEngellensinmi {
+            get {
+                return ((double)(this["RunEngellensinmi"]));
+            }
+            set {
+                this["RunEngellensinmi"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public double GörevYöneticisiEngellensinmi {
+            get {
+                return ((double)(this["GörevYöneticisiEngellensinmi"]));
+            }
+            set {
+                this["GörevYöneticisiEngellensinmi"] = value;
             }
         }
     }

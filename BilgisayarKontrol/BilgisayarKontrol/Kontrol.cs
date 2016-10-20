@@ -51,6 +51,7 @@ namespace BilgisayarKontrol
                 }
                 catch
                 {
+                    
                     gif.Visible = false;
                     label1.Text = "Hata Bulundu";
                     MessageBox.Show("Program yönetici olarak çalıştırılmalıdır.Anti - Virüs programınızdan gerekli izinleri aldığınızdan emin olunuz", "", MessageBoxButtons.OK, MessageBoxIcon.Information);

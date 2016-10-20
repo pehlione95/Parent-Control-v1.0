@@ -99,6 +99,7 @@ namespace BilgisayarKontrol
             }
         }
 
+
         private void iptalettusu_Click(object sender, EventArgs e)
         {
             if(zamandansonra==1)

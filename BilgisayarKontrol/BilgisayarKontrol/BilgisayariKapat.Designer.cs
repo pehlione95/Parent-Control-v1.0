@@ -75,7 +75,7 @@
             // 
             this.tamam.Cursor = System.Windows.Forms.Cursors.Hand;
             this.tamam.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_6mkMqS;
-            this.tamam.Location = new System.Drawing.Point(286, 6);
+            this.tamam.Location = new System.Drawing.Point(296, 6);
             this.tamam.Name = "tamam";
             this.tamam.Size = new System.Drawing.Size(50, 49);
             this.tamam.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;

@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Diagnostics;
+using Microsoft.Win32;
+using System.Runtime.InteropServices;
 
 namespace BilgisayarKontrol
 {
@@ -20,57 +22,68 @@ namespace BilgisayarKontrol
         public static string ilkacilis;
         private void Form1_Load(object sender, EventArgs e)
         {
-            
-                
-                KapatmaEngeli.Interval = 1000;
-                KapatmaEngeli.Start();
-                TimerAnlikZaman.Interval = 500;
-                TimerAnlikZaman.Start();
-                try
-                {
-
-                    anlikzamantimelabel.Text = DateTime.Now.ToLongTimeString();
-                }
-                catch
-                {
-                    MessageBox.Show("Sistem saatinizden, anlık olarak bilgi alınamadığı için program kullanılamaz.Sistem saatinizi ve Anti - Virüs programınızı kontrol ediniz.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    this.Enabled = false;
-                }
-            
-            
-        }
-       
-    
-        private void MesajGöster_Tick(object sender, EventArgs e)
+            if (Settings1.Default.GörevYöneticisiEngellensinmi == 1)
             {
-            
+                TimerGörevYöneticisiEngelle.Interval = 1000;
+                TimerGörevYöneticisiEngelle.Start();
+            }
+            if(Settings1.Default.CmdEngellensinmi==1)
+            {
+                TimerCmdEngelle.Interval = 1000;
+                TimerCmdEngelle.Start();
+            }
+            if(Settings1.Default.RunEngellensinmi==1)
+            {
+                TimerRunEngelle.Interval = 1000;
+                TimerRunEngelle.Start();
+            }
+            TimerAnlikZaman.Interval = 500;
+            TimerAnlikZaman.Start();
+            try
+            {
+
+                anlikzamantimelabel.Text = DateTime.Now.ToLongTimeString();
+            }
+            catch
+            {
+                MessageBox.Show("Sistem saatinizden, anlık olarak bilgi alınamadığı için program kullanılamaz.Sistem saatinizi ve Anti - Virüs programınızı kontrol ediniz.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Enabled = false;
+            }
+
+
+        }
+
+
+        private void MesajGöster_Tick(object sender, EventArgs e)
+        {
+
             sistemsaati = DateTime.Now.ToShortTimeString();
-            if(sistemsaati==MesajGoster.belirlenenzaman)
+            if (sistemsaati == MesajGoster.belirlenenzaman)
             {
                 if (MesajGoster.tür == 1)
                 {
-                    MessageBox.Show(MesajGoster.mesajiçerigi.TrimEnd(),""+MesajGoster.baslik.TrimEnd()+"", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(MesajGoster.mesajiçerigi.TrimEnd(), "" + MesajGoster.baslik.TrimEnd() + "", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else if (MesajGoster.tür == 2)
                 {
-                    MessageBox.Show(MesajGoster.mesajiçerigi.TrimEnd(), ""+MesajGoster.baslik.TrimEnd()+"", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(MesajGoster.mesajiçerigi.TrimEnd(), "" + MesajGoster.baslik.TrimEnd() + "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else if (MesajGoster.tür == 3)
                 {
-                    MessageBox.Show(MesajGoster.mesajiçerigi.TrimEnd(), ""+MesajGoster.baslik.TrimEnd()+"", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show(MesajGoster.mesajiçerigi.TrimEnd(), "" + MesajGoster.baslik.TrimEnd() + "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 MesajGöster.Stop();
             }
         }
         private void TimerBilgisayariKapat_Tick(object sender, EventArgs e)
         {
-            
-            
+
+
             sistemsaati = DateTime.Now.ToShortTimeString();
 
-            if(sistemsaati==BilgisayariKapat.belirlenenzaman)
+            if (sistemsaati == BilgisayariKapat.belirlenenzaman)
             {
-                
+
                 TimerBilgisayariKapat.Stop();
                 try
                 {
@@ -85,9 +98,9 @@ namespace BilgisayarKontrol
                     TimerBilgisayariKapat.Stop();
                 }
             }
-            
-            
-                      
+
+
+
         }
         private void YenidenBaslat_Tick(object sender, EventArgs e)
         {
@@ -112,11 +125,11 @@ namespace BilgisayarKontrol
         {
 
             anlikzamantimelabel.Text = DateTime.Now.ToLongTimeString();
-            
+
         }
         private void İnternetiKes_Tick(object sender, EventArgs e)
         {
-            if(sistemsaati==NetKes.belirlenenzaman)
+            if (sistemsaati == NetKes.belirlenenzaman)
             {
                 try
                 {
@@ -131,22 +144,7 @@ namespace BilgisayarKontrol
         //
         //
 
-        private void ZamanlıOlarakBilgisayariKapatBT_Click(object sender, EventArgs e)
-        {
-            BilgisayariKapat kapat = new BilgisayariKapat();
-            kapat.Show();
-        }
-        private void İnternetiKesTusu_Click(object sender, EventArgs e)
-        {
-            NetKes netikes = new NetKes();
-            netikes.Show();
-        }
 
-        private void MesajGösterTusu_Click(object sender, EventArgs e)
-        {
-            MesajGoster msj = new MesajGoster();
-            msj.Show();
-        }
         private void anlikzamantimelabel_Click(object sender, EventArgs e)
         {
             if (anlikzamantimelabel.Text == "Bilgi Alınıyor ....")
@@ -159,40 +157,10 @@ namespace BilgisayarKontrol
                 anlikzamantimelabel.Text = "Bilgi Alınıyor ....";
             }
         }
-        private void gizletusu_Click(object sender, EventArgs e)
-        {
-
-            this.Hide();
-            
-        }
-
-        private void BilgisayariYenidenBaslatTusu_Click(object sender, EventArgs e)
-        {
-            Reboot newstart = new Reboot();
-            newstart.Show();
-        }
-
-        private void kontrolpicture_Click(object sender, EventArgs e)
-        {
-            Kontrol kt = new Kontrol();
-            kt.Show();
-        }
-
         private void Gizle_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             this.Show();
         }
-
-        private void AnaEkran_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            
-        }
-
-        private void AnaEkran_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            
-        }
-
 
         private void KapatmaEngeli_Tick(object sender, EventArgs e)
         {
@@ -205,34 +173,13 @@ namespace BilgisayarKontrol
                     p.Kill();
                 }
             }
-            Process[] cemede = Process.GetProcessesByName("Cmd");
-            if(cemede.Length>0)
-            {
-                foreach(Process c in cemede)
-                {
-                    c.Kill();
-                }
-            }
-            Process[] run = Process.GetProcessesByName("Run");
-            if(run.Length>0)
-            {
-                foreach(Process r in run)
-                {
-                    r.Kill();
-                }
-            }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            
+
         }
 
-        private void oyunengelletusu_Click(object sender, EventArgs e)
-        {
-            UygulamaEngelle engelle = new UygulamaEngelle();
-            engelle.Show();
-        }
 
         private void TimerBelirlenenZamandanSonra_Tick(object sender, EventArgs e)
         {
@@ -251,7 +198,7 @@ namespace BilgisayarKontrol
 
         private void TimerBelirlenenZamanaKadar_Tick(object sender, EventArgs e)
         {
-            if(sistemsaati!=UygulamaEngelle.belirlenenzaman)
+            if (sistemsaati != UygulamaEngelle.belirlenenzaman)
             {
                 Process[] app = Process.GetProcessesByName(UygulamaEngelle.uygulamaadi.TrimEnd());
                 if (app.Length > 0)
@@ -262,92 +209,6 @@ namespace BilgisayarKontrol
                     }
                 }
             }
-        }
-
-        private void ZamanlıOlarakBilgisayariKapatBT_MouseEnter(object sender, EventArgs e)
-        {
-            ZamanlıOlarakBilgisayariKapatBT.BackColor = Color.SkyBlue;
-        }
-
-        private void ZamanlıOlarakBilgisayariKapatBT_MouseLeave(object sender, EventArgs e)
-        {
-            ZamanlıOlarakBilgisayariKapatBT.BackColor = Color.Azure;
-        }
-
-        private void İnternetiYenileTusu_MouseEnter(object sender, EventArgs e)
-        {
-            İnternetiYenileTusu.BackColor = Color.SkyBlue;
-        }
-
-        private void İnternetiYenileTusu_MouseLeave(object sender, EventArgs e)
-        {
-            İnternetiYenileTusu.BackColor = Color.Azure;
-        }
-
-        private void İnternetiKesTusu_MouseEnter(object sender, EventArgs e)
-        {
-            İnternetiKesTusu.BackColor = Color.SkyBlue;
-        }
-
-        private void İnternetiKesTusu_MouseLeave(object sender, EventArgs e)
-        {
-            İnternetiKesTusu.BackColor = Color.Azure;
-        }
-
-        private void oyunengelletusu_MouseEnter(object sender, EventArgs e)
-        {
-            oyunengelletusu.BackColor = Color.SkyBlue;
-        }
-
-        private void oyunengelletusu_MouseLeave(object sender, EventArgs e)
-        {
-            oyunengelletusu.BackColor = Color.Azure;
-        }
-
-        private void BilgisayariYenidenBaslatTusu_MouseEnter(object sender, EventArgs e)
-        {
-            BilgisayariYenidenBaslatTusu.BackColor = Color.SkyBlue;
-        }
-
-        private void BilgisayariYenidenBaslatTusu_MouseLeave(object sender, EventArgs e)
-        {
-            BilgisayariYenidenBaslatTusu.BackColor = Color.Azure;
-        }
-
-        private void MesajGösterTusu_MouseEnter(object sender, EventArgs e)
-        {
-            MesajGösterTusu.BackColor = Color.SkyBlue;
-        }
-
-        private void MesajGösterTusu_MouseLeave(object sender, EventArgs e)
-        {
-            MesajGösterTusu.BackColor = Color.Azure;
-        }
-
-        private void gizletusu_MouseEnter(object sender, EventArgs e)
-        {
-            gizletusu.BackColor = Color.SkyBlue;
-        }
-
-        private void gizletusu_MouseLeave(object sender, EventArgs e)
-        {
-            gizletusu.BackColor = Color.Azure;
-        }
-
-
-        private void cikistusu_MouseEnter(object sender, EventArgs e)
-        {
-            cikistusu.BackColor = Color.SkyBlue;
-        }
-
-        private void cikistusu_MouseLeave(object sender, EventArgs e)
-        {
-            cikistusu.BackColor = Color.Azure;
-        }
-        private void cikistusu_Click(object sender, EventArgs e)
-        {
-            KapatmaEngeli ka = new KapatmaEngeli();
-            ka.Show();
         }
 
         private void DevamEdenlerTusu_Click(object sender, EventArgs e)
@@ -362,15 +223,11 @@ namespace BilgisayarKontrol
             sam.Show();
         }
 
-        private void UygulamaOyunBaslatTusu_Click(object sender, EventArgs e)
-        {
-            UygulamaOyunBaslatForm sams = new UygulamaOyunBaslatForm();
-            sams.Show();
-        }
+
 
         private void UygulamaOyunBaslat_Tick(object sender, EventArgs e)
         {
-            if(UygulamaOyunBaslatForm.belirlenenzaman==sistemsaati)
+            if (UygulamaOyunBaslatForm.belirlenenzaman == sistemsaati)
             {
                 Process.Start("cmd.exe", "/C" + UygulamaOyunBaslatForm.uygulamaadi);
                 UygulamaOyunBaslat.Stop();
@@ -385,6 +242,195 @@ namespace BilgisayarKontrol
         private void UygulamaOyunBaslatTusu_MouseLeave(object sender, EventArgs e)
         {
             UygulamaOyunBaslatTusu.BackColor = Color.Azure;
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            TimerBaskaBirUygulamaKullanimi.Start();
+        }
+
+        private void GösterBT_Click(object sender, EventArgs e)
+        {
+            if(Convert.ToDouble(YöneticiSifreKutusu.Text)==Settings1.Default.Sifre)
+            {
+                AyarlarPanel.Visible = false;
+            }
+            else
+            {
+                label1.Text = "Şifre geçersiz";
+            }
+        }
+
+        private void YöneticiSifreKutusu_TextChanged(object sender, EventArgs e)
+        {
+            label1.Text = "Yönetici sifresini yaziniz";
+        }
+
+        private void NedirBuButton_Click(object sender, EventArgs e)
+        {
+            Yardim.nedirbu = 1;
+            Yardim yr = new Yardim();
+            yr.göstermecombo.Visible = false;
+            yr.Show();
+            
+        }
+
+        private void BaskaBirUygulamaKullanimi_CheckedChanged(object sender)
+        {
+            MessageBox.Show("Bu işlemi durdurmak için, tekrar bu bölümden ilgili ayarın işaretini kaldırınız ve ayarlari kaydetmeyi unutmayiniz.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            AyarlarPanelTamamTusu.Text = "Ayarları Kaydet";
+        }
+
+        [DllImport("user32.dll")]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        static extern bool SetForegroundWindow(IntPtr hWnd);
+        public void BaskaBirUygulamaKullaniminiEngelle()
+        {
+            RegistryKey objRegistryKey = Registry.CurrentUser.CreateSubKey(
+                @"Software\Microsoft\Windows\CurrentVersion\Policies\System");
+            if (objRegistryKey.GetValue("DisableTaskMgr") == null)
+                objRegistryKey.SetValue("DisableTaskMgr", "1");
+            else
+                objRegistryKey.DeleteValue("DisableTaskMgr");
+            objRegistryKey.Close();
+        }
+
+        private void TimerBaskaBirUygulamaKullanimi_Tick(object sender, EventArgs e)
+        {
+            SetForegroundWindow(this.Handle);
+        }
+
+        private void AyarlarPanelTamamTusu_Click(object sender, EventArgs e)
+        {
+            if(RunEngelleCombo.Checked==true)
+            {
+                Settings1.Default.RunEngellensinmi = 1;
+                TimerRunEngelle.Interval = 1000;
+                TimerRunEngelle.Start();
+            }
+            if(GörevYöneticisiEngelleCombo.Checked==true)
+            {
+                Settings1.Default.GörevYöneticisiEngellensinmi = 1;
+                TimerGörevYöneticisiEngelle.Interval = 1000;
+                TimerGörevYöneticisiEngelle.Start();
+            }
+            if (BaskaBirUygulamaKullanimiCombo.Checked==true)
+            {
+                TimerBaskaBirUygulamaKullanimi.Start();
+            }
+            if(CmdEngelleCombo.Checked==true)
+            {
+                Settings1.Default.CmdEngellensinmi = 1;
+                TimerCmdEngelle.Interval = 1000;
+                TimerCmdEngelle.Start();
+            }
+            ///////////////////////////////////////////
+            if (CmdEngelleCombo.Checked == false)
+            {
+                TimerCmdEngelle.Stop();
+                Settings1.Default.CmdEngellensinmi =0;
+            }
+            if (RunEngelleCombo.Checked == false)
+            {
+                TimerRunEngelle.Stop();
+                Settings1.Default.RunEngellensinmi = 0;
+            }
+            if (BaskaBirUygulamaKullanimiCombo.Checked == false)
+            {
+                TimerBaskaBirUygulamaKullanimi.Stop();
+            }
+            if (GörevYöneticisiEngelleCombo.Checked == false)
+            {
+                Settings1.Default.GörevYöneticisiEngellensinmi = 0;
+                TimerGörevYöneticisiEngelle.Stop();
+            }
+            AyarlarPanel.Visible = true;
+            YöneticiSifreKutusu.Text = "";
+        }
+
+        private void TimerCmdEngelle_Tick(object sender, EventArgs e)
+        {
+            Process[] cemede = Process.GetProcessesByName("Cmd");
+            if (cemede.Length > 0)
+            {
+                foreach (Process c in cemede)
+                {
+                    c.Kill();
+                }
+            }
+        }
+
+        private void TimerRunEngelle_Tick(object sender, EventArgs e)
+        {
+
+            Process[] run = Process.GetProcessesByName("Run");
+            if (run.Length > 0)
+            {
+                foreach (Process r in run)
+                {
+                    r.Kill();
+                }
+            }
+        }
+
+        private void UygulamaOyunBaslatTusu_Click(object sender, EventArgs e)
+        {
+            UygulamaOyunBaslatForm sams = new UygulamaOyunBaslatForm();
+            sams.Show();
+        }
+
+        private void oyunengelletusu_Click(object sender, EventArgs e)
+        {
+            UygulamaEngelle engelle = new UygulamaEngelle();
+            engelle.Show();
+        }
+
+        private void ZamanlıOlarakBilgisayariKapatBTN_Click(object sender, EventArgs e)
+        {
+            BilgisayariKapat kapat = new BilgisayariKapat();
+            kapat.Show();
+        }
+
+        private void BilgisayariYenidenBaslatTusu_Click(object sender, EventArgs e)
+        {
+            Reboot newstart = new Reboot();
+            newstart.Show();
+        }
+
+        private void İnternetiYenileTusu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void InternetiKesTusu_Click(object sender, EventArgs e)
+        {
+            NetKes netikes = new NetKes();
+            netikes.Show();
+
+        }
+
+        private void UygulamayiGizleTusu_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
+        private void CikisTusu_Click(object sender, EventArgs e)
+        {
+            if (UygulamaKapatilirkenSifreİsteCombo.Checked == true)
+            {
+                KapatmaEngeli ka = new KapatmaEngeli();
+                ka.Show();
+            }
+            else
+            {
+                Application.Exit();
+            }
+        }
+
+        private void TestTusu_Click(object sender, EventArgs e)
+        {
+            Kontrol kt = new Kontrol();
+            kt.Show();
         }
     }
     }

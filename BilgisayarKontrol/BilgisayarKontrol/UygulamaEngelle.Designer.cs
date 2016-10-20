@@ -31,7 +31,6 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.iptalettusu = new System.Windows.Forms.PictureBox();
             this.tamam = new System.Windows.Forms.PictureBox();
-            this.uygulamadiTXT = new System.Windows.Forms.TextBox();
             this.belirlenenzamanakadarradio = new System.Windows.Forms.RadioButton();
             this.belirlenenzamandansonraradio = new System.Windows.Forms.RadioButton();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -42,6 +41,7 @@
             this.bilgiiki = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.uygulamadiTXT = new iTalk.iTalk_TextBox_Small();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iptalettusu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tamam)).BeginInit();
@@ -83,16 +83,6 @@
             this.tamam.TabIndex = 30;
             this.tamam.TabStop = false;
             this.tamam.Click += new System.EventHandler(this.tamam_Click);
-            // 
-            // uygulamadiTXT
-            // 
-            this.uygulamadiTXT.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.uygulamadiTXT.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.uygulamadiTXT.Location = new System.Drawing.Point(27, 65);
-            this.uygulamadiTXT.Name = "uygulamadiTXT";
-            this.uygulamadiTXT.ReadOnly = true;
-            this.uygulamadiTXT.Size = new System.Drawing.Size(327, 27);
-            this.uygulamadiTXT.TabIndex = 35;
             // 
             // belirlenenzamanakadarradio
             // 
@@ -210,18 +200,33 @@
             this.label1.TabIndex = 33447;
             this.label1.Text = "Ne zaman engellenecek ?";
             // 
+            // uygulamadiTXT
+            // 
+            this.uygulamadiTXT.BackColor = System.Drawing.Color.Transparent;
+            this.uygulamadiTXT.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.uygulamadiTXT.ForeColor = System.Drawing.Color.DimGray;
+            this.uygulamadiTXT.Location = new System.Drawing.Point(27, 65);
+            this.uygulamadiTXT.MaxLength = 32767;
+            this.uygulamadiTXT.Multiline = false;
+            this.uygulamadiTXT.Name = "uygulamadiTXT";
+            this.uygulamadiTXT.ReadOnly = false;
+            this.uygulamadiTXT.Size = new System.Drawing.Size(326, 28);
+            this.uygulamadiTXT.TabIndex = 33448;
+            this.uygulamadiTXT.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+            this.uygulamadiTXT.UseSystemPasswordChar = false;
+            // 
             // UygulamaEngelle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(183)))), ((int)(((byte)(211)))));
             this.ClientSize = new System.Drawing.Size(440, 467);
+            this.Controls.Add(this.uygulamadiTXT);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.bilgiiki);
             this.Controls.Add(this.bilgibir);
             this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.uygulamadiTXT);
             this.Controls.Add(this.DosyaSec);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
@@ -252,7 +257,6 @@
         private System.Windows.Forms.PictureBox iptalettusu;
         private System.Windows.Forms.PictureBox tamam;
         private System.Windows.Forms.PictureBox DosyaSec;
-        public System.Windows.Forms.TextBox uygulamadiTXT;
         private System.Windows.Forms.RadioButton belirlenenzamanakadarradio;
         private System.Windows.Forms.RadioButton belirlenenzamandansonraradio;
         public System.Windows.Forms.DateTimePicker dateTimePicker1;
@@ -262,5 +266,6 @@
         private System.Windows.Forms.Label bilgiiki;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private iTalk.iTalk_TextBox_Small uygulamadiTXT;
     }
 }

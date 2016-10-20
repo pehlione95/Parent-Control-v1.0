@@ -38,15 +38,29 @@ namespace BilgisayarKontrol
             Settings1.Default.Save();
         }
 
-        private void Giristusu_Click(object sender, EventArgs e)
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            
+            SifremiUnuttum pw = new SifremiUnuttum();
+            pw.Show();
+        }
+
+        private void GirisTusu_Click(object sender, EventArgs e)
         {
             try
             {
                 if (Convert.ToDouble(sifreTXT.Text) == Settings1.Default.Sifre)
                 {
+                    
                     AnaEkran an = new AnaEkran();
                     an.Show();
                     this.Hide();
+                    if (Settings1.Default.Yardim == 0)
+                    {
+                        Yardim yard = new Yardim();
+                        yard.Show();
+                    }
                 }
                 else
                 {
@@ -65,13 +79,6 @@ namespace BilgisayarKontrol
         {
             label1.Text = "Kullanıcı bilgileriniz ile giriş yapınız";
             label1.ForeColor = Color.Black;
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-            
-            SifremiUnuttum pw = new SifremiUnuttum();
-            pw.Show();
         }
     }
 }

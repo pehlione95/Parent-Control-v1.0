@@ -65,6 +65,7 @@
     <Compile Include="DevamEdenler.Designer.cs">
       <DependentUpon>DevamEdenler.cs</DependentUpon>
     </Compile>
+    <Compile Include="iTalk Theme.cs" />
     <Compile Include="SifremiUnuttum.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +134,12 @@
     <Compile Include="UygulamaOyunBaslat.Designer.cs">
       <DependentUpon>UygulamaOyunBaslat.cs</DependentUpon>
     </Compile>
+    <Compile Include="Yardim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yardim.Designer.cs">
+      <DependentUpon>Yardim.cs</DependentUpon>
+    </Compile>
     <Compile Include="YenidenBaslat.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -193,6 +200,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UygulamaOyunBaslat.resx">
       <DependentUpon>UygulamaOyunBaslat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yardim.resx">
+      <DependentUpon>Yardim.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="YenidenBaslat.resx">
       <DependentUpon>YenidenBaslat.cs</DependentUpon>
@@ -446,6 +456,16 @@
   <ItemGroup>
     <None Include="Resources\Logomakr_7gV4IG.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_2icDiW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_5qWUAZ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_1RBsZw.png" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
