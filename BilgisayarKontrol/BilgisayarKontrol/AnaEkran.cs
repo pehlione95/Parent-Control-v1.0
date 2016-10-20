@@ -251,13 +251,23 @@ namespace BilgisayarKontrol
 
         private void GösterBT_Click(object sender, EventArgs e)
         {
-            if(Convert.ToDouble(YöneticiSifreKutusu.Text)==Settings1.Default.Sifre)
+            try
             {
-                AyarlarPanel.Visible = false;
+                if (Convert.ToDouble(YöneticiSifreKutusu.Text) == Settings1.Default.Sifre)
+                {
+                    AyarlarPanel.Visible = false;
+                }
+                else
+                {
+                    label1.Text = "Sifre gecersiz";
+                }
             }
-            else
+            catch
             {
-                label1.Text = "Şifre geçersiz";
+                if(YöneticiSifreKutusu.Text=="")
+                {
+                    label1.Text = "Bos bırakmayınız";
+                }
             }
         }
 
@@ -280,7 +290,32 @@ namespace BilgisayarKontrol
             MessageBox.Show("Bu işlemi durdurmak için, tekrar bu bölümden ilgili ayarın işaretini kaldırınız ve ayarlari kaydetmeyi unutmayiniz.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
             AyarlarPanelTamamTusu.Text = "Ayarları Kaydet";
         }
+        private void GörevYöneticisiEngelleCombo_CheckedChanged(object sender)
+        {
+            AyarlarPanelTamamTusu.Text = "Ayarları Kaydet";
+        }
 
+        private void RunEngelleCombo_CheckedChanged(object sender)
+        {
+            AyarlarPanelTamamTusu.Text = "Ayarları Kaydet";
+        }
+
+        private void CmdEngelleCombo_CheckedChanged(object sender)
+        {
+            AyarlarPanelTamamTusu.Text = "Ayarları Kaydet";
+        }
+
+        private void UygulamaKapatilirkenSifreİsteCombo_CheckedChanged(object sender)
+        {
+            AyarlarPanelTamamTusu.Text = "Ayarları Kaydet";
+        }
+
+        private void BaslangicdaCalissinCombo_CheckedChanged(object sender)
+        {
+            AyarlarPanelTamamTusu.Text = "Ayarları Kaydet";
+        }
+
+        
         [DllImport("user32.dll")]
         [return: MarshalAs(UnmanagedType.Bool)]
         static extern bool SetForegroundWindow(IntPtr hWnd);
@@ -432,6 +467,14 @@ namespace BilgisayarKontrol
             Kontrol kt = new Kontrol();
             kt.Show();
         }
+
+        private void MesajGösterTusu_Click(object sender, EventArgs e)
+        {
+            MesajGoster msj = new MesajGoster();
+            msj.Show();
+        }
+
+
     }
     }
 

@@ -74,6 +74,12 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.iTalk_Button_11 = new iTalk.iTalk_Button_1();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.İnternetGecmisiniKaydetTusu = new iTalk.iTalk_Button_1();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.EkranGörüntüsüAlTusu = new iTalk.iTalk_Button_1();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.MesajGösterTusu = new iTalk.iTalk_Button_1();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.BaskaBirUygulamaKullanimiCombo = new iTalk.iTalk_CheckBox();
@@ -82,6 +88,7 @@
             this.CmdEngelleCombo = new iTalk.iTalk_CheckBox();
             this.RunEngelleCombo = new iTalk.iTalk_CheckBox();
             this.AyarlarPanelTamamTusu = new iTalk.iTalk_Button_1();
+            this.BaslangicdaCalissinCombo = new iTalk.iTalk_CheckBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.TimerBelirlenenZamandanSonra = new System.Windows.Forms.Timer(this.components);
@@ -113,6 +120,9 @@
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.tabPage5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.tabPage6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -264,10 +274,10 @@
             this.AyarlarPanel.Controls.Add(this.GösterBT);
             this.AyarlarPanel.Controls.Add(this.YöneticiSifreKutusu);
             this.AyarlarPanel.Controls.Add(this.label1);
-            this.AyarlarPanel.Location = new System.Drawing.Point(-12, -4);
+            this.AyarlarPanel.Location = new System.Drawing.Point(-12, -6);
             this.AyarlarPanel.Name = "AyarlarPanel";
             this.AyarlarPanel.Padding = new System.Windows.Forms.Padding(5);
-            this.AyarlarPanel.Size = new System.Drawing.Size(313, 267);
+            this.AyarlarPanel.Size = new System.Drawing.Size(313, 269);
             this.AyarlarPanel.TabIndex = 51;
             this.AyarlarPanel.Text = "iTalk_Panel1";
             // 
@@ -619,6 +629,12 @@
             // 
             this.tabPage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
             this.tabPage5.Controls.Add(this.iTalk_Button_11);
+            this.tabPage5.Controls.Add(this.pictureBox14);
+            this.tabPage5.Controls.Add(this.İnternetGecmisiniKaydetTusu);
+            this.tabPage5.Controls.Add(this.pictureBox13);
+            this.tabPage5.Controls.Add(this.EkranGörüntüsüAlTusu);
+            this.tabPage5.Controls.Add(this.pictureBox5);
+            this.tabPage5.Controls.Add(this.MesajGösterTusu);
             this.tabPage5.Controls.Add(this.pictureBox4);
             this.tabPage5.Location = new System.Drawing.Point(139, 4);
             this.tabPage5.Name = "tabPage5";
@@ -629,16 +645,89 @@
             // iTalk_Button_11
             // 
             this.iTalk_Button_11.BackColor = System.Drawing.Color.Transparent;
-            this.iTalk_Button_11.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.iTalk_Button_11.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.iTalk_Button_11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.iTalk_Button_11.Image = null;
             this.iTalk_Button_11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iTalk_Button_11.Location = new System.Drawing.Point(44, 6);
+            this.iTalk_Button_11.Location = new System.Drawing.Point(44, 123);
             this.iTalk_Button_11.Name = "iTalk_Button_11";
             this.iTalk_Button_11.Size = new System.Drawing.Size(246, 33);
-            this.iTalk_Button_11.TabIndex = 33449;
-            this.iTalk_Button_11.Text = "Mesaj Göster";
+            this.iTalk_Button_11.TabIndex = 33455;
+            this.iTalk_Button_11.Text = "Uygulama Geçmişini Kaydet / Gör";
             this.iTalk_Button_11.TextAlignment = System.Drawing.StringAlignment.Center;
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_8lh57r;
+            this.pictureBox14.Location = new System.Drawing.Point(7, 123);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(31, 30);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox14.TabIndex = 33454;
+            this.pictureBox14.TabStop = false;
+            // 
+            // İnternetGecmisiniKaydetTusu
+            // 
+            this.İnternetGecmisiniKaydetTusu.BackColor = System.Drawing.Color.Transparent;
+            this.İnternetGecmisiniKaydetTusu.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.İnternetGecmisiniKaydetTusu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.İnternetGecmisiniKaydetTusu.Image = null;
+            this.İnternetGecmisiniKaydetTusu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.İnternetGecmisiniKaydetTusu.Location = new System.Drawing.Point(44, 84);
+            this.İnternetGecmisiniKaydetTusu.Name = "İnternetGecmisiniKaydetTusu";
+            this.İnternetGecmisiniKaydetTusu.Size = new System.Drawing.Size(246, 33);
+            this.İnternetGecmisiniKaydetTusu.TabIndex = 33453;
+            this.İnternetGecmisiniKaydetTusu.Text = "İnternet Geçmişini Kaydet / Gör";
+            this.İnternetGecmisiniKaydetTusu.TextAlignment = System.Drawing.StringAlignment.Center;
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_8lh57r;
+            this.pictureBox13.Location = new System.Drawing.Point(7, 84);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(31, 30);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox13.TabIndex = 33452;
+            this.pictureBox13.TabStop = false;
+            // 
+            // EkranGörüntüsüAlTusu
+            // 
+            this.EkranGörüntüsüAlTusu.BackColor = System.Drawing.Color.Transparent;
+            this.EkranGörüntüsüAlTusu.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.EkranGörüntüsüAlTusu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.EkranGörüntüsüAlTusu.Image = null;
+            this.EkranGörüntüsüAlTusu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.EkranGörüntüsüAlTusu.Location = new System.Drawing.Point(44, 45);
+            this.EkranGörüntüsüAlTusu.Name = "EkranGörüntüsüAlTusu";
+            this.EkranGörüntüsüAlTusu.Size = new System.Drawing.Size(246, 33);
+            this.EkranGörüntüsüAlTusu.TabIndex = 33451;
+            this.EkranGörüntüsüAlTusu.Text = "Belirlenen Zamanlarda Ekran Görüntüsü Al";
+            this.EkranGörüntüsüAlTusu.TextAlignment = System.Drawing.StringAlignment.Center;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_8lh57r;
+            this.pictureBox5.Location = new System.Drawing.Point(7, 45);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(31, 30);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox5.TabIndex = 33450;
+            this.pictureBox5.TabStop = false;
+            // 
+            // MesajGösterTusu
+            // 
+            this.MesajGösterTusu.BackColor = System.Drawing.Color.Transparent;
+            this.MesajGösterTusu.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.MesajGösterTusu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.MesajGösterTusu.Image = null;
+            this.MesajGösterTusu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.MesajGösterTusu.Location = new System.Drawing.Point(44, 6);
+            this.MesajGösterTusu.Name = "MesajGösterTusu";
+            this.MesajGösterTusu.Size = new System.Drawing.Size(246, 33);
+            this.MesajGösterTusu.TabIndex = 33449;
+            this.MesajGösterTusu.Text = "Mesaj Göster";
+            this.MesajGösterTusu.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.MesajGösterTusu.Click += new System.EventHandler(this.MesajGösterTusu_Click);
             // 
             // pictureBox4
             // 
@@ -660,6 +749,7 @@
             this.tabPage6.Controls.Add(this.CmdEngelleCombo);
             this.tabPage6.Controls.Add(this.RunEngelleCombo);
             this.tabPage6.Controls.Add(this.AyarlarPanelTamamTusu);
+            this.tabPage6.Controls.Add(this.BaslangicdaCalissinCombo);
             this.tabPage6.Location = new System.Drawing.Point(139, 4);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Size = new System.Drawing.Size(297, 262);
@@ -688,6 +778,7 @@
             this.GörevYöneticisiEngelleCombo.Size = new System.Drawing.Size(194, 15);
             this.GörevYöneticisiEngelleCombo.TabIndex = 48;
             this.GörevYöneticisiEngelleCombo.Text = "Görev yöneticisini engelle";
+            this.GörevYöneticisiEngelleCombo.CheckedChanged += new iTalk.iTalk_CheckBox.CheckedChangedEventHandler(this.GörevYöneticisiEngelleCombo_CheckedChanged);
             // 
             // UygulamaKapatilirkenSifreİsteCombo
             // 
@@ -699,6 +790,7 @@
             this.UygulamaKapatilirkenSifreİsteCombo.Size = new System.Drawing.Size(240, 15);
             this.UygulamaKapatilirkenSifreİsteCombo.TabIndex = 49;
             this.UygulamaKapatilirkenSifreİsteCombo.Text = "Uygulama kapatılırken sifre iste";
+            this.UygulamaKapatilirkenSifreİsteCombo.CheckedChanged += new iTalk.iTalk_CheckBox.CheckedChangedEventHandler(this.UygulamaKapatilirkenSifreİsteCombo_CheckedChanged);
             // 
             // CmdEngelleCombo
             // 
@@ -710,6 +802,7 @@
             this.CmdEngelleCombo.Size = new System.Drawing.Size(194, 15);
             this.CmdEngelleCombo.TabIndex = 33452;
             this.CmdEngelleCombo.Text = "Komut istemi engelle";
+            this.CmdEngelleCombo.CheckedChanged += new iTalk.iTalk_CheckBox.CheckedChangedEventHandler(this.CmdEngelleCombo_CheckedChanged);
             // 
             // RunEngelleCombo
             // 
@@ -721,6 +814,7 @@
             this.RunEngelleCombo.Size = new System.Drawing.Size(194, 15);
             this.RunEngelleCombo.TabIndex = 33451;
             this.RunEngelleCombo.Text = "Çalıştır engelle";
+            this.RunEngelleCombo.CheckedChanged += new iTalk.iTalk_CheckBox.CheckedChangedEventHandler(this.RunEngelleCombo_CheckedChanged);
             // 
             // AyarlarPanelTamamTusu
             // 
@@ -736,6 +830,18 @@
             this.AyarlarPanelTamamTusu.Text = "Tamam";
             this.AyarlarPanelTamamTusu.TextAlignment = System.Drawing.StringAlignment.Center;
             this.AyarlarPanelTamamTusu.Click += new System.EventHandler(this.AyarlarPanelTamamTusu_Click);
+            // 
+            // BaslangicdaCalissinCombo
+            // 
+            this.BaslangicdaCalissinCombo.BackColor = System.Drawing.Color.Transparent;
+            this.BaslangicdaCalissinCombo.Checked = false;
+            this.BaslangicdaCalissinCombo.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.BaslangicdaCalissinCombo.Location = new System.Drawing.Point(3, 111);
+            this.BaslangicdaCalissinCombo.Name = "BaslangicdaCalissinCombo";
+            this.BaslangicdaCalissinCombo.Size = new System.Drawing.Size(283, 15);
+            this.BaslangicdaCalissinCombo.TabIndex = 33453;
+            this.BaslangicdaCalissinCombo.Text = "Bu uygulamayi baslangicda otomatik baslat";
+            this.BaslangicdaCalissinCombo.CheckedChanged += new iTalk.iTalk_CheckBox.CheckedChangedEventHandler(this.BaslangicdaCalissinCombo_CheckedChanged);
             // 
             // panel2
             // 
@@ -892,6 +998,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.tabPage6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
@@ -968,7 +1077,14 @@
         private iTalk.iTalk_Button_1 InternetiKesTusu;
         private iTalk.iTalk_Button_1 İnternetiYenileTusu;
         private iTalk.iTalk_Button_1 WebSiteEngelleTusu;
+        private iTalk.iTalk_Button_1 MesajGösterTusu;
+        private iTalk.iTalk_Button_1 İnternetGecmisiniKaydetTusu;
+        private System.Windows.Forms.PictureBox pictureBox13;
+        private iTalk.iTalk_Button_1 EkranGörüntüsüAlTusu;
+        private System.Windows.Forms.PictureBox pictureBox5;
         private iTalk.iTalk_Button_1 iTalk_Button_11;
+        private System.Windows.Forms.PictureBox pictureBox14;
+        private iTalk.iTalk_CheckBox BaslangicdaCalissinCombo;
     }
 }
 

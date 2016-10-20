@@ -34,7 +34,9 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.GirisTusu = new iTalk.iTalk_Button_2();
             this.sifreTXT = new iTalk.iTalk_TextBox_Big();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -64,7 +66,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_6yirxO;
-            this.pictureBox1.Location = new System.Drawing.Point(67, 7);
+            this.pictureBox1.Location = new System.Drawing.Point(52, 7);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(374, 114);
             this.pictureBox1.TabIndex = 33438;
@@ -111,12 +113,23 @@
             this.sifreTXT.UseSystemPasswordChar = true;
             this.sifreTXT.TextChanged += new System.EventHandler(this.sifreTXT_TextChanged);
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_1RBsZw;
+            this.pictureBox6.Location = new System.Drawing.Point(432, 38);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(42, 58);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 33445;
+            this.pictureBox6.TabStop = false;
+            // 
             // Giris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(183)))), ((int)(((byte)(211)))));
             this.ClientSize = new System.Drawing.Size(508, 279);
+            this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.sifreTXT);
             this.Controls.Add(this.GirisTusu);
             this.Controls.Add(this.panel4);
@@ -129,6 +142,7 @@
             this.Text = "Giris";
             this.Load += new System.EventHandler(this.Giris_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -141,5 +155,6 @@
         private System.Windows.Forms.Panel panel4;
         private iTalk.iTalk_Button_2 GirisTusu;
         private iTalk.iTalk_TextBox_Big sifreTXT;
+        private System.Windows.Forms.PictureBox pictureBox6;
     }
 }
