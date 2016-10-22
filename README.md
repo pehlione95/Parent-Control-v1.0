@@ -3,7 +3,6 @@ Tasarımı tamamlanmıştır.
 Kodlama %80 olarak tamamlanmıştır.
 Zamana bağlı olarak yapılabilecek işlemler,
 -------------------------------------------
-
 * Güç kapatma
 * Yeniden başlatma
 * Mesaj gösterme
@@ -14,7 +13,7 @@ Zamana bağlı olarak yapılabilecek işlemler,
 * İnternet geçmişini kaydetme
 * Belirlenen zamanda internet geçmişini belirlenen adrese mail olarak yollama
 * Ekran görüntüsünü belli aralıklarla kaydetme
-* Programın arkplanda gizlenebilmesi
+* Programın arkaplanda gizlenebilmesi
 * Kullanıcı bilgileri ile giriş
 * Güvenlik nedeni ile programın kapatılması için kullanıcı şifre gereksinimi
 
