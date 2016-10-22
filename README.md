@@ -9,7 +9,7 @@ Zamana bağlı olarak yapılabilecek işlemler,
 * İnternet erişimini sınırlandır
 * İnternet erişimini sağlama
 * Uygulama / Oyun engelleme ( Belirlenen süreden sonra veya belirlenen süreye kadar)
-* Uygulama / Oyun Başlatma
+* Uygulama / Oyun başlatma
 * İnternet geçmişini kaydetme
 * Belirlenen zamanda internet geçmişini belirlenen adrese mail olarak yollama
 * Ekran görüntüsünü belli aralıklarla kaydetme
