@@ -13,9 +13,6 @@ Zamana bağlı olarak yapılabilecek işlemler,
 * İnternet geçmişini kaydetme
 * Belirlenen zamanda internet geçmişini belirlenen adrese mail olarak yollama
 * Ekran görüntüsünü belli aralıklarla kaydetme
-* Programın arkaplanda gizlenebilmesi
-* Kullanıcı bilgileri ile giriş
-* Güvenlik nedeni ile programın kapatılması için kullanıcı şifre gereksinimi
 
 [12.10.2016] EKLENEN / DEĞİŞTİRİLEN
 -----------------------------------
@@ -23,6 +20,7 @@ Zamana bağlı olarak yapılabilecek işlemler,
 * Uygulama / Oyun başlatma
 * Kod fazlalığının temizlenmesi
 * Bazı tasarım değişikliliği
+* Programın arkaplanda gizlenebilmesi
 
 [21.09.2016] EKLENEN / DEĞİŞTİRİLEN
 -----------------------------------
