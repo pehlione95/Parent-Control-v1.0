@@ -11,9 +11,12 @@ Zamana bağlı olarak yapılabilecek işlemler,
 * İnternet erişimini sağlama
 * Uygulama / Oyun engelleme ( Belirlenen süreden sonra veya belirlenen süreye kadar)
 * Uygulama / Oyun Başlatma
+* İnternet geçmişini kaydetme
+* Belirlenen zamanda internet geçmişini belirlenen adrese mail olarak yollama
+* Ekran görüntüsünü belli aralıklarla kaydetme
 * Programın arkplanda gizlenebilmesi
 * Kullanıcı bilgileri ile giriş
-* Güvenlik nedeni ile rogramın kapatılması için kullanıcı şifre gereksinimi
+* Güvenlik nedeni ile programın kapatılması için kullanıcı şifre gereksinimi
 
 [12.10.2016] EKLENEN / DEĞİŞTİRİLEN
 -----------------------------------
