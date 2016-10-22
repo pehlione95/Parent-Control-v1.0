@@ -20,21 +20,10 @@ namespace BilgisayarKontrol
         
         private void İnternetiKes_Load(object sender, EventArgs e)
         {
-            if(islemyapildi==0)
-            {
-                
-                iptalettusu.Enabled = false;
-
-            }
-            else if(islemyapildi==1)
-            {
-               
-                iptalettusu.Enabled = true;
-            }
+     
         }
 
-
-        private void tamamtusu_Click(object sender, EventArgs e)
+        private void TamamTusu_Click(object sender, EventArgs e)
         {
             belirlenenzaman = dateTimePicker1.Value.ToShortTimeString();
             DialogResult soru = MessageBox.Show("İnternet bağlantısı " + belirlenenzaman + " aralığında kesilsin mı ?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
@@ -45,7 +34,6 @@ namespace BilgisayarKontrol
                     AnaEkran f1 = new AnaEkran();
                     f1.İnternetiKes.Interval = 10000;
                     f1.TimerBilgisayariKapat.Start();
-                    iptalettusu.Enabled = false;
                     islemyapildi = 1;
                     this.Hide();
                     Basarili success = new Basarili();
@@ -61,7 +49,6 @@ namespace BilgisayarKontrol
                         AnaEkran f1 = new AnaEkran();
                         f1.İnternetiKes.Interval = 10000;
                         f1.TimerBilgisayariKapat.Start();
-                        iptalettusu.Enabled = false;
                         islemyapildi = 1;
                         this.Hide();
                         Basarili success = new Basarili();
@@ -79,10 +66,7 @@ namespace BilgisayarKontrol
             }
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            AnaEkran an = new AnaEkran();
-            an.İnternetiKes.Stop();
-        }
+
+
     }
 }

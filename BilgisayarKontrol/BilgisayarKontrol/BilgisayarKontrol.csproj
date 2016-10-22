@@ -59,11 +59,11 @@
     <Compile Include="BilgisayariKapat.Designer.cs">
       <DependentUpon>BilgisayariKapat.cs</DependentUpon>
     </Compile>
-    <Compile Include="DevamEdenler.cs">
+    <Compile Include="IslemListesi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DevamEdenler.Designer.cs">
-      <DependentUpon>DevamEdenler.cs</DependentUpon>
+    <Compile Include="IslemListesi.Designer.cs">
+      <DependentUpon>IslemListesi.cs</DependentUpon>
     </Compile>
     <Compile Include="iTalk Theme.cs" />
     <Compile Include="SifremiUnuttum.cs">
@@ -158,8 +158,8 @@
     <EmbeddedResource Include="BilgisayariKapat.resx">
       <DependentUpon>BilgisayariKapat.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DevamEdenler.resx">
-      <DependentUpon>DevamEdenler.cs</DependentUpon>
+    <EmbeddedResource Include="IslemListesi.resx">
+      <DependentUpon>IslemListesi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SifremiUnuttum.resx">
       <DependentUpon>SifremiUnuttum.cs</DependentUpon>

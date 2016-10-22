@@ -30,12 +30,9 @@
         {
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.iptalettusu = new System.Windows.Forms.PictureBox();
-            this.tamam = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.TamamTusu = new iTalk.iTalk_Button_2();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iptalettusu)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tamam)).BeginInit();
             this.SuspendLayout();
             // 
             // dateTimePicker1
@@ -52,36 +49,11 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel4.Controls.Add(this.iptalettusu);
-            this.panel4.Controls.Add(this.tamam);
+            this.panel4.Controls.Add(this.TamamTusu);
             this.panel4.Location = new System.Drawing.Point(-3, 104);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(365, 63);
             this.panel4.TabIndex = 32;
-            // 
-            // iptalettusu
-            // 
-            this.iptalettusu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iptalettusu.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_4rwvAD;
-            this.iptalettusu.Location = new System.Drawing.Point(19, 6);
-            this.iptalettusu.Name = "iptalettusu";
-            this.iptalettusu.Size = new System.Drawing.Size(50, 48);
-            this.iptalettusu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.iptalettusu.TabIndex = 29;
-            this.iptalettusu.TabStop = false;
-            this.iptalettusu.Click += new System.EventHandler(this.kapattusu_Click);
-            // 
-            // tamam
-            // 
-            this.tamam.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.tamam.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_6mkMqS;
-            this.tamam.Location = new System.Drawing.Point(296, 6);
-            this.tamam.Name = "tamam";
-            this.tamam.Size = new System.Drawing.Size(50, 49);
-            this.tamam.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.tamam.TabIndex = 30;
-            this.tamam.TabStop = false;
-            this.tamam.Click += new System.EventHandler(this.tamam_Click);
             // 
             // label1
             // 
@@ -93,6 +65,21 @@
             this.label1.Size = new System.Drawing.Size(339, 32);
             this.label1.TabIndex = 33440;
             this.label1.Text = "Bilgisayar ne zaman kapatılsın ?";
+            // 
+            // TamamTusu
+            // 
+            this.TamamTusu.BackColor = System.Drawing.Color.Transparent;
+            this.TamamTusu.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.TamamTusu.ForeColor = System.Drawing.Color.White;
+            this.TamamTusu.Image = null;
+            this.TamamTusu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.TamamTusu.Location = new System.Drawing.Point(14, 10);
+            this.TamamTusu.Name = "TamamTusu";
+            this.TamamTusu.Size = new System.Drawing.Size(331, 40);
+            this.TamamTusu.TabIndex = 33450;
+            this.TamamTusu.Text = "Tamam";
+            this.TamamTusu.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.TamamTusu.Click += new System.EventHandler(this.TamamTusu_Click);
             // 
             // BilgisayariKapat
             // 
@@ -110,9 +97,6 @@
             this.Text = "Zamanlı Bilgisayar Kapat";
             this.Load += new System.EventHandler(this.BilgisayariKapat_Load);
             this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iptalettusu)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tamam)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -121,8 +105,7 @@
         #endregion
         public System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.PictureBox iptalettusu;
-        private System.Windows.Forms.PictureBox tamam;
         private System.Windows.Forms.Label label1;
+        private iTalk.iTalk_Button_2 TamamTusu;
     }
 }

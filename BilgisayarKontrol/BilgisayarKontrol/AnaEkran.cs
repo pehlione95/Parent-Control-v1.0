@@ -22,6 +22,9 @@ namespace BilgisayarKontrol
         public static string ilkacilis;
         private void Form1_Load(object sender, EventArgs e)
         {
+            TimerBilgi.Interval = 1000;
+            TimerBilgi.Start();
+            
             if (Settings1.Default.GörevYöneticisiEngellensinmi == 1)
             {
                 TimerGörevYöneticisiEngelle.Interval = 1000;
@@ -37,18 +40,8 @@ namespace BilgisayarKontrol
                 TimerRunEngelle.Interval = 1000;
                 TimerRunEngelle.Start();
             }
-            TimerAnlikZaman.Interval = 500;
-            TimerAnlikZaman.Start();
-            try
-            {
 
-                anlikzamantimelabel.Text = DateTime.Now.ToLongTimeString();
-            }
-            catch
-            {
-                MessageBox.Show("Sistem saatinizden, anlık olarak bilgi alınamadığı için program kullanılamaz.Sistem saatinizi ve Anti - Virüs programınızı kontrol ediniz.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Enabled = false;
-            }
+           
 
 
         }
@@ -213,8 +206,8 @@ namespace BilgisayarKontrol
 
         private void DevamEdenlerTusu_Click(object sender, EventArgs e)
         {
-            DevamEdenler dv = new DevamEdenler();
-            dv.Show();
+            IslemListesi run = new IslemListesi();
+            run.Show();
         }
 
         private void hakkindatusu_Click(object sender, EventArgs e)
@@ -246,7 +239,9 @@ namespace BilgisayarKontrol
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-            TimerBaskaBirUygulamaKullanimi.Start();
+            //TimerBaskaBirUygulamaKullanimi.Start();
+            TimerBilgi.Interval = 1000;
+            TimerBilgi.Start();
         }
 
         private void GösterBT_Click(object sender, EventArgs e)
@@ -473,8 +468,199 @@ namespace BilgisayarKontrol
             MesajGoster msj = new MesajGoster();
             msj.Show();
         }
+        public static int regeditengelle,vivaldiengelle, firefoxengelle, chromeengelle, msconfigengelle, maxhtonengelle, safariengelle, iengelle;
+        
+        private void YardimTusu_Click(object sender, EventArgs e)
+        {
+            Yardim help = new Yardim();
+            help.Show();
+        }
+
+        public static int bilgideger = 0;
+        private void Kontrol_Tick(object sender, EventArgs e)
+        {
+
+            if (SametBar.Value == 100)
+            {
+                bilgideger = 100;
+                TimerBilgi.Stop();
+                Bubble1.Visible = false;
+                SametBar.Visible = false;
+                Yardim yr = new Yardim();
+                yr.Hide();
+                TimerAnlikZaman.Interval = 500;
+                TimerAnlikZaman.Start();
+                try
+                {
+                    anlikzamantimelabel.Text = DateTime.Now.ToLongTimeString();
+                }
+                catch
+                {
+                    MessageBox.Show("Sistem saatinizden, anlık olarak bilgi alınamadığı için program kullanılamaz.Sistem saatinizi ve Anti - Virüs programınızı kontrol ediniz.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Enabled = false;
+                }
+            }
+            else
+            {
+                if (SametBar.Value < 100)
+                {
+                    SametBar.Value += 20;
+                    anlikzamantimelabel.Text = "Bilgi Aliniyor ....";
+                }
+            }
+            
+        }
 
 
+        private void HizliEngelleTusu_Click(object sender, EventArgs e)
+        {
+            DialogResult soru = MessageBox.Show(HizliEngelleCheckBox.Text + " uygulamasini engellemek istiyormusunuz ?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (DialogResult.Yes == soru)
+            {
+                try
+                {
+                    if (HizliEngelleCheckBox.Text == "Regedit")
+                    {
+                        TimerCmdEngelle.Interval = 1000;
+                        TimerCmdEngelle.Start();
+                        HizliEngelleTusu.Text = "İslem Tamam";
+
+                    }
+                    if (HizliEngelleCheckBox.Text == "CMD")
+                    {
+                        TimerCmdEngelle.Interval = 1000;
+                        TimerCmdEngelle.Start();
+                        HizliEngelleTusu.Text = "İslem Tamam";
+
+                    }
+                    if (HizliEngelleCheckBox.Text == "Vivaldi")
+                    {
+                        vivaldiengelle = 1;
+                        TimerHizliEngelle.Interval = 1000;
+                        TimerHizliEngelle.Start();
+                        HizliEngelleTusu.Text = "İslem Tamam";
+                    }
+                    if (HizliEngelleCheckBox.Text == "Firefox")
+                    {
+                        firefoxengelle = 1;
+                        TimerHizliEngelle.Interval = 1000;
+                        TimerHizliEngelle.Start();
+                        HizliEngelleTusu.Text = "İslem Tamam";
+                    }
+                    if (HizliEngelleCheckBox.Text == "Chrome")
+                    {
+                        chromeengelle = 1;
+                        TimerHizliEngelle.Interval = 1000;
+                        TimerHizliEngelle.Start();
+                        HizliEngelleTusu.Text = "İslem Tamam";
+                    }
+                    if (HizliEngelleCheckBox.Text == "Safari")
+                    {
+                        safariengelle = 1;
+                        TimerHizliEngelle.Interval = 1000;
+                        TimerHizliEngelle.Start();
+                        HizliEngelleTusu.Text = "İslem Tamam";
+                    }
+                    if (HizliEngelleCheckBox.Text == "Msconfig")
+                    {
+                        msconfigengelle = 1;
+                        TimerHizliEngelle.Interval = 1000;
+                        TimerHizliEngelle.Start();
+                        HizliEngelleTusu.Text = "İslem Tamam";
+                    }
+                    if (HizliEngelleCheckBox.Text == "Maxhton")
+                    {
+                        maxhtonengelle = 1;
+                        TimerHizliEngelle.Interval = 1000;
+                        TimerHizliEngelle.Start();
+                        HizliEngelleTusu.Text = "İslem Tamam";
+                    }
+                    if (HizliEngelleCheckBox.Text == "Internet Explorer")
+                    {
+                        iengelle = 1;
+                        TimerHizliEngelle.Interval = 1000;
+                        TimerHizliEngelle.Start();
+                        HizliEngelleTusu.Text = "İslem Tamam";
+                    }
+                }
+                catch(Exception hata)
+                {
+                    MessageBox.Show(hata + " hatası nedeni ile devam edemiyoruz", "", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                }
+            }
+        }
+
+        private void TimerHizliEngelle_Tick(object sender, EventArgs e)
+        {
+            if (regeditengelle == 1)
+            {
+                Process[] regedit = Process.GetProcessesByName("regedit");
+                if (regedit.Length > 0)
+                {
+                    foreach (Process v in regedit)
+                    {
+                        v.Kill();
+                    }
+                }
+            }
+
+            if (vivaldiengelle==1)
+            {
+                Process[] vivaldi = Process.GetProcessesByName("vivaldi");
+                if(vivaldi.Length>0)
+                {
+                    foreach(Process v in vivaldi)
+                    {
+                        v.Kill();
+                    }
+                }
+            }
+            if(firefoxengelle==1)
+            {
+                Process[] firefox = Process.GetProcessesByName("firefox");
+                if (firefox.Length > 0)
+                {
+                    foreach (Process v in firefox)
+                    {
+                        v.Kill();
+                    }
+                }
+            }
+            if (chromeengelle == 1)
+            {
+                Process[] chrome = Process.GetProcessesByName("chrome");
+                if (chrome.Length > 0)
+                {
+                    foreach (Process v in chrome)
+                    {
+                        v.Kill();
+                    }
+                }
+            }
+            if (msconfigengelle == 1)
+            {
+
+            }
+            if (maxhtonengelle == 1)
+            {
+
+            }
+            if (safariengelle == 1)
+            {
+
+            }
+            if (iengelle == 1)
+            {
+
+            }
+        }
+
+        private void HizliEngelleCheckBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            HizliEngelleTusu.Enabled = true;
+            HizliEngelleTusu.Text = "Engelle";
+
+        }
     }
     }
 

@@ -128,7 +128,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(183)))), ((int)(((byte)(211)))));
-            this.ClientSize = new System.Drawing.Size(508, 279);
+            this.ClientSize = new System.Drawing.Size(508, 295);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.sifreTXT);
             this.Controls.Add(this.GirisTusu);

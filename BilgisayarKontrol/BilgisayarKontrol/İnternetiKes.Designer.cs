@@ -30,11 +30,8 @@
         {
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
-            this.tamamtusu = new System.Windows.Forms.PictureBox();
-            this.iptalettusu = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.tamamtusu)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iptalettusu)).BeginInit();
+            this.TamamTusu = new iTalk.iTalk_Button_2();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,46 +57,36 @@
             this.label1.TabIndex = 33441;
             this.label1.Text = "İnternet baglantisi ne zaman kesilsin ?";
             // 
-            // tamamtusu
-            // 
-            this.tamamtusu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.tamamtusu.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_6mkMqS;
-            this.tamamtusu.Location = new System.Drawing.Point(352, 6);
-            this.tamamtusu.Name = "tamamtusu";
-            this.tamamtusu.Size = new System.Drawing.Size(50, 49);
-            this.tamamtusu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.tamamtusu.TabIndex = 30;
-            this.tamamtusu.TabStop = false;
-            this.tamamtusu.Click += new System.EventHandler(this.tamamtusu_Click);
-            // 
-            // iptalettusu
-            // 
-            this.iptalettusu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iptalettusu.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_4rwvAD;
-            this.iptalettusu.Location = new System.Drawing.Point(19, 6);
-            this.iptalettusu.Name = "iptalettusu";
-            this.iptalettusu.Size = new System.Drawing.Size(50, 48);
-            this.iptalettusu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.iptalettusu.TabIndex = 29;
-            this.iptalettusu.TabStop = false;
-            this.iptalettusu.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel4.Controls.Add(this.iptalettusu);
-            this.panel4.Controls.Add(this.tamamtusu);
+            this.panel4.Controls.Add(this.TamamTusu);
             this.panel4.Location = new System.Drawing.Point(0, 128);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(460, 63);
             this.panel4.TabIndex = 33442;
+            // 
+            // TamamTusu
+            // 
+            this.TamamTusu.BackColor = System.Drawing.Color.Transparent;
+            this.TamamTusu.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.TamamTusu.ForeColor = System.Drawing.Color.White;
+            this.TamamTusu.Image = null;
+            this.TamamTusu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.TamamTusu.Location = new System.Drawing.Point(12, 10);
+            this.TamamTusu.Name = "TamamTusu";
+            this.TamamTusu.Size = new System.Drawing.Size(388, 40);
+            this.TamamTusu.TabIndex = 33450;
+            this.TamamTusu.Text = "Tamam";
+            this.TamamTusu.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.TamamTusu.Click += new System.EventHandler(this.TamamTusu_Click);
             // 
             // NetKes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(183)))), ((int)(((byte)(211)))));
-            this.ClientSize = new System.Drawing.Size(414, 190);
+            this.ClientSize = new System.Drawing.Size(414, 193);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dateTimePicker1);
@@ -109,10 +96,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Zamanlı Olarak İnterneti Kes";
             this.Load += new System.EventHandler(this.İnternetiKes_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.tamamtusu)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iptalettusu)).EndInit();
             this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -121,8 +105,7 @@
         #endregion
         public System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox tamamtusu;
-        private System.Windows.Forms.PictureBox iptalettusu;
         private System.Windows.Forms.Panel panel4;
+        private iTalk.iTalk_Button_2 TamamTusu;
     }
 }
