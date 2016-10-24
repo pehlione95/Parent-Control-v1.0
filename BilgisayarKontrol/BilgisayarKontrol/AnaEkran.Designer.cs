@@ -815,7 +815,7 @@
             this.kadilabel.AutoSize = true;
             this.kadilabel.Font = new System.Drawing.Font("Yu Gothic UI Semilight", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.kadilabel.ForeColor = System.Drawing.Color.DimGray;
-            this.kadilabel.Location = new System.Drawing.Point(72, 32);
+            this.kadilabel.Location = new System.Drawing.Point(74, 43);
             this.kadilabel.Name = "kadilabel";
             this.kadilabel.Size = new System.Drawing.Size(112, 32);
             this.kadilabel.TabIndex = 33451;
@@ -828,7 +828,7 @@
             this.NedirBuButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.NedirBuButton.Image = null;
             this.NedirBuButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.NedirBuButton.Location = new System.Drawing.Point(278, 198);
+            this.NedirBuButton.Location = new System.Drawing.Point(280, 209);
             this.NedirBuButton.Name = "NedirBuButton";
             this.NedirBuButton.Size = new System.Drawing.Size(43, 41);
             this.NedirBuButton.TabIndex = 33450;
@@ -843,7 +843,7 @@
             this.GösterBT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.GösterBT.Image = null;
             this.GösterBT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.GösterBT.Location = new System.Drawing.Point(78, 151);
+            this.GösterBT.Location = new System.Drawing.Point(80, 162);
             this.GösterBT.Name = "GösterBT";
             this.GösterBT.Size = new System.Drawing.Size(244, 41);
             this.GösterBT.TabIndex = 33449;
@@ -857,7 +857,7 @@
             this.YöneticiSifreKutusu.Font = new System.Drawing.Font("Tahoma", 11F);
             this.YöneticiSifreKutusu.ForeColor = System.Drawing.Color.DimGray;
             this.YöneticiSifreKutusu.Image = null;
-            this.YöneticiSifreKutusu.Location = new System.Drawing.Point(77, 104);
+            this.YöneticiSifreKutusu.Location = new System.Drawing.Point(79, 115);
             this.YöneticiSifreKutusu.MaxLength = 32767;
             this.YöneticiSifreKutusu.Multiline = false;
             this.YöneticiSifreKutusu.Name = "YöneticiSifreKutusu";
@@ -873,7 +873,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Yu Gothic UI Semilight", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.Color.DimGray;
-            this.label1.Location = new System.Drawing.Point(72, 64);
+            this.label1.Location = new System.Drawing.Point(74, 75);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(244, 32);
             this.label1.TabIndex = 33447;
@@ -959,7 +959,7 @@
             this.BaslangicdaCalissinCombo.BackColor = System.Drawing.Color.Transparent;
             this.BaslangicdaCalissinCombo.Checked = false;
             this.BaslangicdaCalissinCombo.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.BaslangicdaCalissinCombo.Location = new System.Drawing.Point(3, 111);
+            this.BaslangicdaCalissinCombo.Location = new System.Drawing.Point(4, 111);
             this.BaslangicdaCalissinCombo.Name = "BaslangicdaCalissinCombo";
             this.BaslangicdaCalissinCombo.Size = new System.Drawing.Size(283, 15);
             this.BaslangicdaCalissinCombo.TabIndex = 33453;
@@ -1054,7 +1054,7 @@
             // 
             this.yardımToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.yardımToolStripMenuItem.Name = "yardımToolStripMenuItem";
-            this.yardımToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.yardımToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.yardımToolStripMenuItem.Text = "Yardım";
             this.yardımToolStripMenuItem.Click += new System.EventHandler(this.yardımToolStripMenuItem_Click);
             // 
@@ -1062,7 +1062,7 @@
             // 
             this.güncellemeToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.güncellemeToolStripMenuItem.Name = "güncellemeToolStripMenuItem";
-            this.güncellemeToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.güncellemeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.güncellemeToolStripMenuItem.Text = "Güncelleme";
             this.güncellemeToolStripMenuItem.Click += new System.EventHandler(this.güncellemeToolStripMenuItem_Click);
             // 
