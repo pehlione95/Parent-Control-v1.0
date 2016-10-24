@@ -22,13 +22,14 @@ namespace BilgisayarKontrol
 
         }
 
-        private void tamam_Click(object sender, EventArgs e)
+
+        private void TamamTusu_Click(object sender, EventArgs e)
         {
-            if (güvenlikcevabiTXT.Text == Settings1.Default.Soru)
+            if (güvenlikcevabiTXT.Text == KullaniciBilgileri.Default.GizliCevap)
             {
                 try
                 {
-                    MessageBox.Show("Şifreniz :" + Settings1.Default.Sifre + "");
+                    MessageBox.Show("Şifreniz :" + KullaniciBilgileri.Default.KullaniciSifre + "");
                     this.Hide();
                 }
                 catch
@@ -44,9 +45,5 @@ namespace BilgisayarKontrol
             }
         }
 
-        private void kapattusu_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-        }
     }
 }

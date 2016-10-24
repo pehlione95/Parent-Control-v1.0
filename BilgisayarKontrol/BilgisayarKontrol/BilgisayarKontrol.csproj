@@ -66,17 +66,22 @@
       <DependentUpon>IslemListesi.cs</DependentUpon>
     </Compile>
     <Compile Include="iTalk Theme.cs" />
+    <Compile Include="KullaniciBilgileri.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>KullaniciBilgileri.settings</DependentUpon>
+    </Compile>
     <Compile Include="SifremiUnuttum.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SifremiUnuttum.Designer.cs">
       <DependentUpon>SifremiUnuttum.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sifreolustur.cs">
+    <Compile Include="KullaniciOlustur.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sifreolustur.Designer.cs">
-      <DependentUpon>Sifreolustur.cs</DependentUpon>
+    <Compile Include="KullaniciOlustur.Designer.cs">
+      <DependentUpon>KullaniciOlustur.cs</DependentUpon>
     </Compile>
     <Compile Include="AnaEkran.cs">
       <SubType>Form</SubType>
@@ -164,8 +169,8 @@
     <EmbeddedResource Include="SifremiUnuttum.resx">
       <DependentUpon>SifremiUnuttum.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Sifreolustur.resx">
-      <DependentUpon>Sifreolustur.cs</DependentUpon>
+    <EmbeddedResource Include="KullaniciOlustur.resx">
+      <DependentUpon>KullaniciOlustur.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AnaEkran.resx">
       <DependentUpon>AnaEkran.cs</DependentUpon>
@@ -214,6 +219,10 @@
     <None Include="app.manifest">
       <SubType>Designer</SubType>
     </None>
+    <EmbeddedResource Include="KullaniciBilgileri.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>KullaniciBilgileri.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

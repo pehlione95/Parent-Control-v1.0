@@ -19,15 +19,38 @@ namespace BilgisayarKontrol
         public static int islemyapildi = 0;
         private void UygulamaOyunBaslat_Load(object sender, EventArgs e)
         {
-            if(islemyapildi==0)
-            {
-                iptalettusu.Visible = false;
-            }
-            if(islemyapildi==1)
-            {
-                iptalettusu.Visible = true;
-            }
+         
+        }
 
+        private void TamamTusu_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DialogResult soru1 = MessageBox.Show("Bu işlemi onaylıyormusunuz ?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (DialogResult.Yes == soru1)
+                {
+                    if (islemyapildi == 1)
+                    {
+                        MessageBox.Show("Devam eden bir isleminiz bulunmaktadır. En fazla bir islem yapılabilir", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    }
+                    else
+                    {
+                        islemyapildi = 1;
+                        belirlenenzaman = dateTimePicker1.Value.ToShortTimeString();
+                        uygulamaadi = UygulamaAdiTXT.Text;
+                        AnaEkran an = new AnaEkran();
+                        an.UygulamaOyunBaslat.Interval = 2000;
+                        an.UygulamaOyunBaslat.Start();
+                        this.Hide();
+                    }
+                }
+            }
+            catch (Exception hata)
+            {
+                MessageBox.Show("Bir hata oluştu. Programı yeniden başlatınız", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(hata.ToString());
+            }
         }
 
         private void DosyaSec_Click(object sender, EventArgs e)
@@ -56,51 +79,6 @@ namespace BilgisayarKontrol
             }
         }
 
-        private void tamamtusu_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                DialogResult soru1 = MessageBox.Show("Bu işlemi onaylıyormusunuz ?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (DialogResult.Yes == soru1)
-                {
-                    if (islemyapildi == 1)
-                    {
-                        MessageBox.Show("Devam eden bir isleminiz bulunmaktadır. En fazla bir islem yapılabilir","Bilgi",MessageBoxButtons.OK,MessageBoxIcon.Information);
 
-                    }
-                    else
-                    {
-                        islemyapildi = 1;
-                        belirlenenzaman = dateTimePicker1.Value.ToShortTimeString();
-                        uygulamaadi = UygulamaAdiTXT.Text;
-                        AnaEkran an = new AnaEkran();
-                        an.UygulamaOyunBaslat.Interval = 2000;
-                        an.UygulamaOyunBaslat.Start();
-                        this.Hide();
-                    }
-                }
-            }
-            catch (Exception hata)
-            {
-                MessageBox.Show("Bir hata oluştu. Programı yeniden başlatınız", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                MessageBox.Show(hata.ToString());
-            }
-
-        }
-
-        private void iptalettusu_Click(object sender, EventArgs e)
-        {
-            DialogResult soru2 = MessageBox.Show("Zamanlanmış görevi iptal etmek istiyormusunuz ?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (DialogResult.Yes == soru2)
-            {
-                islemyapildi = 0;
-                AnaEkran an = new AnaEkran();
-                an.UygulamaOyunBaslat.Stop();
-            }
-            else
-            {
-
-            }
-        }
     }
 }

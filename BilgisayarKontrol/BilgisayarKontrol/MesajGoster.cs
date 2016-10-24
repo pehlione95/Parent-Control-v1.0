@@ -17,27 +17,14 @@ namespace BilgisayarKontrol
         }
         public static string belirlenenzaman,mesajiçerigi,baslik;
         public static byte islem = 0,tür=0;
-        
 
-
-        private void iptal_Click(object sender, EventArgs e)
+        private void label4_Click(object sender, EventArgs e)
         {
-            DialogResult soru = MessageBox.Show("Zamanlanmış görevi iptal etmek istiyormusunuz ?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (DialogResult.Yes == soru)
-            {
-                islem = 0;
-                AnaEkran f1 = new AnaEkran();
-                f1.MesajGöster.Stop();
-                MessageBox.Show("Zamanlanan görev iptal edildi", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                iptalettusu.Visible = false;
-            }
-            else
-            {
 
-            }
         }
 
-        private void tamam_Click(object sender, EventArgs e)
+
+        private void TamamTusu_Click(object sender, EventArgs e)
         {
             if (mesajTXT.Text.Length < 1 || baslikTXT.Text.Length < 1 || comboBox1.Text == "")
             {
@@ -59,7 +46,6 @@ namespace BilgisayarKontrol
                         ana.MesajGöster.Interval = 10000;
                         ana.MesajGöster.Start();
                         islem = 1;
-                        iptalettusu.Visible = true;
                         this.Hide();
                         Basarili success = new Basarili();
                         success.Show();
@@ -108,14 +94,7 @@ namespace BilgisayarKontrol
 
         private void MesajGoster_Load(object sender, EventArgs e)
         {
-            if(islem==1)
-            {
-                iptalettusu.Visible = true;
-            }
-            else if(islem == 0)
-            {
-                iptalettusu.Visible = false;
-            }
+            
         }
     }
 }

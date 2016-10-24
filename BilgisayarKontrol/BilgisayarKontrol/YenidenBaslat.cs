@@ -21,19 +21,10 @@ namespace BilgisayarKontrol
         
         private void YenidenBaslat_Load(object sender, EventArgs e)
         {
-            if (islem == 0)
-            {
-                iptalettusu.Visible = false;
-            }
-            else if (islem != 0)
-            {
-                iptalettusu.Visible = true;
-            }
+         
         }
 
- 
-
-        private void tamam_Click(object sender, EventArgs e)
+        private void TamamTusu_Click(object sender, EventArgs e)
         {
             belirlenenzaman = dateTimePicker1.Value.ToShortTimeString();
             DialogResult soru = MessageBox.Show("Bilgisayar " + belirlenenzaman + " aralığında yeniden başlatılsın mı ?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
@@ -45,7 +36,6 @@ namespace BilgisayarKontrol
                     an.YenidenBaslat.Interval = 10000;
                     an.YenidenBaslat.Start();
                     islem = 1;
-                    iptalettusu.Visible = true;
                     this.Hide();
                     Basarili success = new Basarili();
                     success.Show();
@@ -62,7 +52,6 @@ namespace BilgisayarKontrol
                         an.YenidenBaslat.Interval = 10000;
                         an.YenidenBaslat.Start();
                         islem = 1;
-                        iptalettusu.Visible = true;
                         this.Hide();
                         Basarili success = new Basarili();
                         success.Show();
@@ -72,24 +61,6 @@ namespace BilgisayarKontrol
                         MessageBox.Show("İşlem tamamlanamıyor.Sistem saatinizi kontrol ettikden sonra programı yeniden başlatınız.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
-
-            }
-        }
-
-        private void iptalettusu_Click(object sender, EventArgs e)
-        {
-            DialogResult soru = MessageBox.Show("Zamanlanmış görevi iptal etmek istiyormusunuz ?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (DialogResult.Yes == soru)
-            {
-                islem = 0;
-                AnaEkran f1 = new AnaEkran();
-                f1.YenidenBaslat.Stop();
-                MessageBox.Show("Zamanlanan görev iptal edildi", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                iptalettusu.Visible = false;
-                this.Hide();
-            }
-            else
-            {
 
             }
         }

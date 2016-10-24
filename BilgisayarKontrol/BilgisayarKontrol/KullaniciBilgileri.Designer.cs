@@ -13,11 +13,11 @@ namespace BilgisayarKontrol {
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "14.0.0.0")]
-    internal sealed partial class Settings1 : global::System.Configuration.ApplicationSettingsBase {
+    internal sealed partial class KullaniciBilgileri : global::System.Configuration.ApplicationSettingsBase {
         
-        private static Settings1 defaultInstance = ((Settings1)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings1())));
+        private static KullaniciBilgileri defaultInstance = ((KullaniciBilgileri)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new KullaniciBilgileri())));
         
-        public static Settings1 Default {
+        public static KullaniciBilgileri Default {
             get {
                 return defaultInstance;
             }
@@ -26,60 +26,60 @@ namespace BilgisayarKontrol {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public double Yardim {
+        public int KullaniciVarmi {
             get {
-                return ((double)(this["Yardim"]));
+                return ((int)(this["KullaniciVarmi"]));
             }
             set {
-                this["Yardim"] = value;
+                this["KullaniciVarmi"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public double UygulamaKapatilirkenSifreİstensinmi {
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string KullaniciSifre {
             get {
-                return ((double)(this["UygulamaKapatilirkenSifreİstensinmi"]));
+                return ((string)(this["KullaniciSifre"]));
             }
             set {
-                this["UygulamaKapatilirkenSifreİstensinmi"] = value;
+                this["KullaniciSifre"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public double CmdEngellensinmi {
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string KullaniciAdi {
             get {
-                return ((double)(this["CmdEngellensinmi"]));
+                return ((string)(this["KullaniciAdi"]));
             }
             set {
-                this["CmdEngellensinmi"] = value;
+                this["KullaniciAdi"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public double RunEngellensinmi {
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        public string YardimGösterilsinmi {
             get {
-                return ((double)(this["RunEngellensinmi"]));
+                return ((string)(this["YardimGösterilsinmi"]));
             }
             set {
-                this["RunEngellensinmi"] = value;
+                this["YardimGösterilsinmi"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public double GörevYöneticisiEngellensinmi {
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string GizliCevap {
             get {
-                return ((double)(this["GörevYöneticisiEngellensinmi"]));
+                return ((string)(this["GizliCevap"]));
             }
             set {
-                this["GörevYöneticisiEngellensinmi"] = value;
+                this["GizliCevap"] = value;
             }
         }
     }

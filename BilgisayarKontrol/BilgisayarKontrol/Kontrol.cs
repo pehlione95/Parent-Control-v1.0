@@ -19,7 +19,6 @@ namespace BilgisayarKontrol
         public static int islemyapiliyor = 0;
         private void Kontrol_Load(object sender, EventArgs e)
         {
-            gif.Visible = false;
             progressBar1.Maximum = 100;
             progressBar1.Step = 10;
             KontrolTimer.Interval = 1000;
@@ -28,13 +27,12 @@ namespace BilgisayarKontrol
 
         private void KontrolTimer_Tick(object sender, EventArgs e)
         {
-            BaslatTusu.Enabled = false;
+            BaslatTusu.Visible = false;
             islemyapiliyor = 1;
             a += 10;
             if(a<40)
             {
-                gif.Visible = true;
-                label1.Text = "Başlatılıyor..";
+                label1.Text = "Baslatılıyor..";
                 progressBar1.Value = a;
 
                 
@@ -52,7 +50,6 @@ namespace BilgisayarKontrol
                 catch
                 {
                     
-                    gif.Visible = false;
                     label1.Text = "Hata Bulundu";
                     MessageBox.Show("Program yönetici olarak çalıştırılmalıdır.Anti - Virüs programınızdan gerekli izinleri aldığınızdan emin olunuz", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     KontrolTimer.Stop();
@@ -67,9 +64,9 @@ namespace BilgisayarKontrol
                 if(progressBar1.Value==100)
                 {
                     progressBar1.Value = 0;
-                    gif.Visible = false;
                     BaslatTusu.Visible = false;
                     islemyapiliyor = 0;
+                    İptalEtTusu.Text = "Cıkıs";
                 }
 
             }
@@ -90,33 +87,22 @@ namespace BilgisayarKontrol
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            KontrolTimer.Start();
-            
-        }
 
-
-        private void BaslatTusu_Click(object sender, EventArgs e)
-        {
-            KontrolTimer.Start();
-        }
 
         private void İptalEtTusu_Click(object sender, EventArgs e)
         {
-            if(islemyapiliyor==1)
+            if (islemyapiliyor == 1)
             {
                 DialogResult soru = MessageBox.Show("İşlemi iptal etmek istiyormusunuz ?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if(DialogResult.Yes==soru)
+                if (DialogResult.Yes == soru)
                 {
                     islemyapiliyor = 0;
                     KontrolTimer.Stop();
                     örnektimer.Stop();
                     progressBar1.Value = 0;
                     label1.Text = "Bu islem programın tüm fonksiyonlarını yerine getirebilme özelliğini kontrol eder";
-                    gif.Visible = false;
-                    BaslatTusu.Enabled = true;
-                    
+                    BaslatTusu.Visible = true;
+
                 }
             }
             else
@@ -124,5 +110,11 @@ namespace BilgisayarKontrol
                 this.Hide();
             }
         }
+
+        private void BaslatTusu_Click(object sender, EventArgs e)
+        {
+            KontrolTimer.Start();
+        }
+
     }
 }

@@ -23,30 +23,40 @@ namespace BilgisayarKontrol
 
         }
 
+        private void iTalk_Button_11_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
 
-        private void tamamtusu_Click(object sender, EventArgs e)
+        private void TamamTusu_Click(object sender, EventArgs e)
         {
             try
             {
-                if (Convert.ToDouble(sifreTXT.Text) == Settings1.Default.Sifre)
+                if (sifreTXT.Text != "")
                 {
-                    Application.Exit();
+                    if (sifreTXT.Text == KullaniciBilgileri.Default.KullaniciSifre)
+                    {
+                        Application.Exit();
+                    }
+                    else
+                    {
+                        label2.Text = "Böyle bir sifre yok";
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Sifre yanlis. Doğru sifre girilene kadar uygulama, güvenlik nedeni ile kapatılamaz", "", MessageBoxButtons.OK, MessageBoxIcon.Hand);
-
+                    label2.Text = "Eksik sifre";
                 }
             }
             catch
             {
-                MessageBox.Show("Sifre yanlis. Doğru sifre girilene kadar uygulama, güvenlik nedeni ile kapatılamaz", "", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+
             }
         }
 
-        private void kapattusu_Click(object sender, EventArgs e)
+        private void sifreTXT_TextChanged(object sender, EventArgs e)
         {
-            this.Hide();
+            label2.Text = "Yönetici sifresini yaziniz";
         }
     }
 }

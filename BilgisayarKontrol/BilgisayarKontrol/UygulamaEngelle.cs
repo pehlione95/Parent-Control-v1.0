@@ -48,9 +48,19 @@ namespace BilgisayarKontrol
 
         }
 
-        private void tamam_Click(object sender, EventArgs e)
+       
+
+        private void belirlenenzamanakadarradio_CheckedChanged(object sender, EventArgs e)
         {
-            if(belirlenenzamanakadarradio.Checked==true&&uygulamadiTXT.Text.Length>1)
+            if(belirlenenzamanakadarradio.Checked==true)
+            {
+                belirlenenzamandansonraradio.Checked = false;
+            }
+        }
+
+        private void TamamTusu_Click(object sender, EventArgs e)
+        {
+            if (belirlenenzamanakadarradio.Checked == true && uygulamadiTXT.Text.Length > 1)
             {
                 zamanakadaruygulama += uygulamaadi;
                 AnaEkran an = new AnaEkran();
@@ -63,31 +73,22 @@ namespace BilgisayarKontrol
 
 
             }
-            if(belirlenenzamandansonraradio.Checked==true&&uygulamadiTXT.Text.Length>1)
+            if (belirlenenzamandansonraradio.Checked == true && uygulamadiTXT.Text.Length > 1)
             {
 
                 zamandansonrauygulama += uygulamaadi;
-                    AnaEkran an = new AnaEkran();
-                    an.TimerBelirlenenZamandanSonra.Interval = 2000;
-                    an.TimerBelirlenenZamandanSonra.Start();
-                    Basarili success = new Basarili();
-                    zamandansonra = 1;
-                    success.Show();
-                    this.Hide();
-                
-            }
-            else if(uygulamadiTXT.Text.Length< 1)
-            {
-                MessageBox.Show("Uygulama seçilmedi","",MessageBoxButtons.OK,MessageBoxIcon.Information);
-            }
-          
-        }
+                AnaEkran an = new AnaEkran();
+                an.TimerBelirlenenZamandanSonra.Interval = 2000;
+                an.TimerBelirlenenZamandanSonra.Start();
+                Basarili success = new Basarili();
+                zamandansonra = 1;
+                success.Show();
+                this.Hide();
 
-        private void belirlenenzamanakadarradio_CheckedChanged(object sender, EventArgs e)
-        {
-            if(belirlenenzamanakadarradio.Checked==true)
+            }
+            else if (uygulamadiTXT.Text.Length < 1)
             {
-                belirlenenzamandansonraradio.Checked = false;
+                MessageBox.Show("Uygulama seçilmedi", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -100,45 +101,10 @@ namespace BilgisayarKontrol
         }
 
 
-        private void iptalettusu_Click(object sender, EventArgs e)
-        {
-            if(zamandansonra==1)
-            {
-                DialogResult soru = MessageBox.Show("Belirlenen zamandan sonra "+zamandansonrauygulama.TrimEnd()+" kapatma aktif. İptal etmek istiyormusunuz ?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (DialogResult.Yes == soru)
-                {
-                    AnaEkran an = new AnaEkran();
-                    an.TimerBelirlenenZamandanSonra.Stop();
-                }
-            }
-            if(zamankadarislem==1)
-            {
-                DialogResult sooru = MessageBox.Show("Belirlenen zamana kadar "+zamanakadaruygulama.TrimEnd()+" kapatma aktif. İptal etmek istiyormusunuz ?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (DialogResult.Yes == sooru)
-                {
-                    AnaEkran an = new AnaEkran();
-                    an.TimerBelirlenenZamanaKadar.Stop();
-                }
-            }
-            this.Hide();
-        }
 
         private void UygulamaEngelle_Load(object sender, EventArgs e)
         {
-            bilgibir.Visible = false;
-            bilgiiki.Visible = false;
-            if(zamandansonra ==1)
-            {
-                bilgibir.Visible = true;
-                bilgibir.Text = "Belirlenen zamandan sonra engelleme aktif";
-                iptalettusu.Visible = true;
-            }
-            if(zamankadarislem==1)
-            {
-                bilgiiki.Visible = true;
-                bilgiiki.Text = "Belirlenen zamana kadar engelleme aktif";
-                iptalettusu.Visible = true;
-            }
+
             belirlenenzaman = dateTimePicker1.Value.ToShortTimeString();
             
         }

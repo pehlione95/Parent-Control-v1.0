@@ -22,9 +22,9 @@ namespace BilgisayarKontrol
         public static string ilkacilis;
         private void Form1_Load(object sender, EventArgs e)
         {
-            TimerBilgi.Interval = 1000;
-            TimerBilgi.Start();
-            
+            kadilabel.Text = "Merhaba, " + KullaniciBilgileri.Default.KullaniciAdi+".";
+            TimerAnlikZaman.Interval = 1000;
+            TimerAnlikZaman.Start();
             if (Settings1.Default.GörevYöneticisiEngellensinmi == 1)
             {
                 TimerGörevYöneticisiEngelle.Interval = 1000;
@@ -203,21 +203,6 @@ namespace BilgisayarKontrol
                 }
             }
         }
-
-        private void DevamEdenlerTusu_Click(object sender, EventArgs e)
-        {
-            IslemListesi run = new IslemListesi();
-            run.Show();
-        }
-
-        private void hakkindatusu_Click(object sender, EventArgs e)
-        {
-            Hakkinda sam = new Hakkinda();
-            sam.Show();
-        }
-
-
-
         private void UygulamaOyunBaslat_Tick(object sender, EventArgs e)
         {
             if (UygulamaOyunBaslatForm.belirlenenzaman == sistemsaati)
@@ -239,36 +224,35 @@ namespace BilgisayarKontrol
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-            //TimerBaskaBirUygulamaKullanimi.Start();
-            TimerBilgi.Interval = 1000;
-            TimerBilgi.Start();
+           
         }
 
         private void GösterBT_Click(object sender, EventArgs e)
         {
             try
             {
-                if (Convert.ToDouble(YöneticiSifreKutusu.Text) == Settings1.Default.Sifre)
+                if (YöneticiSifreKutusu.Text == KullaniciBilgileri.Default.KullaniciSifre)
                 {
+                    label1.Text = "Tamamdır";                   
                     AyarlarPanel.Visible = false;
                 }
                 else
                 {
-                    label1.Text = "Sifre gecersiz";
+                    label1.Text = "Sifreniz gecersiz";
                 }
             }
             catch
             {
                 if(YöneticiSifreKutusu.Text=="")
                 {
-                    label1.Text = "Bos bırakmayınız";
+                    label1.Text = "Bir sifre girmelisiniz";
                 }
             }
         }
 
         private void YöneticiSifreKutusu_TextChanged(object sender, EventArgs e)
         {
-            label1.Text = "Yönetici sifresini yaziniz";
+            label1.Text = "Sifreniz ile giris yapiniz";
         }
 
         private void NedirBuButton_Click(object sender, EventArgs e)
@@ -438,78 +422,90 @@ namespace BilgisayarKontrol
             netikes.Show();
 
         }
-
-        private void UygulamayiGizleTusu_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-        }
-
-        private void CikisTusu_Click(object sender, EventArgs e)
-        {
-            if (UygulamaKapatilirkenSifreİsteCombo.Checked == true)
-            {
-                KapatmaEngeli ka = new KapatmaEngeli();
-                ka.Show();
-            }
-            else
-            {
-                Application.Exit();
-            }
-        }
-
-        private void TestTusu_Click(object sender, EventArgs e)
-        {
-            Kontrol kt = new Kontrol();
-            kt.Show();
-        }
-
         private void MesajGösterTusu_Click(object sender, EventArgs e)
         {
             MesajGoster msj = new MesajGoster();
             msj.Show();
         }
         public static int regeditengelle,vivaldiengelle, firefoxengelle, chromeengelle, msconfigengelle, maxhtonengelle, safariengelle, iengelle;
-        
-        private void YardimTusu_Click(object sender, EventArgs e)
-        {
-            Yardim help = new Yardim();
-            help.Show();
-        }
 
-        public static int bilgideger = 0;
-        private void Kontrol_Tick(object sender, EventArgs e)
-        {
 
-            if (SametBar.Value == 100)
+        // MENÜ
+        private void kapatToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult soru = MessageBox.Show("Uygulama kapatilir ise devam eden islemler iptal edilecektir.Uygulama kapatılsın mı ?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (DialogResult.Yes == soru)
             {
-                bilgideger = 100;
-                TimerBilgi.Stop();
-                Bubble1.Visible = false;
-                SametBar.Visible = false;
-                Yardim yr = new Yardim();
-                yr.Hide();
-                TimerAnlikZaman.Interval = 500;
-                TimerAnlikZaman.Start();
-                try
+                if (UygulamaKapatilirkenSifreİsteCombo.Checked == true)
                 {
-                    anlikzamantimelabel.Text = DateTime.Now.ToLongTimeString();
+                    KapatmaEngeli ka = new KapatmaEngeli();
+                    ka.Show();
                 }
-                catch
+                else
                 {
-                    MessageBox.Show("Sistem saatinizden, anlık olarak bilgi alınamadığı için program kullanılamaz.Sistem saatinizi ve Anti - Virüs programınızı kontrol ediniz.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    this.Enabled = false;
+                    Application.Exit();
                 }
             }
-            else
+
+        }
+        
+        private void yardımToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Yardim.nedirbu = 3;
+            Yardim helps = new Yardim();
+            helps.Show();
+        }
+
+        private void güncellemeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uygulamaTestToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Kontrol kt = new Kontrol();
+            kt.Show();
+        }
+
+        private void islemListesiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            IslemListesi run = new IslemListesi();
+            run.Show();
+        }
+
+        private void yenidenBaşlatToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult soru = MessageBox.Show("Uygulama yeniden başlatılır ise devam eden islemler iptal edilecektir.Yeniden baslatılsın mı ?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if(DialogResult.Yes==soru)
             {
-                if (SametBar.Value < 100)
-                {
-                    SametBar.Value += 20;
-                    anlikzamantimelabel.Text = "Bilgi Aliniyor ....";
-                }
+                Application.Restart();
             }
             
         }
+
+        public static int oturumukapat = 0;
+        private void oturumuKapatToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult soru = MessageBox.Show("Oturum kapatilir ise devam eden islemler iptal edilecektir.Devam etmek istiyor musunuz ?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (DialogResult.Yes == soru)
+            {
+                
+                    oturumukapat = 1;
+                    KapatmaEngeli ka = new KapatmaEngeli();
+                    ka.Show();
+                
+            }
+        }
+
+        // MENÜ
+
+        private void gizleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
+        public static int bilgideger = 0;
+
 
 
         private void HizliEngelleTusu_Click(object sender, EventArgs e)

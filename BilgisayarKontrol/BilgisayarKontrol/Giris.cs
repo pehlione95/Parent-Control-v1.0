@@ -19,23 +19,21 @@ namespace BilgisayarKontrol
 
         private void Giris_Load(object sender, EventArgs e)
         {
-            if (Settings1.Default.User == 1)
+            if (KullaniciBilgileri.Default.KullaniciVarmi==1)
             {
                 
             }
-            else if (Settings1.Default.User == 0)
+            if (KullaniciBilgileri.Default.KullaniciVarmi == 0)
             {
                 
-                Sifreolustur fs = new Sifreolustur();
+                KullaniciOlustur fs = new KullaniciOlustur();
                 fs.Show();
             }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            Settings1.Default.Sifre = 0;
-            Settings1.Default.User = 0;
-            Settings1.Default.Save();
+           
         }
 
 
@@ -48,34 +46,41 @@ namespace BilgisayarKontrol
 
         private void GirisTusu_Click(object sender, EventArgs e)
         {
-            try
+          try
             {
-                if (Convert.ToDouble(sifreTXT.Text) == Settings1.Default.Sifre)
+                if(KullaniciAdiTXT.Text.Length > 1 && sifreTXT.Text.Length > 1)
                 {
-                    
-                    AnaEkran an = new AnaEkran();
-                    an.Show();
-                    this.Hide();
-                    if (Settings1.Default.Yardim == 0)
+                    string kadi = KullaniciAdiTXT.Text.TrimEnd();
+                    string sifre = sifreTXT.Text.TrimEnd();
+                    if(kadi == KullaniciBilgileri.Default.KullaniciAdi && sifre==KullaniciBilgileri.Default.KullaniciSifre)
                     {
-                        Yardim yard = new Yardim();
-                        yard.Show();
+                        AnaEkran main = new AnaEkran();
+                        main.Show();
                     }
+                    else
+                    {
+                        label1.Text = "Yanlıs sifre veya kullanici adi";
+                    }
+                    
                 }
                 else
                 {
-                    label1.ForeColor = Color.IndianRed;
-                    label1.Text = "Böyle bir sifre bulunamadı";
+                    label1.Text = "Eksik bilgi";
                 }
             }
             catch
             {
-                label1.ForeColor = Color.IndianRed;
-                label1.Text = "Şifre sadece sayi olabilir";
+
             }
+         
         }
 
         private void sifreTXT_TextChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void KullaniciAdiTXT_TextChanged(object sender, EventArgs e)
         {
             label1.Text = "Kullanıcı bilgileriniz ile giriş yapınız";
             label1.ForeColor = Color.Black;

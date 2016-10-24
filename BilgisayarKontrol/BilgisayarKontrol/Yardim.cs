@@ -25,18 +25,25 @@ namespace BilgisayarKontrol
 
         private void Yardim_Load(object sender, EventArgs e)
         {
-                   
-            
-                if (nedirbu == 1)
-                {
-                    richTextBox1.Text = "Bu alanda değişiklik yapabilmek için,yönetici olduğunuzu doğrulamamız gerekmektedir";
-                //nedirbu = 0;
-                }
-                if (nedirbu == 0)
 
-                    richTextBox1.Text = "Kategoriye ayrılmış olan bölümlerden zamana bağlı olarak işlem yapabilirsiniz.Bir işlem ister o an ister belirtilen zamanda yapılması için ayarlanabilir.Programın kullanımı sırasında Görev Yöneticisi ' nin çalışması engellenecektir. Programın kapatılması içinde güvenlik nedeni ile ilk girişde belirlenen şifreye gereksinim duyulmaktadır.Bu ayarları, ayarlar bölümünden değiştirebilirsiniz.";
-                 }
-        int a = 5;
+            if (nedirbu == 3) // Menüdeki yardim tusu
+            {
+                richTextBox1.Text = "Kategoriye ayrılmış olan bölümlerden zamana bağlı olarak işlem yapabilirsiniz.Bir işlem ister o an ister belirtilen zamanda yapılması için ayarlanabilir.Programın kullanımı sırasında Görev Yöneticisi ' nin çalışması engellenecektir. Programın kapatılması içinde güvenlik nedeni ile ilk girişde belirlenen şifreye gereksinim duyulmaktadır.Bu ayarları, ayarlar bölümünden değiştirebilirsiniz.";
+                göstermecombo.Visible = false;
+            }
+            if (nedirbu == 1) // Kullanici ayarlarindaki nedir bu
+            {
+                richTextBox1.Text = "Bu alanda değişiklik yapabilmek için,yönetici olduğunuzu doğrulamamız gerekmektedir";
+                göstermecombo.Visible = false;
+                //nedirbu = 0;
+            }
+            if (nedirbu == 0) // Programın açılışında
+            {
+
+                richTextBox1.Text = "Kategoriye ayrılmış olan bölümlerden zamana bağlı olarak işlem yapabilirsiniz.Bir işlem ister o an ister belirtilen zamanda yapılması için ayarlanabilir.Programın kullanımı sırasında Görev Yöneticisi ' nin çalışması engellenecektir. Programın kapatılması içinde güvenlik nedeni ile ilk girişde belirlenen şifreye gereksinim duyulmaktadır.Bu ayarları, ayarlar bölümünden değiştirebilirsiniz.";
+            }
+        }
+       
 
         private void TamamTusu_Click(object sender, EventArgs e)
         {

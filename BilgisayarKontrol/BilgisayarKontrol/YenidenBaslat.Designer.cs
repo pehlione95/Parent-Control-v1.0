@@ -30,12 +30,9 @@
         {
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.iptalettusu = new System.Windows.Forms.PictureBox();
-            this.tamam = new System.Windows.Forms.PictureBox();
+            this.TamamTusu = new iTalk.iTalk_Button_1();
             this.label2 = new System.Windows.Forms.Label();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iptalettusu)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tamam)).BeginInit();
             this.SuspendLayout();
             // 
             // dateTimePicker1
@@ -52,42 +49,32 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel4.Controls.Add(this.iptalettusu);
-            this.panel4.Controls.Add(this.tamam);
+            this.panel4.Controls.Add(this.TamamTusu);
             this.panel4.Location = new System.Drawing.Point(-14, 115);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(477, 63);
             this.panel4.TabIndex = 33;
             // 
-            // iptalettusu
+            // TamamTusu
             // 
-            this.iptalettusu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iptalettusu.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_4rwvAD;
-            this.iptalettusu.Location = new System.Drawing.Point(30, 6);
-            this.iptalettusu.Name = "iptalettusu";
-            this.iptalettusu.Size = new System.Drawing.Size(50, 48);
-            this.iptalettusu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.iptalettusu.TabIndex = 29;
-            this.iptalettusu.TabStop = false;
-            this.iptalettusu.Click += new System.EventHandler(this.iptalettusu_Click);
-            // 
-            // tamam
-            // 
-            this.tamam.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.tamam.Image = global::BilgisayarKontrol.Properties.Resources.Logomakr_6mkMqS;
-            this.tamam.Location = new System.Drawing.Point(402, 6);
-            this.tamam.Name = "tamam";
-            this.tamam.Size = new System.Drawing.Size(50, 49);
-            this.tamam.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.tamam.TabIndex = 30;
-            this.tamam.TabStop = false;
-            this.tamam.Click += new System.EventHandler(this.tamam_Click);
+            this.TamamTusu.BackColor = System.Drawing.Color.Transparent;
+            this.TamamTusu.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.TamamTusu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.TamamTusu.Image = null;
+            this.TamamTusu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.TamamTusu.Location = new System.Drawing.Point(32, 10);
+            this.TamamTusu.Name = "TamamTusu";
+            this.TamamTusu.Size = new System.Drawing.Size(420, 40);
+            this.TamamTusu.TabIndex = 33448;
+            this.TamamTusu.Text = "Tamam";
+            this.TamamTusu.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.TamamTusu.Click += new System.EventHandler(this.TamamTusu_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Yu Gothic UI Semilight", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label2.ForeColor = System.Drawing.Color.AliceBlue;
             this.label2.Location = new System.Drawing.Point(12, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(428, 32);
@@ -99,7 +86,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(183)))), ((int)(((byte)(211)))));
-            this.ClientSize = new System.Drawing.Size(450, 173);
+            this.ClientSize = new System.Drawing.Size(457, 177);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.dateTimePicker1);
@@ -110,9 +97,6 @@
             this.Text = "Yeniden Baslat";
             this.Load += new System.EventHandler(this.YenidenBaslat_Load);
             this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iptalettusu)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tamam)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -121,8 +105,7 @@
         #endregion
         public System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.PictureBox iptalettusu;
-        private System.Windows.Forms.PictureBox tamam;
         private System.Windows.Forms.Label label2;
+        private iTalk.iTalk_Button_1 TamamTusu;
     }
 }
