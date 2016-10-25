@@ -34,7 +34,7 @@ namespace BilgisayarKontrol
             {
                 if (sifreTXT.Text != "")
                 {
-                    if (sifreTXT.Text == KullaniciBilgileri.Default.KullaniciSifre)
+                    if (sifreTXT.Text == Ayarlar.Default.KullaniciSifre)
                     {
                         Application.Exit();
                     }

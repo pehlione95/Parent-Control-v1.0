@@ -49,7 +49,7 @@ namespace BilgisayarKontrol
         {
             if (göstermecombo.Checked == true)
             {
-                Settings1.Default.Yardim = 1;
+                Ayarlar.Default.Yardim = 1;
                 this.Hide();
             }
             else

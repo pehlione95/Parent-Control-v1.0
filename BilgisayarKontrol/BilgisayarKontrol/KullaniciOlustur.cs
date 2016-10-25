@@ -36,13 +36,15 @@ namespace BilgisayarKontrol
                     {
                         try
                         {
-                            KullaniciBilgileri.Default.KullaniciAdi = KullaniciAdiTXT.Text;
-                            KullaniciBilgileri.Default.KullaniciSifre = SifreTXT.Text;
-                            KullaniciBilgileri.Default.GizliCevap = GizliCevapTXT.Text;
-                            KullaniciBilgileri.Default.KullaniciVarmi = 1;
-                            KullaniciBilgileri.Default.Save();
+                            Ayarlar.Default.KullaniciAdi = KullaniciAdiTXT.Text;
+                            Ayarlar.Default.KullaniciSifre = SifreTXT.Text;
+                            Ayarlar.Default.GizliCevap = GizliCevapTXT.Text;
+                            Ayarlar.Default.KullaniciVarmi = 1;
+                            Ayarlar.Default.Save();
+                            Ayarlar.Default.Upgrade();
                             
                             MessageBox.Show("Kullanici olusturuldu.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            this.Hide();
                         }
                         catch
                         {

@@ -25,11 +25,11 @@ namespace BilgisayarKontrol
 
         private void TamamTusu_Click(object sender, EventArgs e)
         {
-            if (güvenlikcevabiTXT.Text == KullaniciBilgileri.Default.GizliCevap)
+            if (güvenlikcevabiTXT.Text == Ayarlar.Default.GizliCevap)
             {
                 try
                 {
-                    MessageBox.Show("Şifreniz :" + KullaniciBilgileri.Default.KullaniciSifre + "");
+                    MessageBox.Show("Şifreniz :" + Ayarlar.Default.KullaniciSifre + "");
                     this.Hide();
                 }
                 catch

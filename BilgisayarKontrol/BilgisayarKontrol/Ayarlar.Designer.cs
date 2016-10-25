@@ -13,11 +13,11 @@ namespace BilgisayarKontrol {
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "14.0.0.0")]
-    internal sealed partial class Settings1 : global::System.Configuration.ApplicationSettingsBase {
+    internal sealed partial class Ayarlar : global::System.Configuration.ApplicationSettingsBase {
         
-        private static Settings1 defaultInstance = ((Settings1)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings1())));
+        private static Ayarlar defaultInstance = ((Ayarlar)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Ayarlar())));
         
-        public static Settings1 Default {
+        public static Ayarlar Default {
             get {
                 return defaultInstance;
             }
@@ -80,6 +80,66 @@ namespace BilgisayarKontrol {
             }
             set {
                 this["GörevYöneticisiEngellensinmi"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("samet")]
+        public string KullaniciAdi {
+            get {
+                return ((string)(this["KullaniciAdi"]));
+            }
+            set {
+                this["KullaniciAdi"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1234")]
+        public string KullaniciSifre {
+            get {
+                return ((string)(this["KullaniciSifre"]));
+            }
+            set {
+                this["KullaniciSifre"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int KullaniciVarmi {
+            get {
+                return ((int)(this["KullaniciVarmi"]));
+            }
+            set {
+                this["KullaniciVarmi"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        public string YardimGösterilsinmi {
+            get {
+                return ((string)(this["YardimGösterilsinmi"]));
+            }
+            set {
+                this["YardimGösterilsinmi"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string GizliCevap {
+            get {
+                return ((string)(this["GizliCevap"]));
+            }
+            set {
+                this["GizliCevap"] = value;
             }
         }
     }

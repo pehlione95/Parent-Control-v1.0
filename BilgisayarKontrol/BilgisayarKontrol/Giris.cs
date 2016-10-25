@@ -19,11 +19,11 @@ namespace BilgisayarKontrol
 
         private void Giris_Load(object sender, EventArgs e)
         {
-            if (KullaniciBilgileri.Default.KullaniciVarmi==1)
+            if (Ayarlar.Default.KullaniciVarmi == 1)
             {
                 
             }
-            if (KullaniciBilgileri.Default.KullaniciVarmi == 0)
+            if (Ayarlar.Default.KullaniciVarmi == 0)
             {
                 
                 KullaniciOlustur fs = new KullaniciOlustur();
@@ -46,13 +46,14 @@ namespace BilgisayarKontrol
 
         private void GirisTusu_Click(object sender, EventArgs e)
         {
-          try
+           
+            try
             {
                 if(KullaniciAdiTXT.Text.Length > 1 && sifreTXT.Text.Length > 1)
                 {
                     string kadi = KullaniciAdiTXT.Text.TrimEnd();
                     string sifre = sifreTXT.Text.TrimEnd();
-                    if(kadi == KullaniciBilgileri.Default.KullaniciAdi && sifre==KullaniciBilgileri.Default.KullaniciSifre)
+                    if(kadi == Ayarlar.Default.KullaniciAdi && sifre==Ayarlar.Default.KullaniciSifre)
                     {
                         AnaEkran main = new AnaEkran();
                         main.Show();

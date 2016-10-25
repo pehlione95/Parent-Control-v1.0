@@ -22,20 +22,20 @@ namespace BilgisayarKontrol
         public static string ilkacilis;
         private void Form1_Load(object sender, EventArgs e)
         {
-            kadilabel.Text = "Merhaba, " + KullaniciBilgileri.Default.KullaniciAdi+".";
+            kadilabel.Text = "Merhaba, " + Ayarlar.Default.KullaniciAdi+".";
             TimerAnlikZaman.Interval = 1000;
             TimerAnlikZaman.Start();
-            if (Settings1.Default.GörevYöneticisiEngellensinmi == 1)
+            if (Ayarlar.Default.GörevYöneticisiEngellensinmi == 1)
             {
                 TimerGörevYöneticisiEngelle.Interval = 1000;
                 TimerGörevYöneticisiEngelle.Start();
             }
-            if(Settings1.Default.CmdEngellensinmi==1)
+            if(Ayarlar.Default.CmdEngellensinmi==1)
             {
                 TimerCmdEngelle.Interval = 1000;
                 TimerCmdEngelle.Start();
             }
-            if(Settings1.Default.RunEngellensinmi==1)
+            if(Ayarlar.Default.RunEngellensinmi==1)
             {
                 TimerRunEngelle.Interval = 1000;
                 TimerRunEngelle.Start();
@@ -231,7 +231,7 @@ namespace BilgisayarKontrol
         {
             try
             {
-                if (YöneticiSifreKutusu.Text == KullaniciBilgileri.Default.KullaniciSifre)
+                if (YöneticiSifreKutusu.Text == Ayarlar.Default.KullaniciSifre)
                 {
                     label1.Text = "Tamamdır";                   
                     AyarlarPanel.Visible = false;
@@ -318,13 +318,13 @@ namespace BilgisayarKontrol
         {
             if(RunEngelleCombo.Checked==true)
             {
-                Settings1.Default.RunEngellensinmi = 1;
+                Ayarlar.Default.RunEngellensinmi = 1;
                 TimerRunEngelle.Interval = 1000;
                 TimerRunEngelle.Start();
             }
             if(GörevYöneticisiEngelleCombo.Checked==true)
             {
-                Settings1.Default.GörevYöneticisiEngellensinmi = 1;
+                Ayarlar.Default.GörevYöneticisiEngellensinmi = 1;
                 TimerGörevYöneticisiEngelle.Interval = 1000;
                 TimerGörevYöneticisiEngelle.Start();
             }
@@ -334,7 +334,7 @@ namespace BilgisayarKontrol
             }
             if(CmdEngelleCombo.Checked==true)
             {
-                Settings1.Default.CmdEngellensinmi = 1;
+                Ayarlar.Default.CmdEngellensinmi = 1;
                 TimerCmdEngelle.Interval = 1000;
                 TimerCmdEngelle.Start();
             }
@@ -342,12 +342,12 @@ namespace BilgisayarKontrol
             if (CmdEngelleCombo.Checked == false)
             {
                 TimerCmdEngelle.Stop();
-                Settings1.Default.CmdEngellensinmi =0;
+                Ayarlar.Default.CmdEngellensinmi =0;
             }
             if (RunEngelleCombo.Checked == false)
             {
                 TimerRunEngelle.Stop();
-                Settings1.Default.RunEngellensinmi = 0;
+                Ayarlar.Default.RunEngellensinmi = 0;
             }
             if (BaskaBirUygulamaKullanimiCombo.Checked == false)
             {
@@ -355,7 +355,7 @@ namespace BilgisayarKontrol
             }
             if (GörevYöneticisiEngelleCombo.Checked == false)
             {
-                Settings1.Default.GörevYöneticisiEngellensinmi = 0;
+                Ayarlar.Default.GörevYöneticisiEngellensinmi = 0;
                 TimerGörevYöneticisiEngelle.Stop();
             }
             AyarlarPanel.Visible = true;
