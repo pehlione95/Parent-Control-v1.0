@@ -84,7 +84,13 @@ namespace BilgisayarKontrol
         private void KullaniciAdiTXT_TextChanged(object sender, EventArgs e)
         {
             label1.Text = "Kullanıcı bilgileriniz ile giriş yapınız";
-            label1.ForeColor = Color.Black;
+            
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            SifreDegistir pwdegistir = new SifreDegistir();
+            pwdegistir.Show();
         }
     }
 }

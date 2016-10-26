@@ -23,6 +23,26 @@ namespace BilgisayarKontrol
 
         }
 
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedValueChanged_1(object sender, EventArgs e)
+        {
+            if (comboBox1.Text == "Hata")
+            {
+                tür = 1;
+            }
+            else if (comboBox1.Text == "Uyarı")
+            {
+                tür = 2;
+            }
+            else if (comboBox1.Text == "Bilgilendirme")
+            {
+                tür = 3;
+            }
+        }
 
         private void TamamTusu_Click(object sender, EventArgs e)
         {
@@ -35,15 +55,15 @@ namespace BilgisayarKontrol
             {
                 try
                 {
-                    belirlenenzaman = dateTimePicker1.Value.ToShortTimeString();
+                    belirlenenzaman = dateTimePicker1.Value.ToLongTimeString();
                     DialogResult soru = MessageBox.Show("Mesaj " + belirlenenzaman + " aralığında gösterilsin mi ?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
                     if (DialogResult.Yes == soru)
                     {
-                        belirlenenzaman = dateTimePicker1.Value.ToShortTimeString();
+                        belirlenenzaman = dateTimePicker1.Value.ToLongTimeString();
                         baslik = baslikTXT.Text.TrimEnd();
                         mesajiçerigi = mesajTXT.Text.TrimEnd();
                         AnaEkran ana = new AnaEkran();
-                        ana.MesajGöster.Interval = 10000;
+                        ana.MesajGöster.Interval = 1000;
                         ana.MesajGöster.Start();
                         islem = 1;
                         this.Hide();
@@ -58,7 +78,7 @@ namespace BilgisayarKontrol
                     DialogResult soru = MessageBox.Show("Tekrar denemek istermisiniz ?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
                     if (DialogResult.Yes == soru)
                     {
-                        belirlenenzaman = dateTimePicker1.Value.ToShortTimeString();
+                        belirlenenzaman = dateTimePicker1.Value.ToLongTimeString();
                         baslik = baslikTXT.Text.TrimEnd();
                         mesajiçerigi = mesajTXT.Text.TrimEnd();
                         AnaEkran ana = new AnaEkran();

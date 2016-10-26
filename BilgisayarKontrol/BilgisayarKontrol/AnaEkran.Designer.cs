@@ -106,19 +106,21 @@
             this.RunEngelleCombo = new iTalk.iTalk_CheckBox();
             this.AyarlarPanelTamamTusu = new iTalk.iTalk_Button_1();
             this.BaslangicdaCalissinCombo = new iTalk.iTalk_CheckBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.SifreDegistirLabel = new System.Windows.Forms.Label();
             this.Menü = new iTalk.iTalk_MenuStrip();
             this.programToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gizleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.oturumuKapatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.yenidenBaşlatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kapatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hakkindaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.yardımToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.güncellemeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.testToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.hakkindaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.islemlerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.islemListesiToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.islemTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.uygulamaTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.islemListesiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.TimerİnterneteBaglan = new System.Windows.Forms.Timer(this.components);
             this.AcilirMenü.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -581,6 +583,7 @@
             this.İnternetiYenileTusu.TabIndex = 33446;
             this.İnternetiYenileTusu.Text = "İnternete Bağla";
             this.İnternetiYenileTusu.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.İnternetiYenileTusu.Click += new System.EventHandler(this.İnternetiYenileTusu_Click_1);
             // 
             // pictureBox12
             // 
@@ -788,7 +791,7 @@
             this.tabPage6.Controls.Add(this.RunEngelleCombo);
             this.tabPage6.Controls.Add(this.AyarlarPanelTamamTusu);
             this.tabPage6.Controls.Add(this.BaslangicdaCalissinCombo);
-            this.tabPage6.Controls.Add(this.label4);
+            this.tabPage6.Controls.Add(this.SifreDegistirLabel);
             this.tabPage6.Location = new System.Drawing.Point(139, 4);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Size = new System.Drawing.Size(509, 278);
@@ -803,10 +806,10 @@
             this.AyarlarPanel.Controls.Add(this.GösterBT);
             this.AyarlarPanel.Controls.Add(this.YöneticiSifreKutusu);
             this.AyarlarPanel.Controls.Add(this.label1);
-            this.AyarlarPanel.Location = new System.Drawing.Point(-12, -9);
+            this.AyarlarPanel.Location = new System.Drawing.Point(-9, -9);
             this.AyarlarPanel.Name = "AyarlarPanel";
             this.AyarlarPanel.Padding = new System.Windows.Forms.Padding(5);
-            this.AyarlarPanel.Size = new System.Drawing.Size(395, 334);
+            this.AyarlarPanel.Size = new System.Drawing.Size(416, 308);
             this.AyarlarPanel.TabIndex = 51;
             this.AyarlarPanel.Text = "iTalk_Panel1";
             // 
@@ -948,7 +951,7 @@
             this.AyarlarPanelTamamTusu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.AyarlarPanelTamamTusu.Location = new System.Drawing.Point(1, 236);
             this.AyarlarPanelTamamTusu.Name = "AyarlarPanelTamamTusu";
-            this.AyarlarPanelTamamTusu.Size = new System.Drawing.Size(382, 41);
+            this.AyarlarPanelTamamTusu.Size = new System.Drawing.Size(379, 41);
             this.AyarlarPanelTamamTusu.TabIndex = 33450;
             this.AyarlarPanelTamamTusu.Text = "Tamam";
             this.AyarlarPanelTamamTusu.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -966,25 +969,25 @@
             this.BaslangicdaCalissinCombo.Text = "Bu uygulamayi baslangicda otomatik baslat";
             this.BaslangicdaCalissinCombo.CheckedChanged += new iTalk.iTalk_CheckBox.CheckedChangedEventHandler(this.BaslangicdaCalissinCombo_CheckedChanged);
             // 
-            // label4
+            // SifreDegistirLabel
             // 
-            this.label4.AutoSize = true;
-            this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.label4.ForeColor = System.Drawing.Color.Gray;
-            this.label4.Location = new System.Drawing.Point(296, 208);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(84, 19);
-            this.label4.TabIndex = 33455;
-            this.label4.Text = "Sifre degistir";
+            this.SifreDegistirLabel.AutoSize = true;
+            this.SifreDegistirLabel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SifreDegistirLabel.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.SifreDegistirLabel.ForeColor = System.Drawing.Color.Gray;
+            this.SifreDegistirLabel.Location = new System.Drawing.Point(296, 208);
+            this.SifreDegistirLabel.Name = "SifreDegistirLabel";
+            this.SifreDegistirLabel.Size = new System.Drawing.Size(84, 19);
+            this.SifreDegistirLabel.TabIndex = 33455;
+            this.SifreDegistirLabel.Text = "Sifre degistir";
+            this.SifreDegistirLabel.Click += new System.EventHandler(this.SifreDegistirLabel_Click);
             // 
             // Menü
             // 
             this.Menü.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.programToolStripMenuItem,
             this.hakkindaToolStripMenuItem,
-            this.testToolStripMenuItem,
-            this.islemListesiToolStripMenuItem});
+            this.islemlerToolStripMenuItem});
             this.Menü.Location = new System.Drawing.Point(0, 0);
             this.Menü.Name = "Menü";
             controlRenderer1.ColorTable = msColorTable1;
@@ -998,7 +1001,6 @@
             // 
             this.programToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.gizleToolStripMenuItem,
-            this.oturumuKapatToolStripMenuItem,
             this.yenidenBaşlatToolStripMenuItem,
             this.kapatToolStripMenuItem});
             this.programToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -1011,23 +1013,15 @@
             // 
             this.gizleToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.gizleToolStripMenuItem.Name = "gizleToolStripMenuItem";
-            this.gizleToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.gizleToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.gizleToolStripMenuItem.Text = "Gizle";
             this.gizleToolStripMenuItem.Click += new System.EventHandler(this.gizleToolStripMenuItem_Click);
-            // 
-            // oturumuKapatToolStripMenuItem
-            // 
-            this.oturumuKapatToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.oturumuKapatToolStripMenuItem.Name = "oturumuKapatToolStripMenuItem";
-            this.oturumuKapatToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
-            this.oturumuKapatToolStripMenuItem.Text = "Oturumu Kapat";
-            this.oturumuKapatToolStripMenuItem.Click += new System.EventHandler(this.oturumuKapatToolStripMenuItem_Click);
             // 
             // yenidenBaşlatToolStripMenuItem
             // 
             this.yenidenBaşlatToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.yenidenBaşlatToolStripMenuItem.Name = "yenidenBaşlatToolStripMenuItem";
-            this.yenidenBaşlatToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.yenidenBaşlatToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.yenidenBaşlatToolStripMenuItem.Text = "Yeniden Başlat";
             this.yenidenBaşlatToolStripMenuItem.Click += new System.EventHandler(this.yenidenBaşlatToolStripMenuItem_Click);
             // 
@@ -1035,7 +1029,7 @@
             // 
             this.kapatToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.kapatToolStripMenuItem.Name = "kapatToolStripMenuItem";
-            this.kapatToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.kapatToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.kapatToolStripMenuItem.Text = "Kapat";
             this.kapatToolStripMenuItem.Click += new System.EventHandler(this.kapatToolStripMenuItem_Click);
             // 
@@ -1043,7 +1037,8 @@
             // 
             this.hakkindaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.yardımToolStripMenuItem,
-            this.güncellemeToolStripMenuItem});
+            this.güncellemeToolStripMenuItem,
+            this.hakkindaToolStripMenuItem1});
             this.hakkindaToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.hakkindaToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.hakkindaToolStripMenuItem.Name = "hakkindaToolStripMenuItem";
@@ -1054,7 +1049,7 @@
             // 
             this.yardımToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.yardımToolStripMenuItem.Name = "yardımToolStripMenuItem";
-            this.yardımToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.yardımToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.yardımToolStripMenuItem.Text = "Yardım";
             this.yardımToolStripMenuItem.Click += new System.EventHandler(this.yardımToolStripMenuItem_Click);
             // 
@@ -1062,19 +1057,44 @@
             // 
             this.güncellemeToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.güncellemeToolStripMenuItem.Name = "güncellemeToolStripMenuItem";
-            this.güncellemeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.güncellemeToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.güncellemeToolStripMenuItem.Text = "Güncelleme";
             this.güncellemeToolStripMenuItem.Click += new System.EventHandler(this.güncellemeToolStripMenuItem_Click);
             // 
-            // testToolStripMenuItem
+            // hakkindaToolStripMenuItem1
             // 
-            this.testToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.uygulamaTestToolStripMenuItem});
-            this.testToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.testToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.testToolStripMenuItem.Name = "testToolStripMenuItem";
-            this.testToolStripMenuItem.Size = new System.Drawing.Size(43, 21);
-            this.testToolStripMenuItem.Text = "Test";
+            this.hakkindaToolStripMenuItem1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.hakkindaToolStripMenuItem1.Name = "hakkindaToolStripMenuItem1";
+            this.hakkindaToolStripMenuItem1.Size = new System.Drawing.Size(143, 22);
+            this.hakkindaToolStripMenuItem1.Text = "Hakkinda";
+            this.hakkindaToolStripMenuItem1.Click += new System.EventHandler(this.hakkindaToolStripMenuItem1_Click);
+            // 
+            // islemlerToolStripMenuItem
+            // 
+            this.islemlerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.islemListesiToolStripMenuItem1,
+            this.islemTestToolStripMenuItem});
+            this.islemlerToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.islemlerToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.islemlerToolStripMenuItem.Name = "islemlerToolStripMenuItem";
+            this.islemlerToolStripMenuItem.Size = new System.Drawing.Size(65, 21);
+            this.islemlerToolStripMenuItem.Text = "İslemler";
+            // 
+            // islemListesiToolStripMenuItem1
+            // 
+            this.islemListesiToolStripMenuItem1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.islemListesiToolStripMenuItem1.Name = "islemListesiToolStripMenuItem1";
+            this.islemListesiToolStripMenuItem1.Size = new System.Drawing.Size(145, 22);
+            this.islemListesiToolStripMenuItem1.Text = "İslem Listesi";
+            this.islemListesiToolStripMenuItem1.Click += new System.EventHandler(this.islemListesiToolStripMenuItem1_Click);
+            // 
+            // islemTestToolStripMenuItem
+            // 
+            this.islemTestToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.islemTestToolStripMenuItem.Name = "islemTestToolStripMenuItem";
+            this.islemTestToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.islemTestToolStripMenuItem.Text = "İslem Test";
+            this.islemTestToolStripMenuItem.Click += new System.EventHandler(this.islemTestToolStripMenuItem_Click);
             // 
             // uygulamaTestToolStripMenuItem
             // 
@@ -1084,14 +1104,9 @@
             this.uygulamaTestToolStripMenuItem.Text = "Uygulama Test";
             this.uygulamaTestToolStripMenuItem.Click += new System.EventHandler(this.uygulamaTestToolStripMenuItem_Click);
             // 
-            // islemListesiToolStripMenuItem
+            // TimerİnterneteBaglan
             // 
-            this.islemListesiToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.islemListesiToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.islemListesiToolStripMenuItem.Name = "islemListesiToolStripMenuItem";
-            this.islemListesiToolStripMenuItem.Size = new System.Drawing.Size(89, 21);
-            this.islemListesiToolStripMenuItem.Text = "İslem Listesi";
-            this.islemListesiToolStripMenuItem.Click += new System.EventHandler(this.islemListesiToolStripMenuItem_Click);
+            this.TimerİnterneteBaglan.Tick += new System.EventHandler(this.TimerİnterneteBaglan_Tick);
             // 
             // AnaEkran
             // 
@@ -1229,23 +1244,25 @@
         private iTalk.iTalk_CheckBox BaslangicdaCalissinCombo;
         private iTalk.iTalk_Button_1 HizliEngelleTusu;
         public System.Windows.Forms.Timer TimerHizliEngelle;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label SifreDegistirLabel;
         private iTalk.iTalk_Button_1 İnternetGecmisiniMailOlarakYollaTusu;
         private System.Windows.Forms.PictureBox pictureBox15;
         private iTalk.iTalk_MenuStrip Menü;
         private System.Windows.Forms.ToolStripMenuItem programToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem hakkindaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gizleToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem oturumuKapatToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem yenidenBaşlatToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem kapatToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem yardımToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem güncellemeToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem testToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem uygulamaTestToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem islemListesiToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBox16;
         private System.Windows.Forms.Label kadilabel;
+        public System.Windows.Forms.Timer TimerİnterneteBaglan;
+        private System.Windows.Forms.ToolStripMenuItem islemlerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem islemListesiToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem islemTestToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem hakkindaToolStripMenuItem1;
     }
 }
 

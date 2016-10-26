@@ -16,7 +16,6 @@ namespace BilgisayarKontrol
             InitializeComponent();
         }
         public static string uygulamaadi,belirlenenzaman;
-        public static int islemyapildi = 0;
         private void UygulamaOyunBaslat_Load(object sender, EventArgs e)
         {
          
@@ -29,21 +28,16 @@ namespace BilgisayarKontrol
                 DialogResult soru1 = MessageBox.Show("Bu işlemi onaylıyormusunuz ?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (DialogResult.Yes == soru1)
                 {
-                    if (islemyapildi == 1)
-                    {
-                        MessageBox.Show("Devam eden bir isleminiz bulunmaktadır. En fazla bir islem yapılabilir", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                    }
-                    else
-                    {
-                        islemyapildi = 1;
-                        belirlenenzaman = dateTimePicker1.Value.ToShortTimeString();
-                        uygulamaadi = UygulamaAdiTXT.Text;
-                        AnaEkran an = new AnaEkran();
-                        an.UygulamaOyunBaslat.Interval = 2000;
-                        an.UygulamaOyunBaslat.Start();
-                        this.Hide();
-                    }
+                   
+                    belirlenenzaman = dateTimePicker1.Value.ToLongTimeString();
+                    uygulamaadi = UygulamaAdiTXT.Text;
+                    AnaEkran an = new AnaEkran();
+                    an.UygulamaOyunBaslat.Interval = 1000;
+                    an.UygulamaOyunBaslat.Start();
+                    Basarili success = new Basarili();
+                    success.Show();
+                    this.Hide();
+                    
                 }
             }
             catch (Exception hata)

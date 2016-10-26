@@ -3542,8 +3542,8 @@ namespace iTalk
         {
             SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.OptimizedDoubleBuffer | ControlStyles.ResizeRedraw | ControlStyles.SupportsTransparentBackColor | ControlStyles.UserPaint, true);
 
-            BackColor = Color.Transparent;
-            DoubleBuffered = true;
+            //BackColor = Color.Transparent;
+            //DoubleBuffered = true;
             Font = new Font("Segoe UI", 10);
             Size = new Size(120, 26);
         }

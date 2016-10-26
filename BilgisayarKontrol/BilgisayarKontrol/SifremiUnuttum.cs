@@ -25,22 +25,23 @@ namespace BilgisayarKontrol
 
         private void TamamTusu_Click(object sender, EventArgs e)
         {
-            if (güvenlikcevabiTXT.Text == Ayarlar.Default.GizliCevap)
+            if (güvenlikcevabiTXT.Text == Ayarlar.Default.GizliCevap && kadiTXT.Text == Ayarlar.Default.KullaniciAdi)
             {
                 try
                 {
-                    MessageBox.Show("Şifreniz :" + Ayarlar.Default.KullaniciSifre + "");
-                    this.Hide();
+                    güvenlikcevabiTXT.Text = "Sifreniz : " + Ayarlar.Default.KullaniciSifre;
+                    
                 }
                 catch
                 {
-                    MessageBox.Show("Böyle bir güvenlik cevabı bulunamadı", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Bir hata oluştu", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
 
             }
             else
             {
-                MessageBox.Show("Böyle bir güvenlik cevabı bulunamadı", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                kadiTXT.Text = "Bilgiler doğru değil";
+                güvenlikcevabiTXT.Text = "Bilgiler doğru değil";
 
             }
         }

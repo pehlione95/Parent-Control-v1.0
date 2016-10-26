@@ -36,6 +36,7 @@
             this.KullaniciAdiTXT = new iTalk.iTalk_TextBox_Big();
             this.sifreTXT = new iTalk.iTalk_TextBox_Big();
             this.GirisTusu = new iTalk.iTalk_Button_2();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
@@ -45,8 +46,8 @@
             this.label2.AutoSize = true;
             this.label2.Cursor = System.Windows.Forms.Cursors.Help;
             this.label2.Font = new System.Drawing.Font("Yu Gothic UI Semilight", 11F);
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(384, 315);
+            this.label2.ForeColor = System.Drawing.Color.AliceBlue;
+            this.label2.Location = new System.Drawing.Point(78, 281);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(112, 20);
             this.label2.TabIndex = 33440;
@@ -57,8 +58,8 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Yu Gothic UI Semilight", 11F);
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(78, 148);
+            this.label1.ForeColor = System.Drawing.Color.AliceBlue;
+            this.label1.Location = new System.Drawing.Point(78, 143);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(209, 20);
             this.label1.TabIndex = 33439;
@@ -123,7 +124,7 @@
             this.sifreTXT.ReadOnly = false;
             this.sifreTXT.Size = new System.Drawing.Size(294, 43);
             this.sifreTXT.TabIndex = 33444;
-            this.sifreTXT.Text = "1244";
+            this.sifreTXT.Text = "1234";
             this.sifreTXT.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
             this.sifreTXT.UseSystemPasswordChar = true;
             this.sifreTXT.TextChanged += new System.EventHandler(this.KullaniciAdiTXT_TextChanged);
@@ -142,12 +143,26 @@
             this.GirisTusu.TextAlignment = System.Drawing.StringAlignment.Center;
             this.GirisTusu.Click += new System.EventHandler(this.GirisTusu_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Cursor = System.Windows.Forms.Cursors.Help;
+            this.label3.Font = new System.Drawing.Font("Yu Gothic UI Semilight", 11F);
+            this.label3.ForeColor = System.Drawing.Color.AliceBlue;
+            this.label3.Location = new System.Drawing.Point(78, 304);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(89, 20);
+            this.label3.TabIndex = 33447;
+            this.label3.Text = "Sifre degistir";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
             // Giris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(183)))), ((int)(((byte)(211)))));
             this.ClientSize = new System.Drawing.Size(508, 344);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.KullaniciAdiTXT);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.sifreTXT);
@@ -177,5 +192,6 @@
         private iTalk.iTalk_TextBox_Big sifreTXT;
         private System.Windows.Forms.PictureBox pictureBox6;
         private iTalk.iTalk_TextBox_Big KullaniciAdiTXT;
+        private System.Windows.Forms.Label label3;
     }
 }

@@ -172,6 +172,8 @@
             this.comboBox1.Size = new System.Drawing.Size(135, 26);
             this.comboBox1.StartIndex = 0;
             this.comboBox1.TabIndex = 33452;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.comboBox1.SelectedValueChanged += new System.EventHandler(this.comboBox1_SelectedValueChanged_1);
             // 
             // MesajGoster
             // 

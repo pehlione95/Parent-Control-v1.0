@@ -59,6 +59,12 @@
     <Compile Include="BilgisayariKapat.Designer.cs">
       <DependentUpon>BilgisayariKapat.cs</DependentUpon>
     </Compile>
+    <Compile Include="InterneteBaglan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterneteBaglan.Designer.cs">
+      <DependentUpon>InterneteBaglan.cs</DependentUpon>
+    </Compile>
     <Compile Include="IslemListesi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +77,12 @@
     </Compile>
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SifreDegistir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SifreDegistir.Designer.cs">
+      <DependentUpon>SifreDegistir.cs</DependentUpon>
     </Compile>
     <Compile Include="SifremiUnuttum.cs">
       <SubType>Form</SubType>
@@ -164,11 +176,17 @@
     <EmbeddedResource Include="BilgisayariKapat.resx">
       <DependentUpon>BilgisayariKapat.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="InterneteBaglan.resx">
+      <DependentUpon>InterneteBaglan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="IslemListesi.resx">
       <DependentUpon>IslemListesi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SifreDegistir.resx">
+      <DependentUpon>SifreDegistir.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SifremiUnuttum.resx">
       <DependentUpon>SifremiUnuttum.cs</DependentUpon>

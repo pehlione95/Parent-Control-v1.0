@@ -35,8 +35,10 @@ namespace BilgisayarKontrol
                 if (sifreTXT.Text != "")
                 {
                     if (sifreTXT.Text == Ayarlar.Default.KullaniciSifre)
-                    {
-                        Application.Exit();
+                    {                
+                     
+                            Application.Exit();
+                        
                     }
                     else
                     {

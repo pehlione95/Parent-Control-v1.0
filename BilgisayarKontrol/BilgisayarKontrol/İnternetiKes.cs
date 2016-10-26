@@ -25,39 +25,24 @@ namespace BilgisayarKontrol
 
         private void TamamTusu_Click(object sender, EventArgs e)
         {
-            belirlenenzaman = dateTimePicker1.Value.ToShortTimeString();
+            belirlenenzaman = dateTimePicker1.Value.ToLongTimeString();
             DialogResult soru = MessageBox.Show("İnternet bağlantısı " + belirlenenzaman + " aralığında kesilsin mı ?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
             if (DialogResult.Yes == soru)
             {
                 try
                 {
+                    belirlenenzaman = dateTimePicker1.Value.ToLongTimeString();
                     AnaEkran f1 = new AnaEkran();
                     f1.İnternetiKes.Interval = 10000;
-                    f1.TimerBilgisayariKapat.Start();
+                    f1.İnternetiKes.Start();
                     islemyapildi = 1;
                     this.Hide();
                     Basarili success = new Basarili();
                     success.Show();
                 }
-                catch (Exception hata)
+                catch (Exception)
                 {
-                    MessageBox.Show("Bir hata oluştu :" + hata + "", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    DialogResult soru2 = MessageBox.Show("Tekrar denemek istermisiniz ?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
-                    if (DialogResult.Yes == soru)
-                    {
-
-                        AnaEkran f1 = new AnaEkran();
-                        f1.İnternetiKes.Interval = 10000;
-                        f1.TimerBilgisayariKapat.Start();
-                        islemyapildi = 1;
-                        this.Hide();
-                        Basarili success = new Basarili();
-                        success.Show();
-                    }
-                    else
-                    {
-                        MessageBox.Show("İşlem tamamlanamıyor.Sistem saatinizi kontrol ettikden sonra programı yeniden başlatınız.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
+                    MessageBox.Show("Bir hata oluştu.Tekrar deneyiniz", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
             else

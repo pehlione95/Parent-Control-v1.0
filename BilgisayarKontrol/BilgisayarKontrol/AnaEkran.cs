@@ -49,10 +49,10 @@ namespace BilgisayarKontrol
 
         private void MesajGöster_Tick(object sender, EventArgs e)
         {
-
-            sistemsaati = DateTime.Now.ToShortTimeString();
+ 
             if (sistemsaati == MesajGoster.belirlenenzaman)
             {
+                
                 if (MesajGoster.tür == 1)
                 {
                     MessageBox.Show(MesajGoster.mesajiçerigi.TrimEnd(), "" + MesajGoster.baslik.TrimEnd() + "", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -72,8 +72,6 @@ namespace BilgisayarKontrol
         {
 
 
-            sistemsaati = DateTime.Now.ToShortTimeString();
-
             if (sistemsaati == BilgisayariKapat.belirlenenzaman)
             {
 
@@ -87,7 +85,6 @@ namespace BilgisayarKontrol
                 catch
                 {
 
-                    Process.Start("cmd.exe", "/C shutdown -f");
                     TimerBilgisayariKapat.Stop();
                 }
             }
@@ -103,10 +100,11 @@ namespace BilgisayarKontrol
                 {
 
                     Process.Start("cmd.exe", "/C shutdown -r");
+                    YenidenBaslat.Stop();
                 }
                 catch
                 {
-
+                    YenidenBaslat.Stop();
                 }
             }
             else
@@ -116,26 +114,27 @@ namespace BilgisayarKontrol
         }
         private void TimerAnlikZaman_Tick(object sender, EventArgs e)
         {
-
+            sistemsaati = DateTime.Now.ToLongTimeString();
             anlikzamantimelabel.Text = DateTime.Now.ToLongTimeString();
 
         }
         private void İnternetiKes_Tick(object sender, EventArgs e)
         {
+
             if (sistemsaati == NetKes.belirlenenzaman)
-            {
-                try
                 {
-                    Process.Start("ipconfig", "/release");
+                    try
+                    {
+                        Process.Start("ipconfig", "/release");
+                    İnternetiKes.Stop();
+                    }
+                    catch
+                    {
+                    İnternetiKes.Stop();
                 }
-                catch
-                {
-                    Process.Start("cmd.exe", "/C ipconfig/release");
                 }
-            }
+           
         }
-        //
-        //
 
 
         private void anlikzamantimelabel_Click(object sender, EventArgs e)
@@ -166,6 +165,7 @@ namespace BilgisayarKontrol
                     p.Kill();
                 }
             }
+            //TimerGörevYöneticisiEngelle.Stop();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -186,6 +186,7 @@ namespace BilgisayarKontrol
                         aa.Kill();
                     }
                 }
+               
             }
         }
 
@@ -201,6 +202,7 @@ namespace BilgisayarKontrol
                         a.Kill();
                     }
                 }
+                
             }
         }
         private void UygulamaOyunBaslat_Tick(object sender, EventArgs e)
@@ -208,7 +210,8 @@ namespace BilgisayarKontrol
             if (UygulamaOyunBaslatForm.belirlenenzaman == sistemsaati)
             {
                 Process.Start("cmd.exe", "/C" + UygulamaOyunBaslatForm.uygulamaadi);
-                UygulamaOyunBaslat.Stop();
+                
+                
             }
         }
 
@@ -312,6 +315,7 @@ namespace BilgisayarKontrol
         private void TimerBaskaBirUygulamaKullanimi_Tick(object sender, EventArgs e)
         {
             SetForegroundWindow(this.Handle);
+            
         }
 
         private void AyarlarPanelTamamTusu_Click(object sender, EventArgs e)
@@ -385,6 +389,7 @@ namespace BilgisayarKontrol
                     r.Kill();
                 }
             }
+           
         }
 
         private void UygulamaOyunBaslatTusu_Click(object sender, EventArgs e)
@@ -467,12 +472,7 @@ namespace BilgisayarKontrol
             kt.Show();
         }
 
-        private void islemListesiToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            IslemListesi run = new IslemListesi();
-            run.Show();
-        }
-
+        public static int yenidenbaslat = 0;
         private void yenidenBaşlatToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DialogResult soru = MessageBox.Show("Uygulama yeniden başlatılır ise devam eden islemler iptal edilecektir.Yeniden baslatılsın mı ?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -483,20 +483,54 @@ namespace BilgisayarKontrol
             
         }
 
-        public static int oturumukapat = 0;
-        private void oturumuKapatToolStripMenuItem_Click(object sender, EventArgs e)
+        private void TimerİnterneteBaglan_Tick(object sender, EventArgs e)
         {
-            DialogResult soru = MessageBox.Show("Oturum kapatilir ise devam eden islemler iptal edilecektir.Devam etmek istiyor musunuz ?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (DialogResult.Yes == soru)
+            
+            if (sistemsaati == InterneteBaglan.belirlenenzaman)
             {
-                
-                    oturumukapat = 1;
-                    KapatmaEngeli ka = new KapatmaEngeli();
-                    ka.Show();
-                
+                try
+                {
+                    Process.Start("ipconfig", "/renew");
+                    TimerİnterneteBaglan.Stop();
+                }
+                catch
+                {
+                    MessageBox.Show("Hata", "", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                    Process.Start("ipconfig", "/renew");
+                    TimerİnterneteBaglan.Stop();
+                }
             }
         }
 
+        private void İnternetiYenileTusu_Click_1(object sender, EventArgs e)
+        {
+            InterneteBaglan netbagla = new InterneteBaglan();
+            netbagla.Show();
+        }
+
+        private void islemTestToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Kontrol kt = new Kontrol();
+            kt.Show();
+        }
+
+        private void islemListesiToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            IslemListesi run = new IslemListesi();
+            run.Show();
+        }
+
+        private void hakkindaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Hakkinda about = new Hakkinda();
+            about.Show();
+        }
+
+        private void SifreDegistirLabel_Click(object sender, EventArgs e)
+        {
+            SifreDegistir pw = new SifreDegistir();
+            pw.Show();
+        }
         // MENÜ
 
         private void gizleToolStripMenuItem_Click(object sender, EventArgs e)
@@ -598,6 +632,7 @@ namespace BilgisayarKontrol
                         v.Kill();
                     }
                 }
+                
             }
 
             if (vivaldiengelle==1)
@@ -621,6 +656,7 @@ namespace BilgisayarKontrol
                         v.Kill();
                     }
                 }
+                
             }
             if (chromeengelle == 1)
             {
@@ -632,22 +668,23 @@ namespace BilgisayarKontrol
                         v.Kill();
                     }
                 }
+            
             }
             if (msconfigengelle == 1)
             {
-
+              
             }
             if (maxhtonengelle == 1)
             {
-
+            
             }
             if (safariengelle == 1)
             {
-
+                
             }
             if (iengelle == 1)
             {
-
+             
             }
         }
 

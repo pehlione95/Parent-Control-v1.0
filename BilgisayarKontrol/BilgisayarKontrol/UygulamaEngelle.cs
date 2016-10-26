@@ -64,7 +64,7 @@ namespace BilgisayarKontrol
             {
                 zamanakadaruygulama += uygulamaadi;
                 AnaEkran an = new AnaEkran();
-                an.TimerBelirlenenZamanaKadar.Interval = 2000;
+                an.TimerBelirlenenZamanaKadar.Interval = 1000;
                 an.TimerBelirlenenZamanaKadar.Start();
                 zamankadarislem = 1;
                 Basarili success = new Basarili();
@@ -78,7 +78,7 @@ namespace BilgisayarKontrol
 
                 zamandansonrauygulama += uygulamaadi;
                 AnaEkran an = new AnaEkran();
-                an.TimerBelirlenenZamandanSonra.Interval = 2000;
+                an.TimerBelirlenenZamandanSonra.Interval = 1000;
                 an.TimerBelirlenenZamandanSonra.Start();
                 Basarili success = new Basarili();
                 zamandansonra = 1;
@@ -105,13 +105,13 @@ namespace BilgisayarKontrol
         private void UygulamaEngelle_Load(object sender, EventArgs e)
         {
 
-            belirlenenzaman = dateTimePicker1.Value.ToShortTimeString();
+            belirlenenzaman = dateTimePicker1.Value.ToLongTimeString();
             
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
-            belirlenenzaman = dateTimePicker1.Value.ToShortTimeString();
+            belirlenenzaman = dateTimePicker1.Value.ToLongTimeString();
         }
     }
 }
